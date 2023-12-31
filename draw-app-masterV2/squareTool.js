@@ -1,13 +1,13 @@
-//Tool to draw circles
-function CircleTool() {
-    this.name = "circleTool";
-    this.icon = "/assets/circle.jpg";
+//Tool to draw square
+function SquareTool() {
+    this.name = "squareTool";
+    this.icon = "/assets/square.png";
 
     var startMouseX = -1;
     var startMouseY = -1;
     var drawing = false;
     this.draw = function() {
-        //Function to draw the circle
+        //Function to draw the square
         
         if(mouseIsPressed) {
             if(startMouseX == -1) {
@@ -18,7 +18,7 @@ function CircleTool() {
             }    
             else {
                 updatePixels();
-                ellipse(startMouseX,startMouseY,dist(startMouseX,startMouseY,mouseX,mouseY));
+                rect(startMouseX,startMouseY,dist(startMouseX,startMouseY,mouseX,mouseY),dist(startMouseX,startMouseY,mouseX,mouseY));
             }        
         }
         else if(drawing) {
@@ -27,19 +27,19 @@ function CircleTool() {
             startMouseY = -1;
         }
     }
-    //This will clear the button from the canvas when circleTool is unselected
+    //This will clear the button from the canvas when squareTool is unselected
     this.unselectTool = function() {
 		updatePixels();
 		//clear options
 		select(".options").html("");
 	};
     //adds a button and click handler to the options area. When clicked
-	//toggle the fill of the circle
+	//toggle the fill of the square
 	this.populateOptions = function() {
 		select(".options").html(
-			"<button id='circleButton'>Filled Circle</button>");
+			"<button id='squareButton'>Filled Square</button>");
 		// 	//click handler
-		select("#circleButton").mouseClicked(function() {
+		select("#squareButton").mouseClicked(function() {
 			var button = select("#" + this.elt.id);  
             //this will clear the state of the button when changing color
             if (fillButtonState) {
@@ -50,7 +50,7 @@ function CircleTool() {
             if (self.axis == "fill") {
                 self.axis = "notFill";
                 
-                button.html('Filled Circle');   
+                button.html('Filled Square');   
                 fill(colourP.selectedColour);             
             }
             else {                
@@ -58,8 +58,7 @@ function CircleTool() {
                 self.lineOfSymmetry = width / 2;
                 noFill();
                 button.html('Not Filled');
-            }
-			
+            }			
 		});
 	};
 }

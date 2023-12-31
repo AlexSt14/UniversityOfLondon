@@ -1,3 +1,4 @@
+//A tool that will place stamps of different sizes on canvas, based on slider value
 function StampTool() {
     this.icon = "./assets/stamp.png";
     this.image;

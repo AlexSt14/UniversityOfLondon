@@ -5,6 +5,7 @@ function ColourPalette() {
 		"orange", "pink", "fuchsia", "green", "lime", "olive", "yellow", "navy",
 		"blue", "teal", "aqua"
 	];
+	
 	//make the start colour be black
 	this.selectedColour = "black";
 
@@ -23,10 +24,11 @@ function ColourPalette() {
 		fill(c);
 		stroke(c);
 		loadPixels(); //otherwise freehandtool draws disappear if color is changed while drawing
-		if (toolbox.selectedTool.name == "circleTool") {
-			circleTool.unselectTool();
-			circleTool.populateOptions();
-			circleButtonState = true;
+		//this will reset the button and the fill state
+		if (toolbox.selectedTool != null) {
+			toolbox.selectedTool.unselectTool();
+			toolbox.selectedTool.populateOptions();
+			fillButtonState = true;			
 		}
 		//add a new border to the selected colour
 		this.style("border", "2px solid blue");

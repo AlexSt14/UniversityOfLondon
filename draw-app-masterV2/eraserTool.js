@@ -1,3 +1,4 @@
+//A tool to erase from canvas
 function EraserTool() {
     this.name = "eraser";
     this.icon = "./assets/eraser.png";   
@@ -9,7 +10,8 @@ function EraserTool() {
         noStroke();    
         if (mouseIsPressed) {            
             ellipse(mouseX,mouseY,this.eraserWidth.value());
-        }        
+        }  
+        stroke(1); //needed to reset stroke for unfilled circles to be visible again
     }
      //This will clear the slider from the canvas when eraser is unselected
      this.unselectTool = function() {

@@ -1,13 +1,13 @@
-//Tool to draw circles
-function CircleTool() {
-    this.name = "circleTool";
-    this.icon = "/assets/circle.jpg";
+//Tool to draw rectangle
+function RectangleTool() {
+    this.name = "rectangleTool";
+    this.icon = "/assets/rectangle.png";
 
     var startMouseX = -1;
     var startMouseY = -1;
     var drawing = false;
     this.draw = function() {
-        //Function to draw the circle
+        //Function to draw the rectangle
         
         if(mouseIsPressed) {
             if(startMouseX == -1) {
@@ -15,10 +15,24 @@ function CircleTool() {
                 startMouseX = mouseX;
                 startMouseY = mouseY;
                 loadPixels();
+                console.log(startMouseY);
+                console.log(startMouseX);
             }    
             else {
                 updatePixels();
-                ellipse(startMouseX,startMouseY,dist(startMouseX,startMouseY,mouseX,mouseY));
+                if (mouseY < startMouseY && mouseX > startMouseX) { 
+                    rect(startMouseX,startMouseY,abs(startMouseX-mouseX),-abs(startMouseY-mouseY));
+                }
+                else if (mouseY > startMouseY && mouseX > startMouseX) {
+                    rect(startMouseX,startMouseY,abs(startMouseX-mouseX),abs(startMouseY-mouseY));
+                }
+                else if (mouseX < startMouseX && mouseY > startMouseY) {
+                    rect(startMouseX,startMouseY,-abs(startMouseX-mouseX),abs(startMouseY-mouseY));
+                }
+                else if (mouseX < startMouseY && mouseY < startMouseY) {
+                    rect(startMouseX,startMouseY,-abs(startMouseX-mouseX),-abs(mouseY-startMouseY));
+                    console.log(startMouseY-mouseY);
+                }
             }        
         }
         else if(drawing) {
@@ -27,19 +41,19 @@ function CircleTool() {
             startMouseY = -1;
         }
     }
-    //This will clear the button from the canvas when circleTool is unselected
+    //This will clear the button from the canvas when rectangleTool is unselected
     this.unselectTool = function() {
 		updatePixels();
 		//clear options
 		select(".options").html("");
 	};
     //adds a button and click handler to the options area. When clicked
-	//toggle the fill of the circle
+	//toggle the fill of the square
 	this.populateOptions = function() {
 		select(".options").html(
-			"<button id='circleButton'>Filled Circle</button>");
-		// 	//click handler
-		select("#circleButton").mouseClicked(function() {
+			"<button id='rectangleButton'>Filled Rectangle</button>");
+			//click handler
+		select("#rectangleButton").mouseClicked(function() {
 			var button = select("#" + this.elt.id);  
             //this will clear the state of the button when changing color
             if (fillButtonState) {
@@ -50,7 +64,7 @@ function CircleTool() {
             if (self.axis == "fill") {
                 self.axis = "notFill";
                 
-                button.html('Filled Circle');   
+                button.html('Filled Rectangle');   
                 fill(colourP.selectedColour);             
             }
             else {                
@@ -58,8 +72,7 @@ function CircleTool() {
                 self.lineOfSymmetry = width / 2;
                 noFill();
                 button.html('Not Filled');
-            }
-			
+            }			
 		});
 	};
 }
