@@ -6,8 +6,10 @@ var helpers = null;
 var circleTool = null;
 var circleImg;
 var stampTool;
+var colorPicker;
 //needed to control the fill/unfill button of circleTool
-var circleButtonState; 
+var fillButtonState; 
+var c;
 
 function preload() {
 	circleImg = loadImage("./assets/amongus.png");
@@ -16,17 +18,15 @@ function preload() {
 }
 
 function setup() {
-
 	//create a canvas to fill the content div from index.html
 	canvasContainer = select('#content');
-	var c = createCanvas(canvasContainer.size().width, canvasContainer.size().height);
+	c = createCanvas(canvasContainer.size().width, canvasContainer.size().height);
 	c.parent("content");
-
+	
 	//create helper functions and the colour palette
 	helpers = new HelperFunctions();
 	colourP = new ColourPalette();
-	circleTool = new CircleTool();
-	circleButtonState = false;
+	fillButtonState = false;
 	//create a toolbox for storing the tools
 	toolbox = new Toolbox();
 
@@ -35,9 +35,12 @@ function setup() {
 	toolbox.addTool(new LineToTool());
 	toolbox.addTool(new SprayCanTool());
 	toolbox.addTool(new mirrorDrawTool());
-	toolbox.addTool(circleTool);
+	toolbox.addTool(new CircleTool());
+	toolbox.addTool(new SquareTool());
+	toolbox.addTool(new RectangleTool());
 	toolbox.addTool(stampTool);
 	toolbox.addTool(new EraserTool());
+	toolbox.addTool(new EditableShapes());
 	background(255);
 
 }

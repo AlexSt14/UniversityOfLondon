@@ -66,7 +66,15 @@ function Toolbox() {
 					this.selectedTool.populateOptions();
 					//if user changes between tools without changing color, this will reset the button and fill state of circle
 					if (this.selectedTool.name == "circleTool") {
-						circleButtonState = true;
+						fillButtonState = true;
+						fill(colourP.selectedColour);  
+					}
+					if (this.selectedTool.name == "squareTool") {
+						fillButtonState = true;
+						fill(colourP.selectedColour);  
+					}
+					if (this.selectedTool.name == "rectangleTool") {
+						fillButtonState = true;
 						fill(colourP.selectedColour);  
 					}
 				}				

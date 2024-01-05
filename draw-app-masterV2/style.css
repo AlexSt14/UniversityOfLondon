@@ -47,6 +47,12 @@ html, body {
 	grid-area: options2;
 	padding: 15px;		
 }
+.options2 button {
+	margin: 3px;
+}
+.options2 button:hover {
+	color: black;
+}
 .options2 p {
 	font-size: smaller;
 }
@@ -64,12 +70,12 @@ html, body {
 	.wrapper {
 		display: grid;
 		height: 100%;
-		grid-template-columns: 70px 230px  minmax(100px, 1fr) 2050px;
+		grid-template-columns: 70px 230px 150px  minmax(150px, 1fr) 2050px;
 		grid-template-rows: 35px minmax(500px, 1fr) 160px 100px;
 		grid-template-areas:
-               "header header header header"
-				"sidebar content content content"
-                "colourP colourP options options2";
+               "header header header header header"
+				"sidebar content content content content"
+                "colourP colourP colorPicker options options2";
 		background-color: #fff;
 		color: #444;
 	}
@@ -78,7 +84,10 @@ html, body {
   color: #fff;
   font-size: 150%;
 }
-
+.colorPicker p {
+	text-align: center;
+	font-size: smaller;
+}
 .header {
   background-color: #999;
 }
