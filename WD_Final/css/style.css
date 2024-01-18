@@ -1,0 +1,35 @@
+input[type="email"] {
+    width: 500px;
+}
+.navbar {
+    top: 0;
+    position: sticky;
+    width: auto;
+    z-index: 5;
+}
+#test {
+    background-color: white;
+}
+h5 svg {
+    color: rgb(255, 187, 0);
+}
+.modal-content {
+    box-shadow: 10px 10px 10px rgba(0,0,0, 0.3);
+}
+.modal-content .modal-body .form-floating input[type="password"] {
+    width: 500px;
+}
+.modal-content .modal-body .form-floating input[type="text"] {
+    width: 500px;
+}
+@media screen and (max-width: 762px) {
+    .modal-content .modal-body .form-floating input[type="password"] {
+        width: 400px;
+    }
+    .modal-content .modal-body .form-floating input[type="text"] {
+        width: 400px;
+    }
+}
+#top {
+    margin-top: -48px;
+}
