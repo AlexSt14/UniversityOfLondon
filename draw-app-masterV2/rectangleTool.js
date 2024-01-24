@@ -20,19 +20,9 @@ function RectangleTool() {
             }    
             else {
                 updatePixels();
-                if (mouseY < startMouseY && mouseX > startMouseX) { 
-                    rect(startMouseX,startMouseY,abs(startMouseX-mouseX),-abs(startMouseY-mouseY));
-                }
-                else if (mouseY > startMouseY && mouseX > startMouseX) {
-                    rect(startMouseX,startMouseY,abs(startMouseX-mouseX),abs(startMouseY-mouseY));
-                }
-                else if (mouseX < startMouseX && mouseY > startMouseY) {
-                    rect(startMouseX,startMouseY,-abs(startMouseX-mouseX),abs(startMouseY-mouseY));
-                }
-                else if (mouseX < startMouseY && mouseY < startMouseY) {
-                    rect(startMouseX,startMouseY,-abs(startMouseX-mouseX),-abs(mouseY-startMouseY));
-                    console.log(startMouseY-mouseY);
-                }
+                var w = mouseX - startMouseX;
+                var h = mouseY - startMouseY;
+                rect(startMouseX,startMouseY,w,h);                
             }        
         }
         else if(drawing) {

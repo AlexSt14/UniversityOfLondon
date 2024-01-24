@@ -84,10 +84,16 @@ html, body {
   color: #fff;
   font-size: 150%;
 }
-.colorPicker p {
-	text-align: center;
+#colorPicker p {
 	font-size: smaller;
+}
+#colorPicker {
+	
+	position: relative;
+	width: 100;
+	height: 10;
 }
 .header {
   background-color: #999;
 }
+

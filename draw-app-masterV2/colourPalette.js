@@ -11,6 +11,30 @@ function ColourPalette() {
 
 	var self = this;
 
+	this.setSelectedColour = function(colour) {
+		//checking if the provided colour is a text name or a color object
+		if (typeof colour === 'string') {
+			//if it's a text name, find the corresponding color
+			var colorIndex = this.colours.indexOf(colour);
+			if (colorIndex !== -1) {
+				this.selectedColour = this.colours[colorIndex];
+			}
+		} else {
+			//if it's a color object, directly set it
+			this.selectedColour = colour;
+		}
+	
+		fill(this.selectedColour);
+		stroke(this.selectedColour);
+		loadPixels(); // As mentioned in your code
+		//this will reset the button and the fill state
+		if (toolbox.selectedTool.name == "circleTool" || toolbox.selectedTool.name == "eraser" || toolbox.selectedTool.name == "rectangleTool"
+			|| toolbox.selectedTool.name == "scissorsTool" || toolbox.selectedTool.name == "squareTool") {
+			toolbox.selectedTool.unselectTool();
+			toolbox.selectedTool.populateOptions();
+			fillButtonState = true;			
+		}	
+	};
 	var colourClick = function() {
 		//remove the old border
 		var current = select("#" + self.selectedColour + "Swatch");
@@ -20,16 +44,8 @@ function ColourPalette() {
 		var c = this.id().split("Swatch")[0];
 
 		//set the selected colour and fill and stroke
-		self.selectedColour = c;
-		fill(c);
-		stroke(c);
-		loadPixels(); //otherwise freehandtool draws disappear if color is changed while drawing
-		//this will reset the button and the fill state
-		if (toolbox.selectedTool != null) {
-			toolbox.selectedTool.unselectTool();
-			toolbox.selectedTool.populateOptions();
-			fillButtonState = true;			
-		}
+		self.setSelectedColour(c);
+		
 		//add a new border to the selected colour
 		this.style("border", "2px solid blue");
 	}
@@ -55,7 +71,11 @@ function ColourPalette() {
 			select("#" + colourID).style("background-color", this.colours[i]);
 			colourSwatch.mouseClicked(colourClick)
 		}
-
+		//set the color according to the picker color
+		colorPicker.input(function() {
+			self.setSelectedColour(colorPicker.color());
+			console.log(colorPicker.color());
+		})
 		select(".colourSwatches").style("border", "2px solid blue");
 	};
 	//call the loadColours function now it is declared

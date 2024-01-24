@@ -18,7 +18,8 @@ function SquareTool() {
             }    
             else {
                 updatePixels();
-                rect(startMouseX,startMouseY,dist(startMouseX,startMouseY,mouseX,mouseY),dist(startMouseX,startMouseY,mouseX,mouseY));
+                var wh = mouseX-startMouseX;
+                rect(startMouseX,startMouseY,wh,wh);
             }        
         }
         else if(drawing) {

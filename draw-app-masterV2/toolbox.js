@@ -48,39 +48,45 @@ function Toolbox() {
 	};
 
 	this.selectTool = function(toolName) {
+		//checking scissors tool paste button
+		if (scissors.checkToolChange()) {
 		//search through the tools for one that's name matches
 		//toolName
-		for (var i = 0; i < this.tools.length; i++) {
-			if (this.tools[i].name == toolName) {
-				//if the tool has an unselectTool method run it.
-				if (this.selectedTool != null && this.selectedTool.hasOwnProperty(
-						"unselectTool")) {
-					this.selectedTool.unselectTool();
+			for (var i = 0; i < this.tools.length; i++) {
+				if (this.tools[i].name == toolName) {
+					//if the tool has an unselectTool method run it.
+					if (this.selectedTool != null && this.selectedTool.hasOwnProperty(
+							"unselectTool")) {
+						this.selectedTool.unselectTool();
+					}					
+					
+					//select the tool and highlight it on the toolbar
+					this.selectedTool = this.tools[i];
+					select("#" + toolName + "sideBarItem").style("border", "2px solid blue");
+		
+					//if the tool has an options area. Populate it now.
+					if (this.selectedTool.hasOwnProperty("populateOptions")) {
+						this.selectedTool.populateOptions();
+						//if user changes between tools without changing color, this will reset the button and fill state of circle
+						if (this.selectedTool.name == "circleTool") {
+							fillButtonState = true;
+							fill(colourP.selectedColour);  
+						}
+						if (this.selectedTool.name == "squareTool") {
+							fillButtonState = true;
+							fill(colourP.selectedColour);  
+						}
+						if (this.selectedTool.name == "rectangleTool") {
+							fillButtonState = true;
+							fill(colourP.selectedColour);  
+						}
+					}				
 				}
-				//select the tool and highlight it on the toolbar
-				this.selectedTool = this.tools[i];
-				select("#" + toolName + "sideBarItem").style("border", "2px solid blue");
-
-				//if the tool has an options area. Populate it now.
-				if (this.selectedTool.hasOwnProperty("populateOptions")) {
-					this.selectedTool.populateOptions();
-					//if user changes between tools without changing color, this will reset the button and fill state of circle
-					if (this.selectedTool.name == "circleTool") {
-						fillButtonState = true;
-						fill(colourP.selectedColour);  
-					}
-					if (this.selectedTool.name == "squareTool") {
-						fillButtonState = true;
-						fill(colourP.selectedColour);  
-					}
-					if (this.selectedTool.name == "rectangleTool") {
-						fillButtonState = true;
-						fill(colourP.selectedColour);  
-					}
-				}				
 			}
 		}
+		//if end paste is not pressed, alerting the user else it will break the app
+		else if (!scissors.checkToolChange()) {					
+			alert("Press on End Paste button before changing the tool");
+		}
 	};
-
-
 }

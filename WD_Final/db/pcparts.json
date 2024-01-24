@@ -1,0 +1,12 @@
+[
+{
+"name": "CPU",
+"socket": "AM4",
+"price": 250
+},
+{
+"name": "GPU",
+"socket": "PICe",
+"price": 500
+}
+]

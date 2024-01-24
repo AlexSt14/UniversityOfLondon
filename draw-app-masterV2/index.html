@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="lib/p5.min.js"></script>
+    <!-- <script src="lib/p5.min.js"></script>
     <script src="lib/p5.dom.js"></script>
+    <script src="lib/p5.js"></script> -->
     
-<script src= 
-"https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js">  
-</script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.dom.min.js"></script>
 
 
     <script src="sketch.js"></script>
@@ -26,6 +26,8 @@
     <script src="editableShapes.js"></script>
     <script src="squareTool.js"></script>
     <script src="rectangleTool.js"></script>
+    <script src="scissorsTool.js"></script>
+    <script src="floodFill.js"></script>
 
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
@@ -39,7 +41,7 @@
       <div class="box" id="sidebar"></div>
       <div id="content"></div>
       <div class="box colourPalette"></div>
-      <div class="box colorPicker"><p>Color Palette</p></div>
+      <div class="box" id="colorPicker"><p>Color Palette</p></div>
       <div class="box options" id="option1"></div>
       <div class="box options2" id="optionsSize"></div>
 	  </div>

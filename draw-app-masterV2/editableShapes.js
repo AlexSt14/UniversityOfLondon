@@ -5,7 +5,7 @@ var currentShape = [];
 
 function EditableShapes() {
     this.name = "Editable Shapes";
-    this.icon = "/assets/resize.svg";
+    this.icon = "/assets/resize.png";
     this.editButton = createButton('Edit Shape');
     this.finishButton = createButton('Finish Shape');
     var self = this; //Saving the editableShape "this" reference

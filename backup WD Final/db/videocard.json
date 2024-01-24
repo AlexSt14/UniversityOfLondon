@@ -1,0 +1,182 @@
+[
+  {
+    "name": "MSI GeForce RTX 3060 Ventus 2X 12G",
+    "price": 289.39,
+    "chipset": "GeForce RTX 3060 12GB",
+    "memory": 12,
+    "core_clock": 1320,
+    "boost_clock": 1777,
+    "color": "Black",
+    "length": 235
+  },
+  {
+    "name": "MSI RTX 3070 GAMING X TRIO",
+    "price": 579.99,
+    "chipset": "GeForce RTX 3070",
+    "memory": 8,
+    "core_clock": 1500,
+    "boost_clock": 1830,
+    "color": "Black / Silver",
+    "length": 323
+  },
+  {
+    "name": "Asus STRIX GAMING OC",
+    "price": 849.99,
+    "chipset": "GeForce RTX 2080 Ti",
+    "memory": 11,
+    "core_clock": 1350,
+    "boost_clock": 1665,
+    "color": "Black",
+    "length": 305
+  },
+  {
+    "name": "MSI VENTUS 3X OC",
+    "price": 779,
+    "chipset": "GeForce RTX 3070 Ti",
+    "memory": 8,
+    "core_clock": 1575,
+    "boost_clock": 1800,
+    "color": "Black / Silver",
+    "length": 316
+  },
+  {
+    "name": "Asus TUF GAMING OC V2",
+    "price": 929.95,
+    "chipset": "GeForce RTX 3080 10GB LHR",
+    "memory": 10,
+    "core_clock": 1440,
+    "boost_clock": 1815,
+    "color": "Black",
+    "length": 300
+  },
+  {
+    "name": "ASRock Steel Legend OC",
+    "price": 459.99,
+    "chipset": "Radeon RX 7700 XT",
+    "memory": 12,
+    "core_clock": 1700,
+    "boost_clock": 2599,
+    "color": "White",
+    "length": 304
+  },
+  {
+    "name": "Asus ROG STRIX GAMING OC",
+    "price": 699.99,
+    "chipset": "GeForce RTX 4070",
+    "memory": 12,
+    "core_clock": 1920,
+    "boost_clock": 2640,
+    "color": "Black / Red",
+    "length": 339
+  },
+  {
+    "name": "MSI GAMING X SLIM",
+    "price": 1833,
+    "chipset": "GeForce RTX 4070 Ti",
+    "memory": 12,
+    "core_clock": 2310,
+    "boost_clock": 2745,
+    "color": "White",
+    "length": 307
+  },
+  {
+    "name": "Zotac GAMING AMP Extreme AIRO",
+    "price": 1149.99,
+    "chipset": "GeForce RTX 4080",
+    "memory": 16,
+    "core_clock": 2205,
+    "boost_clock": 2565,
+    "color": "Black",
+    "length": 356
+  },
+  {
+    "name": "Zotac GAMING AMP Extreme AIRO",
+    "price": 2394.98,
+    "chipset": "GeForce RTX 4090",
+    "memory": 24,
+    "core_clock": 2235,
+    "boost_clock": 2580,
+    "color": "Black / Silver",
+    "length": 356
+  },
+  {
+    "name": "PowerColor Hellhound Spectral",
+    "price": 1069.99,
+    "chipset": "Radeon RX 7900 XTX",
+    "memory": 24,
+    "core_clock": 2300,
+    "boost_clock": 2525,
+    "color": "White",
+    "length": 338
+  },
+  {
+    "name": "XFX Speedster MERC 310",
+    "price": 789.99,
+    "chipset": "Radeon RX 7900 XT",
+    "memory": 20,
+    "core_clock": 2000,
+    "boost_clock": 2535,
+    "color": "Black / Silver",
+    "length": 344
+  },
+  {
+    "name": "ASRock Challenger OC",
+    "price": 549.99,
+    "chipset": "Radeon RX 7800 XT",
+    "memory": 16,
+    "core_clock": 1295,
+    "boost_clock": 2475,
+    "color": "Black",
+    "length": 267
+  },
+  {
+    "name": "Gigabyte GAMING OC",
+    "price": 439.99,
+    "chipset": "Radeon RX 7700 XT",
+    "memory": 12,
+    "core_clock": 1700,
+    "boost_clock": 2599,
+    "color": "Black",
+    "length": 302
+  },
+  {
+    "name": "Biostar VA69T6AMP2",
+    "price": null,
+    "chipset": "Radeon RX 6900 XT",
+    "memory": 16,
+    "core_clock": 1825,
+    "boost_clock": 2250,
+    "color": "Black",
+    "length": 315
+  },
+  {
+    "name": "PowerColor Red Devil Limited Edition",
+    "price": null,
+    "chipset": "Radeon RX 6800 XT",
+    "memory": 16,
+    "core_clock": 1825,
+    "boost_clock": 2340,
+    "color": "Black / Red",
+    "length": 320
+  },
+  {
+    "name": "ASRock Radeon RX6700XT CLD 12G",
+    "price": 324.99,
+    "chipset": "Radeon RX 6700 XT",
+    "memory": 12,
+    "core_clock": 2321,
+    "boost_clock": 2581,
+    "color": "Black",
+    "length": 269
+  },
+  {
+    "name": "MSI VENTUS 2X XS OC",
+    "price": 219.99,
+    "chipset": "GeForce RTX 3050 8GB",
+    "memory": 8,
+    "core_clock": 1550,
+    "boost_clock": 1807,
+    "color": "Black / Gray",
+    "length": 205
+  }
+]
