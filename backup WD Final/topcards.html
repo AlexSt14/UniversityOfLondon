@@ -10,75 +10,164 @@
     <body>
         <div class="container">
             <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-lg p-2 border-bottom border-body" id="navBarBG">
-            <div class="container-fluid">
-                <ul class="nav nav-tabs">
-                    <li class="nav-item">
-                      <a class="nav-link activeScript" aria-current="page" href="./index.html">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle activeScript" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Tutorials</a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">How to</a></li>
-                        <li><a class="dropdown-item" href="./topcards.html">Top GPUs</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Best Deals</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link activeScript" href="./systembuilder.html">System Builder</a>
-                    </li>
-                </ul>               
-            </div>
-        </nav>
-           <!-- END NAVBAR -->
+            <nav class="navbar navbar-expand-lg p-2 border-bottom border-body" id="navBarBG">
+                <div class="container-fluid">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                        <a class="nav-link activeScript" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Tutorials</a>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="./topcards.html">GPUs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Best Deals</a></li>
+                        <li class="nav-item">
+                        <a class="nav-link activeScript" href="./systembuilder.html">System Builder</a>
+                        </li>                    
+                    </ul>               
+                </div>
+            </nav>
+            <!-- END NAVBAR -->
             
         
             <!-- Top cards-->
-            <div class="row">
-                <div class="col-6">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">awdawd</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">An item</li>
-                          <li class="list-group-item">A second item</li>
-                          <li class="list-group-item">A third item</li>
-                        </ul>
-                        <div class="card-body">
-                          <a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>
-                        </div>
-                      </div>
+            <div class="row row-cols-1">
+                <div class="col">
+                    <img alt="RTX 4070" src="./img/fpgpus.jpg" id="topgpus">
                 </div>
-                <div class="col-6">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">An item</li>
-                          <li class="list-group-item">A second item</li>
-                          <li class="list-group-item">A third item</li>
-                        </ul>
-                        <div class="card-body">
-                          <a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>
-                        </div>
-                      </div>
+                <div class="col">
+                    <p>The best graphics cards are the beating heart of any gaming PC, and everything else comes second. Without a powerful GPU pushing pixels, even the fastest CPU won't manage much. While no one graphics card will be right for everyone, we'll provide options for every budget and mindset below. Whether you're after the fastest graphics card, the best value, or the best card at a given price, we've got you covered.</p>
+                    <p>Where our GPU benchmarks hierarchy ranks all of the cards based purely on performance, our list of the best graphics cards looks at the whole package. Current GPU pricing, performance, features, efficiency, and availability are all important, though the weighting becomes more subjective. Factoring in all of those aspects, these are the best graphics cards that are currently available.</p>
+                    <p>AMD and Nvidia have basically wrapped up their latest generation GPU lineups, unless there are still plans for an RTX 4050 at the bottom of the stack. It's not clear what such a chip might entail at this point, possibly 8GB of memory on a 128-bit interface (again), or could Nvidia try foisting a 96-bit 6GB card on the market? Hopefully the former rather than the latter.</p>
+                    <p>There are rumblings of various RTX 40-series Super cards, which will probably appear in January. These may replace the existing non-Super models. What's not clear is whether anything will happen at the top of the stack with the RTX 4090. Nvidia's RTX 4090 is now banned from export to China, though that has merely encouraged scalpers to hoard RTX 4090 cards. A faster RTX 4090 Ti / Super would likewise be banned, and would need to be assembled outside of China, but it could still happen.</p>
+                    <p>On the AMD side of things, there are credible rumblings of an incoming RX 7600 XT. Specs remain a bit of a mystery, though we can't help but hope for a 12GB Navi 32-based variant. The existing RX 7600 already uses a maxed out Navi 33 configuration, so higher clocks would be the only option if AMD goes that route. Again, we anticipate cards arriving in January, around the CES timeframe.</p>
+                    <p>Intel's Arc Alchemist GPUs rate more as previous generation hardware, as they're manufactured on TSMC N6 and compete more directly against the RTX 3060 and RX 6700 10GB instead of newer parts. However, Arc A750 priced at under $200 (we've seen it sell for as little as $179) remains a very competitive option, if you don't mind the occasional driver snafus and higher power use.</p>
+                </div>
+            
+                
+            </div>
+            <div class="table">
+                <table>
+                    <tr>
+                        <th>Graphics Card</th>
+                        <th>1080p FPS</th>
+                        <th>1440p FPS</th>
+                        <th>4k FPS</th>
+                        <th>Price (MSRP)</th>
+                        <th>Power</th>
+                    </tr>
+                    <tr>
+                        <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DGeForce%2BRTX%2B4090%26rh%3Dn%25253A17923671011%25252Cn%25253J284822%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-1165130229768170000-20" target="_blank">GeForce RTX 4090</a></td>
+                        <td>179.7</td>
+                        <td>133.2</td>
+                        <td>84.8</td>
+                        <td>$1,999($1,600)</td>
+                        <td>316W</td>
+                    </tr>
+                    <tr>
+                        <td><a target="_blank" href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DGeForce%2BRTX%2B4080%26rh%3Dn%25253A17923671011%25252Cn%25253J284822%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-1456236304724552000-20">GeForce RTX 4080</a></td>
+                        <td>159.3</td>
+                        <td>108.3</td>
+                        <td>62.7</td>
+                        <td>$1,119 ($1,200)</td>
+                        <td>245W</td>
+                    </tr>
+                    <tr>
+                        <td><a target="_blank" href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DRadeon%2BRX%2B7900%2BXTX%26rh%3Dn%25253A17923671011%25252Cn%25253J284822%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-1034313229351061800-20">Radeon RX 7900 XTX</a></td>
+                        <td>144.4</td>
+                        <td>96.6</td>
+                        <td>56.3</td>
+                        <td>$949 ($1,000)</td>
+                        <td>338W</td>
+                    </tr>
+                    <tr>
+                        <td><a target="_blank" href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DRadeon%2BRX%2B7900%2BXT%26rh%3Dn%25253A17923671011%25252Cn%25253J284822%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-5588401349537863000-20">Radeon RX 7900 XT</a></td>
+                        <td>134.1</td>
+                        <td>86.2</td>
+                        <td>47.8</td>
+                        <td>$769 ($900)</td>
+                        <td>301W</td>
+                    </tr>
+                    <tr>
+                        <td><a target="_blank" href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DGeForce%2BRTX%2B4070%26rh%3Dn%25253A17923671011%25252Cn%25253J284822%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-8711680304956815000-20" >GeForce RTX 4070</a></td>
+                        <td>125.5</td>
+                        <td>73.7</td>
+                        <td>39.5</td>
+                        <td>$539 ($600)</td>
+                        <td>184W</td>
+                    </tr>
+                    <tr>
+                        <td><a target="_blank" href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DRadeon%2BRX%2B7800%2BXT%26rh%3Dn%25253A17923671011%25252Cn%25253J284822%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-3477759984853850600-20">Radeon RX 7800 XT</a></td>
+                        <td>115.3</td>
+                        <td>69.7</td>
+                        <td>37.7</td>
+                        <td>$499 ($500)</td>
+                        <td>245W</td>
+                    </tr>
+                    <tr>
+                        <td><a target="_blank" href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DGeForce%2BRTX%2B4060%2BTi%26rh%3Dn%25253A17923671011%25252Cn%25253J284822%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-1062709011124927700-20">GeForce RTX 4060 Ti</a></td>
+                        <td>100.4</td>
+                        <td>55.5</td>
+                        <td>27.4</td>
+                        <td>$399 ($400)</td>
+                        <td>142W</td>
+                    </tr>
+                    <tr>
+                        <td><a target="_blank" href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DRadeon%2BRX%2B6700%2BXT%26rh%3Dn%25253A17923671011%25252Cn%25253J284822%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-8453419732101031000-20">Radeon RX 6700 XT</a></td>
+                        <td>80.4</td>
+                        <td>44.3</td>
+                        <td>22.8</td>
+                        <td>$319 ($480)</td>
+                        <td>210W</td>
+                    </tr>
+                    <tr>
+                        <td><a target="_blank" href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DGeForce%2BRTX%2B4060%26rh%3Dn%25253A17923671011%25252Cn%25253J284822%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-7678941482177154000-20">GeForce RTX 4060</a></td>
+                        <td>82.6</td>
+                        <td>44.3</td>
+                        <td>22.0</td>
+                        <td>$299 ($300)</td>
+                        <td>127W</td>
+                    </tr>
+                    <tr>
+                        <td><a target="_blank" href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DRadeon%2BRX%2B7600%26rh%3Dn%25253A17923671011%25252Cn%25253J284822%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-1012725208361711400-20">Radeon RX 7600</a></td>
+                        <td>68.6</td>
+                        <td>34.3</td>
+                        <td>—</td>
+                        <td>$269 ($270)</td>
+                        <td>153W</td>
+                    </tr>
+                    <tr>
+                        <td><a target="_blank" href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DIntel%2BArc%2BA750%26rh%3Dn%25253A17923671011%25252Cn%25253J284822%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-8207100742120022000-20">Intel Arc A750</a></td>
+                        <td>66.4</td>
+                        <td>38.7</td>
+                        <td>—</td>
+                        <td>$179 ($250)</td>
+                        <td>199W</td>
+                    </tr>
+                    <tr>
+                        <td><a target="_blank" href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DIntel%2BArc%2BA380%26rh%3Dn%25253A17923671011%25252Cn%25253J284822%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-2468931508127791000-20">Intel Arc A380</a></td>
+                        <td>25.0</td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td>$119 ($140)</td>
+                        <td>71W</td>
+                    </tr>
+                </table>
+                <div class="col">
+                    <p>Note: We're showing current online prices alongside the official launch MSRPs in the above table, with the GPUs sorted by performance. Retail prices have fluctuated quite a bit over the course of a month; the table lists the best we could find at the time of writing.</p>
+                    <p>Our list now consists mostly of current generation cards, with only a single previous generation part still hanging around (RX 6700 XT) — unless you want to classify Arc as previous gen. Those older parts are near the bottom of the performance list, though they can still offer a good value if you're not after maximum performance or efficiency.</p>
+                    <p>The performance ranking (above) incorporates 15 games from our updated test suite, with both rasterization and ray tracing performance included. While we previously had DXR (DirectX Raytracing) as a separate column, we feel there are enough RT-enabled games now to aggregate the scores. Note that we are not including upscaling results in the table, which would generally skew things more in favor of Nvidia GPUs, depending on the selection of games, but the DXR games at least partially account for that.</p>
+                    <p>The above table is sorted by performance, which is why the RTX 4090 sits at the top, and why the RTX 4070 edges past the 7800 XT. Our subjective rankings below factor in price, power, and features colored by our own opinions. Others may offer a slightly different take, but all of the cards on this list are worthy of your consideration.</p>
                 </div>
             </div>
+            
             <div class="row row-cols-1 py-5" id="top">
                 <div class="col mb-5">
-                    <div class="card" id="3080">
-                        <img src="./Img/rtx3080.jpg" class="card-img-top" alt="...">
+                    <h2>Best Graphics Cards for Gaming 2024</h2>
+                    <div class="card" id="rtx4090">
+                        <img src="./Img/rtx4090.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">GeForce RTX 3080 &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <h5 class="card-title">GeForce RTX 4090 &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
                             <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
                             </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
                             <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -89,61 +178,71 @@
                             </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
                             <path d="M5.354 5.119L7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.519.519 0 0 1-.146.05c-.341.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.171-.403.59.59 0 0 1 .084-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027c.08 0 .16.018.232.056l3.686 1.894-.694-3.957a.564.564 0 0 1 .163-.505l2.906-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.002 2.223 8 2.226v9.8z"/>
                             </svg></h5>
-                            <h6>Best Graphics Card Overall, for 4K and More</h6>
+                            <h6>Fastest Graphics Card, Great for Creators, AI, and Professionals</h6>
 
                             <p class="card-text">
                                 <p>
-                                <strong>GPU:</strong> Ampere (GA102) | <strong>GPU Cores:</strong> 8704 | <strong>Boost Clock:</strong> 1,710 MHz | <br><strong>Video RAM:</strong> 10GB GDDR6X 19 Gbps | <strong>TDP:</strong> 320 watts
+                                <strong>GPU:</strong> Ada AD102 | <strong>GPU Cores:</strong> 16384 | <strong>Boost Clock:</strong> 2,520 MHz | <br><strong>Video RAM:</strong> 24GB GDDR6X 21 Gbps | <strong>TDP:</strong> 450 watts
                                 </p>
                                 <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
                                 <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                                 <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                                </svg>&nbsp;Excellent performance</p>                    
+                                </svg>&nbsp;The fastest GPU, period</p>                    
                                 <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
                                 <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                                 <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                                </svg>&nbsp;Reasonably priced compared to 3090 and 6900 XT</p>                          
+                                </svg>&nbsp;Excellent 4K and maybe even 8K gaming</p>                          
                                 <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
                                 <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                                 <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                                </svg>&nbsp;Can legitimately do 4K ultra at 60 fps or more</p>
+                                </svg>&nbsp;Powerful ray tracing hardware</p>
                                 <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
                                 <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                                 <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                                </svg>&nbsp;Substantially faster than previous gen GPUs</p>
+                                </svg>&nbsp;DLSS and now DLSS 3</p>
+                                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                </svg>&nbsp;24GB is great for content creation workloads</p>
                                 <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle-fill" viewBox="0 0 16 16">
                                 <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"/>
-                                </svg>&nbsp;Availability is severely limited</p>
+                                </svg>&nbsp;Extreme price and power requirements</p>
                                 <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle-fill" viewBox="0 0 16 16">
                                 <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"/>
-                                </svg>&nbsp;Requires 320W of power</p>
+                                </svg>&nbsp;Needs a fast CPU and large PSU</p>
                                 <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle-fill" viewBox="0 0 16 16">
                                 <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"/>
-                                </svg>&nbsp;Overkill for 1080p displays</p>
-                                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle-fill" viewBox="0 0 16 16">
-                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"/>
-                                </svg>&nbsp;Only 10GB VRAM</p>
+                                </svg>&nbsp;Frame Generation is a bit gimmicky</p>
+                                
                                 <p>
-                                The king is dead, long live the king! <a href="https://www.tomshardware.com/reviews/nvidia-geforce-rtx-3080-review" target="new">Nvidia's GeForce RTX 3080</a> sports the new and improved <a href="https://www.tomshardware.com/features/nvidia-ampere-architecture-deep-dive" target="new">Ampere architecture</a>. It's over 30% faster than the previous gen 2080 Ti, for $500 less. 
-                                If you're serious about maxing out all the graphics settings and you want to play at 4K or 1440p, this is the card to get — it's mostly overkill for 1080p gaming, though enabling all ray tracing effects in games that 
-                                support the feature makes 1080p still reasonable.
+                                    For some, the best graphics card is the fastest card, pricing be damned. Nvidia's GeForce RTX 4090 caters to precisely this category of user. It was also the debut of Nvidia's Ada Lovelace architecture, and will represent the most potent card Nvidia has to offer, possibly until 2025 when the next generation GPUs are rumored to arrive.
                                 </p>
                                 <p>
-                                Ampere also brings improved tensor cores for DLSS, a technology we're bound to see more of in future games now that it doesn't require per-game training by a supercomputer. We're seeing a lot more games with DLSS 2.0 these days, 
-                                helped by the fact that it's basically a toggle and UI update to get it working in Unreal Engine. Nvidia's RT and DLSS performance are also quite a bit faster than what you get from AMD's new RX 6000 cards, which is a good thing as Nvidia 
-                                sometimes falls behind in traditional rasterization performance (which is what our raw numbers are based on).
+                                    Note also that pricing of the RTX 4090 has become quite extreme, with most cards now selling above $2,000 thanks to the China RTX 4090 export restrictions. If you don't already have a 4090, you're probably best off giving it a pass now.
                                 </p>
                                 <p>
-                                The biggest problem with RTX 3080 by far is going to be finding one in stock. Rumors swirling around the upcoming RTX 3080 Ti suggest it doubles the VRAM to 20GB, but other rumors indicate the 20GB cards probably won't come out for a while due to component shortages.
+                                    The RTX 4090 offers a larger gap between itself and the next closest Nvidia GPU. Across our suite of gaming benchmarks, it's 35% faster overall than the RTX 4080. It's also 51% faster than AMD's top performing RX 7900 XTX — though it also costs about 60% more.
+                                </p>
+                                <p>
+                                    Let's be clear about something: You really need a high refresh rate 4K monitor to get the most out of the RTX 4090. At 1440p its advantage over a 4080 shrinks to 23%, and it's only 13% at 1080p — and that includes some demanding DXR games. The lead over the RX 7900 XTX also falls to only 24% at 1080p. Not only do you need a high resolution, high refresh rate monitor, but you'll also want the fastest CPU possible to get the most out of the 4090.
+                                </p>
+                                <p>
+                                    It's not just gaming performance, either. In professional content creation workloads like Blender, Octane, and V-Ray, the RTX 4090 is up to 45% faster than the RTX 4080. And with Blender, it's over three times faster than the RX 7900 XTX. Don't even get us started on artificial intelligence tasks. In Stable Diffusion testing, the RTX 4090 is around four times faster than the 7900 XTX for 512x512 images, and nearly seven times faster for 768x768 images.
+                                </p>
+                                <p>
+                                    There are numerous other AI workloads that currently only run on Nvidia GPUs. In short, Nvidia knows a thing or two about content creation applications. The only potential problem is that it uses drivers to lock improved performance in some apps (like some of those in SPECviewperf) to its true professional cards, i.e. the RTX 6000 48GB.
+                                </p>
+                                <p>
+                                    AMD's RDNA 3 response to Ada Lovelace might be a better value, at least if you're only looking at rasterization games, but for raw performance the RTX 4090 reigns as the current champion. Just keep in mind that you may also need a CPU and power supply upgrade to get the most out of the 4090. We'd also suggest waiting until next month to see if we get a new halo part, or if the rumored RTX 4080 Super might be a more cost effective solution.
                                 </p>
                         </div>
                     </div>
                 </div>
                 <div class="col mb-4">
-                    <div class="card" id="6800xt">
-                    <img src="./Img/rx6800xt.jpg" class="card-img-top" alt="...">
+                    <div class="card" id="7900xtx">
+                    <img src="./Img/rx7900xtx.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Radeon RX 6800 XT &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <h5 class="card-title">Radeon RX 7900 XTX &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
                         </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -151,55 +250,50 @@
                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
                         </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
-                        <path d="M5.354 5.119L7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.519.519 0 0 1-.146.05c-.341.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.171-.403.59.59 0 0 1 .084-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027c.08 0 .16.018.232.056l3.686 1.894-.694-3.957a.564.564 0 0 1 .163-.505l2.906-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.002 2.223 8 2.226v9.8z"/>
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                        <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
                         </svg></h5>
-                        <h6>Best AMD GPU, Forget About DLSS</h6>
+                        <h6>AMD's Fastest GPU, Great for Rasterization</h6>
                         <p>
-                        <strong>GPU:</strong> Navi 21 XT | <strong>GPU Cores:</strong> 4608 | <strong>Boost Clock:</strong> 2,250 MHz | <br><strong>Video RAM:</strong> 16GB GDDR6 16 Gbps | <strong>TDP:</strong> 300 watts
+                        <strong>GPU:</strong> Navi 31 | <strong>GPU Cores:</strong> 6144 | <strong>Boost Clock:</strong> 2500 MHz | <br><strong>Video RAM:</strong> 24GB GDDR6 20 Gbps | <strong>TDP:</strong> 355 watts
                         </p>
                         <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
                         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                         <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                        </svg>&nbsp;New RDNA2 architecture provides excellent performance</p>
+                        </svg>&nbsp;Great overall performance</p>
                         <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
                         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                         <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                        </svg>&nbsp;Beats 3080 in rasterization games</p>
+                        </svg>&nbsp;Lots of VRAM and cache</p>
                         <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
                         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                         <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                        </svg>&nbsp;Easily handles 4K and 1440p</p>
+                        </svg>&nbsp;Great for non-RT workloads</p>
                         <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
                         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                         <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                        </svg>&nbsp;Tons of VRAM for the future</p>
+                        </svg>&nbsp;Good SPECviewperf results</p>
                         <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle-fill" viewBox="0 0 16 16">
                         <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"/>
-                        </svg>&nbsp;Weaker ray tracing performance</p>
+                        </svg>&nbsp;$1,000 starting price</p>
                         <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle-fill" viewBox="0 0 16 16">
                         <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"/>
-                        </svg>&nbsp;No DLSS alternative right now</p>
+                        </svg>&nbsp;Much slower RT performance</p>
                         <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle-fill" viewBox="0 0 16 16">
                         <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"/>
-                        </svg>&nbsp;Supply might be even worse than Nvidia</p>
-                        <p class="card-text">AMD's <a href="https://www.tomshardware.com/news/amd-teases-big-navi-rx-6900-xt/news/amd-rx-6000-rdna-2-big-navi-gpus-revealed" target="new">Radeon RX 6800 XT</a> is the best card for Team Red. The <a href="https://www.tomshardware.com/news/amd-radeon-rx-6900-xt-review" target="new">RX Radeon 6900 XT</a> is technically about 5-7 percent faster, but it costs 54 percent more. That's not a great deal, at all, especially since you don't get more VRAM or 
-                            any other extras. The RX 6800 XT provides a massive boost in performance and features relative to the previous generation RX 5700 XT. It adds ray tracing support (via DirectX Raytracing or VulkanRT), and is 70-90% faster across our test suite.</p>
-                        <p class="card-text">The GPU was affectionately dubbed 'Big Navi' prior to launch by the enthusiast community, and we got exactly what we wanted. Navi 21 is over twice the size of Navi 10, with twice the shader cores and twice the RAM. Clock speeds are 
-                            also boosted into the 2.1-2.3 GHz range (depending on the card model), the highest clocks we've ever seen from a reference GPU by about 300 MHz. And AMD did all this without substantially increasing power requirements: 
-                            The RX 6800 XT has a 300W TDP, slightly lower than the RTX 3080's 320W TDP.</p>
-                        <p class="card-text">A big part of AMD's performance comes thanks to the massive 128MB Infinity Cache. It improves the effective bandwidth by 119% (according to AMD). We're confident that few if any games in the coming years are going to need more than 16GB, so the 6800 XT is in a great position in that area.</p>
-                        <p class="card-text">What's not to like? Well, the ray tracing performance is a bit mediocre. Maybe it's because current games are more likely to be optimized for Nvidia's RTX GPUs, but overall the 6800 XT is just barely ahead of the RTX 3070 in ray 
-                            tracing performance, and there are several games where it falls behind by up to 25%. And that's without turning on DLSS, which even in Quality mode can improve performance of RTX cards by 20-40% (sometimes more). AMD is working on 
-                            <a href="https://www.tomshardware.com/news/amd-promises-open-source-fidelityfx-super-resolution-dlss-alternative" target="new">FidelityFX Super Resolution</a> to compete with DLSS, but it's not here yet and it's very much needed.</p>
+                        </svg>&nbsp;Weaker in AI / deep learning workloads</p>
+                        <p class="card-text">The Red Team King is dead; long live the Red Team King! AMD's Radeon RX 7900 XTX rates as the fastest graphics card from AMD, and lands near the top of the charts — with a generational price bump to match. Officially priced at $999, the least expensive models now start at around $950, and supply has basically caught up to demand. There's good reason for the demand, as the 7900 XTX comes packing AMD's latest RDNA 3 architecture.</p>
+                        <p class="card-text">That gives the 7900 XTX a lot more potential compute, and you get 33% more memory and bandwidth as well. Compared to the RX 6950 XT, on average the new GPU is 40% faster at 4K, though that shrinks to 30% at 1440p and just 24% at 1080p. It also delivers that performance boost without dramatically increasing power use or graphics card size.</p>
+                        <p class="card-text">AMD remains a potent solution for anyone that doesn't care as much about ray tracing — and when you see the massive hit to performance for often relatively mild gains in image fidelity, we can understand why many feel that way. Still, the number of games with RT support continues to grow, and most of those also support Nvidia's DLSS technology, something AMD hasn't fully countered even if FSR2 can at times come close. If you want the best DXR/RT experience right now, Nvidia still wins hands down.</p>
+                        <p class="card-text">AMD's GPUs can also be used for professional and content creation tasks, but here things get a bit hit and miss. Certain apps in the SPECviewperf suite run great on AMD hardware, others come up short. However, if you want to do AI or deep learning research, there's no question Nvidia's cards are a far better pick. For this generation, the RX 7900 XTX is AMD's fastest option, and it definitely packs a punch. If you're willing to step down to the 7900 XT, that's also worth considering (see below), as it tends to be priced better now.</p>
                     </div>
                     </div>
                 </div>
                 <div class="col mb-4">
-                    <div class="card" id="3090">
-                    <img src="./Img/rtx3090.jpg" class="card-img-top" alt="...">
+                    <div class="card" id="rtx4070">
+                    <img src="./Img/rtx4070.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">GeForce RTX 3090 &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <h5 class="card-title">GeForce RTX 4070  &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
                         </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -211,38 +305,31 @@
                         <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
                         </svg></h5>
                         <h6>
-                        Fastest Graphics Card, Great for Creators
+                        A Balanced High-End Nvidia GPU
                         </h6>
                         <p class="card-text">
-                            <p><strong>GPU:</strong> Ampere (GA102) | <strong>GPU Cores:</strong> 10496 | <strong>Boost Clock:</strong> 1,695 MHz | <br><strong>Video RAM:</strong> 24GB GDDR6X 19.5 Gbps | <strong>TDP:</strong> 350 watts</p>
+                            <p><strong>GPU:</strong> AD104 | <strong>GPU Cores:</strong> 5888 | <strong>Boost Clock:</strong> 2,475 MHz | <br><strong>Video RAM:</strong> 12GB GDDR6X 21 Gbps | <strong>TDP:</strong> 200 watts</p>
                             <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
                             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                             <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                            </svg>&nbsp;The fastest GPU, period</p>
+                            </svg>&nbsp;Excellent efficiency and good performance</p>
                             <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
                             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                             <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                            </svg>&nbsp;4K and maybe even 8K gaming</p>
+                            </svg>&nbsp;Good for 1440p gaming</p>
                             <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
                             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                             <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                            </svg>&nbsp;24GB is great for content creation workloads</p>
-                            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
-                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                            </svg>&nbsp;Up to 30% faster than 3080 in professional apps</p>
+                            </svg>&nbsp;DLSS, DLSS 3, and DXR features</p>
                             <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle-fill" viewBox="0 0 16 16">
                             <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"/>
-                            </svg>&nbsp;Over twice the cost of 3080 for 10-15% more performance</p>
+                            </svg>&nbsp;12GB is the minimum we'd want with a $400+ GPU</p>
                             <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle-fill" viewBox="0 0 16 16">
                             <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"/>
-                            </svg>&nbsp;Extremely limited availability for now</p>
+                            </svg>&nbsp;Frame Generation marketing</p>
                             <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle-fill" viewBox="0 0 16 16">
                             <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"/>
-                            </svg>&nbsp;High power requirements</p>
-                            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle-fill" viewBox="0 0 16 16">
-                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"/>
-                            </svg>&nbsp;Titan price without Titan enhancements</p>
+                            </svg>&nbsp;Generational price hike</p>
                             <p>
                             For some, the best card is the fastest card — pricing be damned! Nvidia's <a href="https://www.tomshardware.com/reviews/nvidia-geforce-rtx-3090-review" target="new">GeForce RTX 3090</a> caters to this category of user. At more than double the price 
                             of the RTX 3080, performance is only moderately better (10-15%) in most workloads. It's basically a replacement for the Titan RTX, at a still extreme price

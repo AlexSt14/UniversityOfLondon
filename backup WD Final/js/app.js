@@ -11,13 +11,13 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      cpuData: [],
+      dataShowed: [],
       cardsToShow: 13,
       searchQuery: "", //Value to be searched
       selectedItems: [],
       filepath: "../db/cpu.json",
       cpu: "../db/cpu.json",
-      monitor: "../db/monitor.json"
+      monitor: "../db/monitor.json",
     };
   }
   //Handling user scroll of page
@@ -51,10 +51,14 @@ class App extends React.Component {
 
   //Changing json data file
   changeDB = (path) => {
+    window.scrollTo(0, 0);
     this.setState ({
       filepath: path,
-      searchQuery: ""      
+      searchQuery: "",
+      cardsToShow: 13,
     });
+    
+    scrolled = 500;
     let uInput = document.getElementById("searchInput");
     uInput.value = "";
   }
@@ -82,7 +86,7 @@ class App extends React.Component {
   fetchData = (filepath) => {
     fetch(this.state.filepath)
       .then(res => res.json())
-      .then(data => this.setState({ cpuData: data }));
+      .then(data => this.setState({ dataShowed: data }));
   }
 
   //Cleaning up click event listener 
@@ -103,50 +107,85 @@ class App extends React.Component {
   }
 
   //Filtering the results
-  filterCpuData = () => {
-    const { cpuData, searchQuery } = this.state;
-    return cpuData.filter((cpu) => 
-      cpu.name.toLowerCase().includes(searchQuery.toLowerCase())
+  filterData = () => {
+    const { dataShowed, searchQuery } = this.state;
+    return dataShowed.filter((data) => 
+      data.name.toLowerCase().includes(searchQuery.toLowerCase())
     );
   }
 
   //Firstly slicing the data to only show the first bit, will then continue to add cards once scrolling, also searching for user input if needed
   render() {
-    const filteredCards = this.filterCpuData();
+    const filteredCards = this.filterData();
     const cards = filteredCards.slice(0, this.state.cardsToShow);
-    console.log(cards);
-    return (
-      <div className="row parent">
-        <div className="col-sm-6">
-          {cards.map(cpu => (
-            <div key={cpu.name} className="col-sm-12">
-              <Card
-                key={cpu.name}
-                name={cpu.name} 
-                price={cpu.price} 
-                coreCount={cpu.core_count}
-                coreClock={cpu.core_clock}
-                tdp={cpu.tdp}
-                onSelectItem={this.handleSelectedItem}
-              />
-            </div>
-          ))}
+    if (this.state.filepath === "../db/cpu.json") {
+      return (
+        <div className="row parent">
+          <div className="col-sm-6">
+            {cards.map(data => (
+              <div key={data.name} className="col-sm-12">
+                <Card
+                  key={data.name}
+                  name={data.name} 
+                  price={data.price} 
+                  coreCount={data.core_count}
+                  coreClock={data.core_clock}
+                  tdp={data.tdp}
+                  onSelectItem={this.handleSelectedItem}
+                  category={this.state.filepath}
+                />
+              </div>
+            ))}
+          </div>
+          <div className="col-sm-6 rightListContainer" id="asd">
+          <RightList 
+          selectedItems={this.state.selectedItems}
+          onRemoveItem={this.handleRemoveItem}
+          />
+          </div>
         </div>
-        <div className="col-sm-6 rightListContainer" id="asd">
-        <RightList 
-        selectedItems={this.state.selectedItems}
-        onRemoveItem={this.handleRemoveItem}
-        />
+      );
+    }
+    else if (this.state.filepath === "../db/monitor.json") {
+      return (
+        <div className="row parent">
+          <div className="col-sm-6">
+            {cards.map(data => (
+              <div key={data.name} className="col-sm-12">
+                <Card
+                  key={data.name}
+                  name={data.name} 
+                  price={data.price} 
+                  screenSize={data.screen_size}
+                  resolution={data.resolution}
+                  refreshRate={data.refresh_rate}
+                  responseTime={data.response_time}
+                  panelType={data.panel_type}
+                  aspectRation={data.aspect_ratio}
+                  onSelectItem={this.handleSelectedItem}
+                  category={this.state.filepath}
+                />
+              </div>
+            ))}
+          </div>
+          <div className="col-sm-6 rightListContainer" id="asd">
+          <RightList 
+          selectedItems={this.state.selectedItems}
+          onRemoveItem={this.handleRemoveItem}
+          />
+          </div>
         </div>
-      </div>
-    );
+      );
+    }
+    
   }
 }
 
 //Bootstrap card component
-function Card({name, price, coreCount, coreClock, tdp, onSelectItem}) {
-  return (
- 
+function Card({category, name, price, coreCount, coreClock, tdp, onSelectItem,screenSize,resolution,refreshRate,responseTime,panelType,aspectRation,
+                }) {
+  if(category == "../db/cpu.json") {
+    return (
       <div className="card" style={{width: "18rem;"}}>
     
       <div className="card-body">
@@ -156,8 +195,25 @@ function Card({name, price, coreCount, coreClock, tdp, onSelectItem}) {
         <a href="#" className="btn btn-primary" onClick={() => onSelectItem({name, price})}>Select Item</a>
       </div>
       </div>
-   
-  )
+    )
+  }
+  else if (category === "../db/monitor.json"){
+    return (
+      <div className="card" style={{width: "18rem;"}}>
+    
+      <div className="card-body">
+        <h5 className="card-title">{name}</h5>
+        <p className="card-text">Price for this {name} is £{price}</p>
+        <p className="card-text">It comes with a screen size of {screenSize}, a resolution of {resolution} and a refresh rate of {refreshRate}Hz. It's response time is {responseTime}, panel type is {panelType} and aspect ratio {aspectRation}.</p>
+        <a href="#" className="btn btn-primary" onClick={() => onSelectItem({name, price})}>Select Item</a>
+      </div>
+      </div>
+    )
+  }
+  else {
+    return null
+  }
+  
 } 
 
 //Right list of items selected for building a pc build
