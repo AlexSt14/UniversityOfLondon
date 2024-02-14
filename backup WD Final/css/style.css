@@ -22,6 +22,7 @@ input[type="email"] {
 }
 /* END Navbar */
 
+/* MODAL content Home Page */
 h5 svg {
     color: rgb(255, 187, 0);
 }
@@ -42,11 +43,9 @@ h5 svg {
         width: 400px;
     }
 }
-#top {
-    margin-top: -48px;
-}
+/* END MODAL */
 
-/* System Builder */
+/* System Builder PAGE */
 .btnRightList {
     position: relative;
     top: 0px;
@@ -61,53 +60,159 @@ h5 svg {
 .parent {
 height: 500px; 
 }
+/* END SYSTEM BUILDER PAGE */
 
-/* GPUs */
+/* TOP GPUs */
 #topgpus {
     width: 81em;
 }
+/* Table styling*/
 table {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
-  }
-  
-  table td, table th {
+}
+
+table td, table th {
     border: 1px solid #ddd;
     padding: 8px;
-  }
-  
-  table tr:nth-child(even){background-color: #f2f2f2;}
-  
-  table tr:hover {background-color: #ddd;}
-  
-  table th {
+}
+
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+table tr:hover {background-color: #ddd;}
+
+table th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #04AA6D;
+    background-color: var(--bs-dark);
     color: white;
-  }
+}
 
+  /* Slideshow styling */
+.slideshow-container {
+    max-width: 1400px;
+    position: relative;
+    margin: auto;
+}
 
-  /* Managing different screen sizes */
-  @media (max-width: 1400px) {
+.mySlides, .mySlides2 {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    display: block;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot, .dot2 {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.activee, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+/* END TOP GPUs PAGE */
+
+/* BEST DEALS PAGE */
+h2 {
+    border-radius: 18px;
+}
+#bestdealsh1 {
+    text-align: center;
+}
+.quicklinkdeals {
+    font-weight: bold;
+}
+.line .quicklinks::after {
+    background-color: black;
+    width: 100%;
+    height: 6px;
+    content: "";
+    position: absolute;
+    max-width: 1285px;
+    border-radius: 10px;
+}
+.btnwrapper {
+    display: flex;
+    justify-content: end;
+}
+
+/* Managing different screen sizes */
+/* Slideshow */
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+/* End Slideshow */
+@media (max-width: 1400px) {
     #topgpus {
         width: 69.7em;
     }
-  }
-  @media (max-width: 1200px) {
+}
+@media (max-width: 1200px) {
     #topgpus {
         width: 60em;
     }
-  }
-  @media (max-width: 1000px) {
+}
+@media (max-width: 1000px) {
     #topgpus {
         width: 40em;
     }
-  }
-  @media (max-width: 800px) {
+}
+@media (max-width: 800px) {
     #topgpus {
         width: 32em;
     }
-  }
+}
+@media (max-width: 600px) {
+    #topgpus {
+        width: 28.5em;
+    }
+    .top3cards {
+        text-align: center;
+    }
+}
+@media (max-width: 450px) {
+    #topgpus {
+        width: 18.5em;
+    }
+}
