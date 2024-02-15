@@ -1,3 +1,4 @@
+/* Needed for Modal home page */
 input[type="email"] {
     width: 500px;
 }
@@ -7,18 +8,15 @@ input[type="email"] {
     top: 0;
     position: sticky;
     width: auto;
-    z-index: 5;
+    z-index: 555;
+    background-color: white;
 }
 .navbar a {
     transition: transform 0.3s;
-    
 }
 .navbar a:hover {
     transform: scale(1.05);
     overflow: hidden;
-}
-#navBarBG {
-    background-color: white;
 }
 /* END Navbar */
 
@@ -97,12 +95,13 @@ table th {
     margin: auto;
 }
 
-.mySlides, .mySlides2 {
+.mySlides, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6, 
+.mySlides7, .mySlides8, .mySlides9, .mySlides10 {
     display: none;
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev, .next, .nextT {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -123,9 +122,13 @@ table th {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
-
+/* Needed for buildtutorial page, separate next button for correct positioning due to images differences */
+.nextT {
+    right: 100px;
+    border-radius: 3px 0 0 3px;
+}
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.prev:hover, .next:hover, .nextT:hover {
     background-color: rgba(0,0,0,0.8);
 }
 
@@ -175,6 +178,35 @@ h2 {
     display: flex;
     justify-content: end;
 }
+.formwrapper {
+    background-color: #e9e9e9;
+    border-radius: 7px;
+    box-shadow: 5px 5px #a2a2a2;
+}
+/* Build a PC Tutorial Page */
+.imagecontainer {
+    position: relative;
+}
+.expandicon {
+    padding: 7px;
+    position: absolute;
+    right: 110px;
+    top: 10px;
+    color: rgba(0, 0, 0, 0.46);
+    background-color: #b6b5b582;
+}
+.expandiconspecial {
+    padding: 7px;
+    position: absolute;
+    top: 10px;
+    color: rgba(0, 0, 0, 0.46);
+    background-color: #b6b5b582;
+    right: 285px;
+}
+.expandicon:hover, .expandiconspecial:hover {
+    color: rgb(0, 0, 0);
+    background-color: #b6b5b5ee;
+}
 
 /* Managing different screen sizes */
 /* Slideshow */
@@ -197,10 +229,16 @@ h2 {
     #topgpus {
         width: 40em;
     }
+    #bestdealstopimg {
+        max-width: 750px;
+    }
 }
 @media (max-width: 800px) {
     #topgpus {
         width: 32em;
+    }
+    #bestdealstopimg {
+        max-width: 580px;
     }
 }
 @media (max-width: 600px) {
@@ -210,9 +248,24 @@ h2 {
     .top3cards {
         text-align: center;
     }
+    #bestdealstopimg {
+        max-width: 450px;
+    }
 }
 @media (max-width: 450px) {
     #topgpus {
         width: 18.5em;
+    }
+    .form-control {
+        max-width: 300px;
+    }
+    #bestdealstopimg {
+        max-width: 300px;
+    }
+    .formwrapper {
+        max-width: 320px;
+    }
+    .line .quicklinks::after {
+        max-width: 290px;
     }
 }

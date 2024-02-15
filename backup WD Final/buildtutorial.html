@@ -1,0 +1,424 @@
+<!--Web Development MidTerm Website-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.development.js"></script>
+    <!-- Babel required to run JSX -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <title>GPUs Guru</title>
+</head>
+<body>
+    <div class="container">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg p-2 border-bottom border-body">
+            <div class="container-fluid">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link activeScript" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle activeScript" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Tutorials & more</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="buildtutorial.html">Build tutorials</a></li>
+                            <li><a class="dropdown-item" href="./topcards.html">GPUs</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="./bestdeals.html">Best Deals</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link activeScript" href="./systembuilder.html">System Builder</a>
+                    </li>                    
+                </ul>               
+            </div>
+        </nav>
+        <!-- END NAVBAR -->
+        <!--MAIN CONTENT BUILD A PC TUTORIAL PAGE-->
+        <!--IMAGES AND CONTENT/INFO HAVE BEEN TAKEN FROM-->
+        <!--https://www.tomshardware.com/how-to/build-a-pc-->
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2 class="text-bg-dark text-center">How to Build a PC</h2>
+                <p>Turn your components into a rig you can be proud of.</p>
+                <img class="img-fluid" alt="multiple PC components" src="./img/buildtutorials/tutorialmain.jpg">
+            </div>
+            <div class="col-md-12">
+                <p class="mt-3">There are plenty of pre-built gaming PCs on the market, but there’s nothing quite like the satisfaction of using one that you assembled yourself. While the process of assembling a computer isn’t difficult, it’s daunting the first time you do it. For those embarking on their first build – or perhaps the first build in several years – we’ve put together a step-by-step guide to building a PC.</p>
+                <p>Before we start, know that this is a guide exclusively dedicated to assembly. That means you’ll need to pick out your parts first. Our list of tested and approved cases, CPUs, GPUs, motherboards, SSDs, power supplies and RAM can help you choose key components. Or you could check out our Best PC Builds page if you're looking to assemble a system at or under a specific price.</p>
+                <p>The other thing to keep in mind is that no two builds are identical. The order we’re going in here is based partly on preference and on the needs of our specific build. For instance, if you have a large aftermarket cooler that overhangs the RAM slots, you may need to install your memory first. Or if you're installing an AIO cooler radiator at the top of your case, you'll often need to plug in any power or fan cables up there before the cooler blocks access to the ports and headers. </p>
+                <p>Likewise, if you have a particularly small or cramped case and/or a huge high-end graphics card, you may need to install things in a slightly different order, since the graphics card will block access to many ports, slots and connectors. </p>
+                <p>In short, don't be surprised if you need to backtrack and pull out a part here or there to accommodate the quirks of your particular build. But don't get frustrated, as complications like this are common, even for people who have been regularly building PCs for decades.</p>
+            </div>
+            <div class="col-md-12">
+                <h2 class="text-bg-dark text-center">Be Prepared</h2>
+                <img class="img-fluid" alt="tools needed" src="./img/buildtutorials/beprepared.jpg">
+                <p class="mt-3">Before you start building a PC, you need to get your workspace ready. Make sure that you have all of your parts and tools at the ready. At the very least, you’ll want:</p>
+                <ul>
+                    <li>Phillips head screwdrivers (#1 and #2 should do the trick)</li>
+                    <li>Your motherboard manual</li>
+                    <li>Zip ties and/or twist ties for cable management</li>
+                    <li>A flashlight (you will drop screws)</li>
+                    <li>Thermal paste (although many coolers now have this pre-applied)</li>
+                    <li>Something to hold your screws (a cup or a magnetic tray will work)</li>
+                    <li>Installation media for your operating system of choice</li>
+                    <li>Band-aids (just in case)</li>
+                </ul>
+                <p>Some builders swear by anti-static mats or wrist straps. But as long as you don’t live in a particularly dry environment, you’re not building on a metal or all-plastic surface and you aren't rubbing your socks on a carpet while building, you should be able to avoid shorting out your PC or parts. Of course, there’s nothing wrong with playing things safe. So if you’re worried about static, take the appropriate precautions and tether yourself to an anti-static strap. </p>
+                <h2 class="text-bg-dark text-center">Connect Components to the Motherboard</h2>
+                <p>Some people prefer to mount the motherboard in the case before they do anything else, but it’s generally easier with most builds to connect key components like the CPU, M.2 storage and RAM without leaning over the side of the case.</p>
+                <h2 class="text-bg-dark text-center">The CPU</h2>
+                <p>Whether you’re going with an Intel- or AMD-based build, the first step is to remove the plastic cover protecting the socket, then release the tension lever on the CPU and (with the most recent AMD and Intel platforms) lift up the metal retaining bracket, so you can drop the processor into the CPU socket.  </p>
+                <div class="imagecontainer">
+                    <img class="img-fluid" alt="image of mobo cpu socket" src="./img/buildtutorials/thecpu.jpg">
+                    <a class="expandicon" target="_blank" href="https://cdn.mos.cms.futurecdn.net/eS4W8uLnNEe55qjqSbY5uB.jpg"><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i></a>
+                </div>
+                <p>Note that all recent Intel motherboards, as well as AMD's latest AM5 platform, have the CPU-connecting pins built into the socket, while AMD’s AM4 and earlier platforms have the pins on the bottom of the CPU. For the purposes of this story, this is important mostly because it's a lot easier to damage an older AMD CPU by bending its pins. So if you're installing an AM4 (Ryzen 5000 or older) CPU, be extra careful about how you handle and install it.</p>
+                <p>Regardless of which platform you're building around, there will be an arrow/triangle on one corner of the top of the CPU. This needs to line up with the triangle on the socket or socket cover.</p>
+                <div class="imagecontainer">
+                    <img class="img-fluid" alt="image of mobo cpu placing" src="./img/buildtutorials/thecpu2.jpg">
+                    <a class="expandicon" target="_blank" href="https://cdn.mos.cms.futurecdn.net/GWHyMqXoF6GhRxoRkiK2nB.jpg"><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i></a>
+                </div>
+                <p>Don’t attempt to install a CPU with the arrow facing the wrong direction, or you could damage your chip, your board, or both! Once your CPU and socket are properly aligned, you can (gently) drop the chip in place, and it will settle into the socket under its own weight. If it doesn't, pick up the CPU and reseat it. Don't force the processor into the socket or you'll almost certainly damage something. </p>
+                <p>Once you've got the CPU settled correctly in the socket (check to see that it sits evenly, so that it isn't sticking up on any one side), drop the retaining bracket down over the edges of the processor, then press the tension lever back down.</p>
+                <p>Note that on Intel 12th and 13th Gen boards in particular, this may require a surprising amount of force, to the point that socket bending is a known issue, for those who often remove and reinstall processors in their motherboards. This shouldn't be a concern for a regular build where you install the CPU once or perhaps twice. Just know that you'll have to push the retention lever down pretty hard to get it to slip under its retention tab. So long as you've double-checked that your CPU is correctly seated before this, there's no cause for concern. </p>
+                <p>Note that the above instructions pertain to the mainstream platforms for AMD and Intel. Enthusiast platforms like Intel’s Xeon (or older Core X) and AMD’s Threadripper have different / more complex CPU installations, with the Intel chips involving two levers and Threadripper requiring Torx screws and a slide-in plastic bracket. Given the cost and added complexity, we would not recommend either of these for your first PC build.</p>
+                <div class="col-md-12">
+                    <h2 class="text-bg-dark text-center">The Cooler</h2>
+                    <p>Many processors come with coolers in the box. If you’re not doing any heavy overclocking, those may be good enough, though lots of builders also like to buy more powerful (and often quieter) aftermarket coolers, which may also be more visually appealing.</p>
+                    <div class="imagecontainer">
+                        <img class="img-fluid" alt="Cooler placed on mobo" src="./img/buildtutorials/cooler1.jpg">
+                        <a class="expandicon" target="_blank" href="https://cdn.mos.cms.futurecdn.net/hhHtVqC73dg4LwdkBmkqz5.jpg"><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i></a>
+                    </div>
+                    <p>If you decide to use the stock cooler, you'll find that it already has thermal paste applied, as do many AIOs and aftermarket coolers.</p>
+                    <div class="imagecontainer">
+                        <img class="img-fluid" alt="Cooler image" src="./img/buildtutorials/cooler2.jpg">
+                        <a class="expandicon" target="_blank" href="https://cdn.mos.cms.futurecdn.net/KBNpdGqvW4spo7iBADLtjF.jpg"><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i></a>
+                    </div>
+                    <p>Regardless of whether there is pre-applied paste on your cooler or not, don't forget to peel the protective film off the cold plate / paste area before installing the cooler. If you skip this step, you'll have to tear half of your system apart later when you realize your CPU temperatures are abnormally high. </p>
+                    <p> While pre-applied thermal paste is increasingly common, you’ll still often need to apply your own thermal paste atop the CPU. The tube that comes with your cooler will work well enough, but if you want even lower temperatures, consider checking out our list of the best thermal paste we've tested.</p>
+                    <!--short slideshow for cpu-->
+                    <div class="slideshow-container">
+                        <div class="imagecontainer mySlides3 fadee">
+                            <img class="img-fluid" alt="CPU in socket mobo" src="./img/buildtutorials/cpuinsocket1.jpg">
+                            <a class="expandicon" target="_blank" href="https://cdn.mos.cms.futurecdn.net/fTYhajN9yMcoDAma6GhEPD.jpg"><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i></a>
+                        </div>
+                        <div class="imagecontainer mySlides3 fadee">
+                            <img class="img-fluid" alt="CPU in socket mobo 2" src="./img/buildtutorials/cpuinsocket2.jpg">
+                            <a class="expandicon" target="_blank" href="https://cdn.mos.cms.futurecdn.net/Sn4FpcEgqptYjDFTV7DRRF.jpg"><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i></a>
+                        </div>
+
+                        <a class="prev" onclick="plusSlidesCpu(-1)"><i class="fa-solid fa-arrow-left fa-1x"></i></a>
+                        <a class="nextT" onclick="plusSlidesCpu(1)"><i class="fa-solid fa-arrow-right fa-1x"></i></a>
+                    </div>
+                    <p>You don’t need to apply much thermal paste – a pea-sized amount (about 3 mm) applied to the center of the CPU is recommended for AMD's most recent chips. And a pattern of five smaller dollops is recommended for recent Intel CPUs, which are longer and have their heat-generating components less centrally placed under the heat spreader. Serious overclockers and veteran builders may have their own techniques. Just make sure you don't add too much paste; you don't want it squirting out the sides onto the socket and surrounding PCB.</p>
+                    <!--short slideshow for cooler installation-->
+                    <div class="slideshow-container">
+                        <div class="imagecontainer mySlides4 fadee">
+                            <img class="img-fluid" alt="Installing Cooler" src="./img/buildtutorials/installcooler1.jpg">
+                            <a class="expandicon" target="_blank" href="https://cdn.mos.cms.futurecdn.net/YbV2NsAe78VuJqxrPd2VPC.jpg"><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i></a>
+                        </div>
+                        <div class="imagecontainer mySlides4 fadee">
+                            <img class="img-fluid" alt="Installing Cooler Image 2" src="./img/buildtutorials/installcooler2.jpg">
+                            <a class="expandicon" target="_blank" href="https://cdn.mos.cms.futurecdn.net/FBAhEaQf8mU8BKUtYnSaFB.jpg"><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i></a>
+                        </div>
+                        <a class="prev" onclick="plusSlidesCooler(-1)"><i class="fa-solid fa-arrow-left fa-1x"></i></a>
+                        <a class="nextT" onclick="plusSlidesCooler(1)"><i class="fa-solid fa-arrow-right fa-1x"></i></a>
+                    </div>
+                    <p>Stock coolers for Intel processors use push pins that go through holes in the motherboard. We recommend pushing opposite corners in to evenly spread the thermal paste and to keep from putting uneven pressure on one side of the CPU  (just as you should do when screwing down any cooler). AMD stock coolers have metal arms that snap into notches on a plastic bracket on either side of the socket. To mount aftermarket coolers on AMD motherboards, these plastic brackets often need to be removed.</p>
+                    <!--short slideshow for aftermarket coolers-->
+                    <div class="slideshow-container">
+                        <div class="imagecontainer mySlides5 fadee">
+                            <img class="img-fluid" alt="Aftermarket Cooler" src="./img/buildtutorials/aftermarketcooler1.jpg">
+                            <a class="expandicon" target="_blank" href="https://cdn.mos.cms.futurecdn.net/4RfExgi7C6Du5idAJYk3mE.jpg"><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i></a>
+                        </div>
+                        <div class="imagecontainer mySlides5 fadee">
+                            <img class="img-fluid" alt="Aftermarket Cooler 2" src="./img/buildtutorials/aftermarketcooler2.jpg">
+                            <a class="expandicon" target="_blank" href="https://cdn.mos.cms.futurecdn.net/LHEZ38Cx8kVNSBLRjCxz2D.jpg"><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i></a>
+                        </div>
+                        <a class="prev" onclick="plusSlidesAftermarket(-1)"><i class="fa-solid fa-arrow-left fa-1x"></i></a>
+                        <a class="nextT" onclick="plusSlidesAftermarket(1)"><i class="fa-solid fa-arrow-right fa-1x"></i></a>
+                    </div>
+                    <p>Aftermarket coolers mount in various, often much more complicated ways. So be sure to consult the instruction manual for your cooler. </p>
+                    <p>You may need to install a large backplate that has to be mounted behind the motherboard, which you should do before installing it in your case. Many cases have cut-out sections behind the motherboard area to allow for adding a CPU mounting plate after the motherboard is installed. But the cutout doesn't always line up with the CPU socket area. And holding a metal plate in place behind the motherboard while you add mounting hardware inside the case requires a lot of dexterity and patience.</p>
+                    <div class="imagecontainer">
+                        <img class="img-fluid" alt="Installed cooler on Mobo" src="./img/buildtutorials/installedcooler.jpg">
+                        <a class="expandicon" target="_blank" href="https://cdn.mos.cms.futurecdn.net/YS6oMCaX7wtVLPTzMpG7tC.jpg"><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i></a>
+                    </div>
+                    <p>Also note that if you are installing a large air cooler that will hang over your RAM slots (like the DeepCool AK620 we used in the build for many of these photos), it's a good idea to do our next step (installing the memory) before installing the cooler. You are reading this before and not while you're building your PC, right?</p>
+                    <!--short slideshow for cable connection-->
+                    <div class="slideshow-container">
+                        <div class="imagecontainer mySlides6 fadee">
+                            <img class="img-fluid" alt="Cable connection for fan" src="./img/buildtutorials/pluginfan.jpg">
+                            <a class="expandicon" target="_blank" href="https://cdn.mos.cms.futurecdn.net/fHkSYXNwJvtTREjXwbjVVB.jpg"><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i></a>
+                        </div>
+                        <div class="imagecontainer mySlides6 fadee">
+                            <img class="img-fluid" alt="Cable connection for fan 2" src="./img/buildtutorials/pluginfan2.jpg">
+                            <a class="expandicon" target="_blank" href="https://cdn.mos.cms.futurecdn.net/HgscuzsiSKkkETYjptoWjD.jpg"><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i></a>
+                        </div>
+                        <a class="prev" onclick="plusSlidesFan(-1)"><i class="fa-solid fa-arrow-left fa-1x"></i></a>
+                        <a class="nextT" onclick="plusSlidesFan(1)"><i class="fa-solid fa-arrow-right fa-1x"></i></a>
+                    </div>
+                    <p>Once the cooler is installed, plug the CPU fan connector into its header on the motherboard. This is usually somewhere close to the CPU socket and labeled something like "CPU_FAN." If you have a larger cooler with two fans, you'll also need to plug in the second fan (usually on a nearby header labeled "CPU_AUX." And if you're installing a liquid AIO cooler, the pump also needs to get plugged in, with many boards offering a "CPU_PUMP" header connector as well.</p>
+                </div>
+                <div class="col-md-12">
+                    <h2 class="text-bg-dark text-center">Memory</h2>
+                    <div class="slideshow-container">
+                        <div class="imagecontainer mySlides7 fadee">
+                            <img class="img-fluid" alt="Ram Installaion" src="./img/buildtutorials/raminstall1.jpg">
+                            <a class="expandicon" target="_blank" href="https://cdn.mos.cms.futurecdn.net/f7KxJh6w4auEGR4Hq7Nb6F.jpg"><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i></a>
+                        </div>
+                        <div class="imagecontainer mySlides7 fadee">
+                            <img class="img-fluid" alt="Ram Installation 2" src="./img/buildtutorials/raminstall2.jpg">
+                            <a class="expandicon" target="_blank" href="https://cdn.mos.cms.futurecdn.net/VxNmkvS9BbE9pYACMa6JuG.png"><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i></a>
+                        </div>
+                        <a class="prev" onclick="plusSlidesRam(-1)"><i class="fa-solid fa-arrow-left fa-1x"></i></a>
+                        <a class="nextT" onclick="plusSlidesRam(1)"><i class="fa-solid fa-arrow-right fa-1x"></i></a>
+                    </div>
+                    <p>Installing RAM is a snap—literally, whether your board uses newer DDR5 or older, cheaper DDR4. First, if you’re installing two RAM sticks in a board that has four slots, check the motherboard manual to make sure you’re installing your DIMMs in the right slots. If you put them in the wrong slots, you may not get the best performance possible, or one of the sticks may not be recognized by the motherboard or operating system.</p>
+                    <p> Once you know which RAM slots you're going to populate, make sure that the latches for each memory slot are open. Some boards have latches on both sides of a RAM slot, while many now have a latch on just one side, with the other end fixed in place.</p>
+                    <p>Push your latches open, then look at each DIMM and position it over the slot such that the small divot on the bottom of the RAM stick is aligned with the matching bump on the board. If the divot doesn't line up, flip your RAM stick around. Insert the stick into the slot and push down on the DIMM on each edge until it snaps into place, causing the latches to close on their own. </p>
+                    <p>The process requires a bit of force, but if you’re having trouble, make sure that you’re not attempting to put the module in backward, or that one of the ends isn't out of alignment with the slot. Note that sometimes the latches won't quite close all the way on their own. After you're sure your sticks are fully inserted in their slots, you can nudge any latches the rest of the way closed.</p>
+                </div>
+                <div class="col-md-12">
+                    <h2 class="text-bg-dark text-center">M.2 SSD</h2>
+                    <p>If you’re using an M.2 SSD, now is as good a time as any to install it, because later on other parts may get in the way. You could also do this step earlier in the process, as an M.2 drive is small and lives flat against the board, so it won't get in the way of anything else. </p>
+                    <div class="imagecontainer">
+                        <img class="img-fluid" alt="SSD M.2 Installation" src="./img/buildtutorials/ssdinstall.jpg">
+                        <a class="expandicon" target="_blank" href="https://cdn.mos.cms.futurecdn.net/AYu4By3gSowQRM8kSwNkzD.jpg"><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i></a>
+                    </div>
+                    <p>If your board has more than one M.2 slot, as most do these days, you'll first want to figure out which slot to install it in. Depending on the type of drive (SATA or PCIe / NVME) and the compatibility of the slots, some M.2 drives won't work or won't fit in some M.2 slots. You'll also want to make sure if you have a fast PCIe 4.0 or 5.0 SSD, that it goes into the fastest slot on your board. Consult your manual, which will tell you what types of drives your board's M.2 slots support. But as a general rule, if your boot drive is PCIe, you should install it in the M.2 slot closest to the CPU. </p>
+                    <div class="imagecontainer">
+                        <img class="img-fluid" alt="SSD M.2 Installation 2" src="./img/buildtutorials/ssdinstall2.jpg">
+                        <a class="expandicon" target="_blank" href="https://cdn.mos.cms.futurecdn.net/xzoQB4NRHujwaquU8YSjVC.jpg"><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i></a>
+                    </div>
+                    <p>Once you've located the slot you want to use, you may also have to remove a heatsink / cover to actually get to the M.2 slot and install your drive. This usually involves removing one or two small screws, taking the heatsink off, and then your M.2 slot will be ready to receive your SSD.</p>
+                    <div class="imagecontainer">
+                        <img class="img-fluid" alt="SSD M.2 Installation 3" src="./img/buildtutorials/ssdinstall3.jpg">
+                        <a class="expandicon" target="_blank" href="https://cdn.mos.cms.futurecdn.net/R88z8sJ5ZzPNMaGFGJK8eB.jpg"><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i></a>
+                    </div>
+                    <p>If it’s already installed, remove the screw located across from the M.2 slot and slide the SSD into the M.2 slot at an angle. Make sure the notch lines up with the slot, similar to RAM installation. If the notch doesn’t line up, your drive may not be compatible with that slot (again, check your manual for details).</p>
+                    <div class="imagecontainer">
+                        <img class="img-fluid" alt="SSD M.2 Installation 4" src="./img/buildtutorials/ssdinstall4.jpg">
+                        <a class="expandicon" target="_blank" href="https://cdn.mos.cms.futurecdn.net/k674kHY6nRdztuXVBkrF7C.jpg"><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i></a>
+                    </div>
+                    <p>Slowly lay the SSD flat and secure the mounting screw. This tiny screw is easy to drop, which is another reason to install M.2 drives before putting your motherboard into the case. Some high-end boards will have a small plastic tab you can just push to the side when installing a drive, and then slide back to hold the drive down.</p>
+                    <div class="imagecontainer">
+                        <img class="img-fluid" alt="SSD M.2 Installation 5" src="./img/buildtutorials/ssdinstall5.jpg">
+                        <a class="expandicon" target="_blank" href="https://cdn.mos.cms.futurecdn.net/ZSjLRhB8jy9MrdC3NUSVRE.jpg"><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i></a>
+                    </div>
+                    <p>Once your drive is installed and secured by a screw or tab, put the heatsink back where it was on top of your drive, unless your drive has a heatsink of its own. Just be sure if you're putting the motherboard heatsink back above your drive, to remove the protective plastic sheet over the thermal pad (just like on the CPU cooler), which should be on the inside surface of the heatsink.</p>
+                </div>
+                <div class="col-md-12">
+                    <h2 class="text-bg-dark text-center">Putting the Motherboard in the Case</h2>
+                    <div class="imagecontainer">
+                        <img class="img-fluid" alt="Mobo Install" src="./img/buildtutorials/moboinstall.jpg">
+                        <a class="expandicon" target="_blank" href="https://cdn.mos.cms.futurecdn.net/YS6oMCaX7wtVLPTzMpG7tC.jpg"><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i></a>
+                    </div>
+                    <p>Now that we’ve built the core platform (minus the graphics card, which we’ll do later), we’re going to install the CPU, RAM and SSD-equipped motherboard into the case. If you haven’t yet, remove the side panels on your chassis. Most cases have thumb screws holding their panels in place, which makes it easy to remove them. </p>
+                    <h2 class="text-bg-dark text-center">Standoffs</h2>
+                    <p>First, gather the standoffs that came with your case (likely in their own bag) and find the proper place to install them. The holes in the board mounting area inside your case should be marked based on the size of the motherboard you chose.  </p>
+                    <div class="imagecontainer">
+                        <img class="img-fluid" alt="Mobo Install 2" src="./img/buildtutorials/moboinstall2.jpg">
+                        <a class="expandicon" target="_blank" href="https://cdn.mos.cms.futurecdn.net/NDPivzQ5G3PLKQML66zMyD.jpg"><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i></a>
+                    </div>
+                    <p> Many cases have standoffs preinstalled, so you may be able to skip this step. If standoffs are preinstalled in the wrong spot for your motherboard, you can use needle nose pliers to get them out and screw them into the correct holes for your board.</p>
+                    <p> Many cases will also include a special standoff or post that lines up with the center mounting hole of the motherboard (provided it's ATX). This is very helpful in lining up the board inside the case. Once the board is inserted in the case with the post sticking through this hole, most of the rest of the screw holes should line up (or nearly line up) with the motherboard's standoffs. </p>
+                    <p> Don't install and screw the board down yet though – especially if your IO shield isn't pre-installed on your motherboard.</p>
+                    <h2 class="text-bg-dark text-center">I/O Shield</h2>
+                    <div class="slideshow-container">
+                        <div class="imagecontainer mySlides8 fadee">
+                            <img class="img-fluid" alt="Mobo Install 3" src="./img/buildtutorials/IO_shield.jpg">
+                            <a class="expandicon" target="_blank" href="https://cdn.mos.cms.futurecdn.net/isFkRGfPc8noVP3HPwiYmC.jpg"><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i></a>
+                        </div>
+                        <div class="imagecontainer mySlides8 fadee">
+                            <img class="img-fluid" alt="Mobo Install 4" src="./img/buildtutorials/IO_shield2.jpg">
+                            <a class="expandicon" target="_blank" href="https://cdn.mos.cms.futurecdn.net/A4j7JZdmAt8YovoXvgQW7B.jpg"><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i></a>
+                        </div>
+                        <a class="prev" onclick="plusSlidesIoShield(-1)"><i class="fa-solid fa-arrow-left fa-1x"></i></a>
+                        <a class="nextT" onclick="plusSlidesIoShield(1)"><i class="fa-solid fa-arrow-right fa-1x"></i></a>
+                    </div>
+                    <p>The IO (input / output) shield, which covers the area around your rear ports, comes with your motherboard. You’ll need to fit the shield into the chassis before you install the motherboard itself, making sure it's the right way up, so that your motherboard's external ports will fit through the holes once both are installed. You’ll have to use some force to snap all four corners into place. Be careful of sharp edges (that’s why you have the band-aids) as well as metal bits that can block the ports--especially if you have a budget motherboard.</p>
+                    <p> Note also that if you have a mid-range to high-end board made in the last few years, the IO plate may come pre-attached to the motherboard, saving this step. Look at the area where the USB and audio ports are on your motherboard. If the ports look bare, with no cover labeling them and hiding port housings, then you'll have to install the plate yourself. If you just see the open ends of the ports surrounded by labels that tell you which port is which, your plate is pre-installed.</p>
+                    <h2 class="text-bg-dark text-center">Installing the Motherboard</h2>
+                    <div class="imagecontainer">
+                        <img class="img-fluid" alt="Mobo Install 5" src="./img/buildtutorials/moboinstall3.jpg">
+                        <a class="expandicon" target="_blank" href="https://cdn.mos.cms.futurecdn.net/DaceyQFqW9xrXNrRp8NbJE.jpg"><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i></a>
+                    </div>
+                    <p>Now it’s finally time to put the motherboard in your case. Make sure the holes on the motherboard line up with the standoffs you installed and that the ports line up with the cutouts on the IO shield. </p>
+                    <div class="imagecontainer">
+                        <img class="img-fluid" alt="Mobo Install 6" src="./img/buildtutorials/moboinstall4.jpg">
+                        <a class="expandicon" target="_blank" href="https://cdn.mos.cms.futurecdn.net/29Q3QTso24P6y7gHFg9WdF.jpg"><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i></a>
+                    </div>
+                    <p>Once the board is in, put the screws through the holes on the motherboard and into standoffs, then screw them down to anchor the motherboard in place.</p>
+                    <div class="imagecontainer">
+                        <img class="img-fluid" alt="Mobo Install 7" src="./img/buildtutorials/moboinstall5.jpg">
+                        <a class="expandicon" target="_blank" href="https://cdn.mos.cms.futurecdn.net/oXuJqoDCe9YHUzWXXQLPJC.jpg"><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i></a>
+                    </div>
+                    <p>Once this is done, it's a good time to stand the case up, as much of the rest of the build process is easier in this orientation.</p>
+                </div>
+                <div class="col-md-12">
+                    <h2 class="text-bg-dark text-center">Adding the Power Supply and Traditional/SATA Storage</h2>
+                    <p>Now for a few parts that mount to your case rather than your motherboard. </p>
+                    <h3>Power Supply</h3>
+                    <div class="imagecontainer">
+                        <img class="img-fluid" alt="PSU Install" src="./img/buildtutorials/psuinstall.jpg">
+                        <a class="expandicon" target="_blank" href="https://cdn.mos.cms.futurecdn.net/Woroun9Qhh8TwTRTZDpmoA.jpg"><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i></a>
+                    </div>
+                    <p>The power supply, or PSU, is usually mounted to the back of the case. Sometimes you’ll find it at the top, but it’s usually mounted at the bottom, where it can pull in cool air from under the chassis. </p>
+                    <p> If you're using a modular power supply, you may want to plug all the cables you'll need into the back of the front of the power supply before inserting and installing it. Otherwise, you'll have to plug them in later from inside the case where it's hard to see the cable labels on the PSU. If your power supply doesn't have removable cables, this obviously isn't an issue. </p>
+                    <p> Once you put the power supply in the case, it’s generally as simple as screwing it into place with four screws at the back of the case. Or with some cases, you'll need to re-install a bracket (see above, right) that you'll first need to remove in order to slide the power supply in, then screw the four mounting screws into that. Once the PSU is installed, route the 24-pin power connector and supplemental/CPU power connector through your case and plug them into the motherboard. The 24-pin connector is usually somewhere near the center-right of the motherboard, while the PSU power connector plugs in at the top left corner. </p>
+                    <p> Don't forget this last step, because the supplemental CPU power connector is one of the harder cables to install, jammed as it is near the top of the case. And it only gets harder to plug in once you start adding other cables and components, making it progressively difficult to do later on. And if you forget to plug it in altogether, your system won't boot.</p>
+                    <h2 class="text-bg-dark text-center">SATA Storage</h2>
+                    <div class="imagecontainer">
+                        <img class="img-fluid" alt="SATA Storage Install" src="./img/buildtutorials/satastorage.jpg">
+                        <a class="expandicon" target="_blank" href="https://cdn.mos.cms.futurecdn.net/vhLoZBmXJJMqbCN5yYu6MR.jpg"><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i></a>
+                    </div>
+                    <p>We added M.2 storage earlier, so now it’s time for SATA drives, which could be a 2.5-inch SSD or hard drive, or a traditional 3.5-inch hard drive. Connect the SATA data cable to the motherboard and your drive or drives, then connect the SATA power connector from the PSU to your drive(s). Mount the hard drive or SSD in the appropriate bracket and screw or snap it into place. Note that bracket/drive mounting methods and placement vary by chassis model.</p>
+                    <h2 class="text-bg-dark text-center">Inserting the Graphics Card</h2>
+                    <div class="imagecontainer">
+                        <img class="img-fluid" alt="GPU Install" src="./img/buildtutorials/gpuinstall.jpg">
+                        <a class="expandicon" target="_blank" href="https://cdn.mos.cms.futurecdn.net/tieTn2LwHPNWRzBW24458K.jpg"><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i></a>
+                    </div>
+                    <p>First off, if you're going to be installing a very large card, like an RTX 4090 / 4080 or an RX 7900 (or a somewhat smaller card that you're installing in a more cramped case), you'll want to do this a bit later, after you've plugged in all the rest of your cables and done whatever cable routing / cleanup you plan on doing;  a bulky card will block easy access to headers and connectors on the motherboard.</p>
+                    <p> Installing a graphics card is also an optional step. If you’re using an Intel or AMD CPU with integrated graphics and don’t plan on doing serious gaming, you may not need or want a discrete graphics card. But many AMD CPUs, as well as high-end Intel models, don’t have onboard graphics and will require a graphics card in order to connect and output to your monitor. </p>
+                    <p>Connect the GPU into the PCIe X16 slot on the motherboard (it’s the long one, and you’ll want to use the topmost one if there’s more than one on your motherboard). If necessary, plug the PCIe power connectors from the power supply into the card. (You may not need to do this on lower-end cards).</p>
+                    <div class="imagecontainer">
+                        <img class="img-fluid" alt="GPU Install 2" src="./img/buildtutorials/gpuinstall2.jpg">
+                        <a class="expandicon" target="_blank" href="https://cdn.mos.cms.futurecdn.net/3AinYmT6Js7HTbTCPxVYtF.jpg"><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i></a>
+                    </div>
+                    <p>To install the GPU, you'll likely have to remove some slot covers on the back of the case so that the DisplayPort, HDMI and any other graphics card ports show through, letting you connect your monitor(s) later. It's a good idea to first try lining up your card in the case alongside its slot before installing it, if you want to save yourself the hassle of removing the wrong brackets and having to re-install them later. Usually, the top expansion bracket will not have to be removed. That slot is a holdover from days when a PCIe x1 slot lived atop the first graphics card slot. But these days that area is now occupied by the primary M.2 connector (often hidden behind a heat spreader).</p>
+                    <p>Push your graphics card into the PCIe X16 slot on the motherboard (it’s the long one closest to the center / top of the board). If your graphics card has PCIe power connectors on its front edge, you'll also need to connect those from the power supply to the card. (You may not need to do this on low-end cards, because the PCIe slot can deliver 75 watts on its own).</p>
+                    <div class="imagecontainer">
+                        <img class="img-fluid" alt="GPU Install 3" src="./img/buildtutorials/gpuinstall3.jpg">
+                        <a class="expandicon" target="_blank" href="https://cdn.mos.cms.futurecdn.net/e6KmyRu8gZLTmAvVKn8hHF.png"><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i></a>
+                    </div>
+                    <p>Note that for high-end cards, you'll need to connect two or even three PCIe power connectors, sometimes with an adapter that comes with your card. </p>
+                    <p>If you are installing an extremely high-end card like an RTX 4090, you may also want to invest in an ATX 3.0 power supply, which will have a 12VHPWR connector for your GPU, so you only have to plug in a single cable.</p>
+                    <div class="slideshow-container">
+                        <div class="imagecontainer mySlides9 fadee">
+                            <img class="img-fluid" alt="GPU Install 4" src="./img/buildtutorials/gpuinstall4.jpg">
+                            <a class="expandicon" href="https://cdn.mos.cms.futurecdn.net/k9TAd6ELXYyHUmpDjoV4sD.jpg" target="_blank"><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i></a>
+                        </div>
+                        <div class="imagecontainer mySlides9 fadee">
+                            <img class="img-fluid" alt="GPU Install 5" src="./img/buildtutorials/gpuinstall5.jpg">
+                            <a class="expandicon" href="https://cdn.mos.cms.futurecdn.net/iUd2Tqg7sCVykQdVJp5TgC.jpg" target="_blank"><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i></a>
+                        </div>
+                        <a class="prev" onclick="plusSlidesGpu(-1)"><i class="fa-solid fa-arrow-left fa-1x"></i></a>
+                        <a class="nextT" onclick="plusSlidesGpu(1)"><i class="fa-solid fa-arrow-right fa-1x"></i></a>
+                    </div>
+                    <h2 class="text-bg-dark text-center">Add a Wi-Fi Card (if necessary)</h2>
+                    <p>Most motherboards come with an Ethernet port on them and many also have Wi-Fi built-in. However, if you need wireless access and your computer doesn’t come with a Wi-Fi card, you’ll need to install one in one of the PCIe slots, a short M.2 slot, or attach a USB Wi-Fi dongle. If you’re gaming, an Ethernet connection is probably your best bet for reliable connectivity.</p>
+                    <h2 class="text-bg-dark text-center">The Last of the Cable Connections</h2>
+                    <div class="imagecontainer">
+                        <img class="img-fluid" alt="Last Cable connections" src="./img/buildtutorials/lastcables.jpg">
+                        <a class="expandicon" target="_blank" href="https://cdn.mos.cms.futurecdn.net/Yr9GENt2hyRSgacJXLtgf6.jpg"><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i></a>
+                    </div>
+                    <p>OK, just a few more cables to go until we try turning the PC on. Make sure the connectors for any fans are plugged into the motherboard fan headers. Then, attach the front-panel audio cable, USB 2.0, USB 3.0 and 3.1/3.2 case connectors to those headers.</p>
+                    <div class="imagecontainer">
+                        <img class="img-fluid" alt="Last Cable connections 2" src="./img/buildtutorials/lastcables1.jpg">
+                        <a class="expandicon" target="_blank" href="https://cdn.mos.cms.futurecdn.net/4DnoGJMHuSKPrPvghQ7srE.jpg"><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i></a>
+                    </div>
+                    <p>You’ll want to consult your motherboard manual for this, because their location and number varies by motherboard model.</p>
+                    <div class="imagecontainer">
+                        <img class="img-fluid" alt="Last Cable connections 3" src="./img/buildtutorials/lastcables2.jpg">
+                        <a class="expandicon" target="_blank" href="https://cdn.mos.cms.futurecdn.net/YHeE5oGdkvoqgoYqaEbbXF.jpg"><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i></a>
+                    </div>
+                    <p>Lastly, there are the tiny front-panel connectors, including power, reset, HDD activity light, etc. These need to go to the appropriate pins on the motherboard (usually in the bottom-right corner if your motherboard is mounted in the traditional orientation). You’ll definitely need to consult your motherboard manual to see where each should go, as this also can differ based on board make and model (though it has become more standardized in recent years). Some cases will have fewer of these connectors, as things like reset switches and hard drive activity lights are becoming far less common. And some cases will provide these in a single block, rather than tiny pins, which should work in most recent-generation motherboards. Additionally, some motherboards include a block to plug the connectors into, which you can then in turn plug into the motherboard all at once.</p>
+                    <p>Double-check that you’re using the right headers. These things are small (and so are their labels), so it’s easy to mess them up if you’re not paying close attention. These connectors are also easy to accidentally yank out when you're cleaning up your cables or moving things around inside the case after they've been plugged in.</p>
+                    <div class="imagecontainer">
+                        <img class="img-fluid" alt="GPU Install" src="./img/buildtutorials/gpuinstall6.jpg">
+                        <a class="expandicon" target="_blank" href="https://cdn.mos.cms.futurecdn.net/aJHgYaiiTvnMZnWnrgZzzB.jpg"><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i></a>
+                    </div>
+                    <p>If you have a large graphics card or a moderate-sized card and a compact case, now is the best time to install it, and any supplemental PCIe power cables, as discussed above.</p>
+                </div>
+                <div class="col-md-12">
+                    <h2 class="text-bg-dark text-center">Turn the Computer On</h2>
+                    <div class="imagecontainer">
+                        <img class="img-fluid" alt="Turn PC On" src="./img/buildtutorials/turnpcon.jpg">
+                        <a class="expandicon" target="_blank" href="https://cdn.mos.cms.futurecdn.net/j2b67xvbyFj37BLVsN93eD.jpg"><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i></a>
+                    </div>
+                    <p>Once all that's done, it's a good idea to double check to make sure there are no extra fan headers or power cables still waiting to be routed to the right connector. Then plug the PC in, plug in and connect your monitor (to one of the ports on the graphics card, if you've installed on) and your keyboard and mouse.</p>
+                    <p>Hit the power button on your monitor, then turn the power supply switch on (on the back of the power supply) and then press your PC's power button. If everything is working, the PC should turn on and run its POST (power-on self test). Since your operating system isn’t installed yet, you may get an error message about a missing boot drive, or you may get sent straight to the UEFI/BIOS.</p>
+                    <h2 class="text-bg-dark text-center">Cable Management</h2>
+                    <div class="imagecontainer">
+                        <img class="img-fluid" alt="Cable Management" src="./img/buildtutorials/cablemanagement.jpg">
+                        <a class="expandicon" target="_blank" href="https://cdn.mos.cms.futurecdn.net/3SxBjr4iG7bXKmWZvG3pYA.jpg"><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i></a>
+                    </div>
+                    <p>This is where you make the interior of your case pretty and tidy, and ensure that cables aren't obstructing airflow to your CPU or GPU. We’re doing this after we know that the system boots properly, because we’d hate to tear apart all of the careful wiring and cut a bunch of zip ties just to have to re-seat a component or reroute a cable. You could, of course, install your operating system before this step. </p>
+                    <p>Clean cable routing is somewhat less important if you don’t have a case with a glass side panel or window. But it's good to keep cables out of the way of airflow, and we like things neat and pretty, so it’s time to shut the system down, unplug the power cable and clean things up.</p>
+                    <div class="slideshow-container">
+                        <div class="imagecontainer mySlides10">
+                            <img class="img-fluid" alt="Cable Management 2" src="./img/buildtutorials/cablemanagement2.jpg">
+                            <a class="expandicon" target="_blank" href="https://cdn.mos.cms.futurecdn.net/A5VhNYfmBdift9ELqYyuCC.jpg"><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i></a>
+                        </div>
+                        <div class="imagecontainer mySlides10">
+                            <img class="img-fluid" alt="Cable Management 3" src="./img/buildtutorials/cablemanagement3.jpg">
+                            <a class="expandicon" target="_blank" href="https://cdn.mos.cms.futurecdn.net/XRE3CrQGhCgJzZdDcqXhFD.jpg"><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i></a>
+                        </div>
+                        <a class="prev" onclick="plusSlidesCable(-1)"><i class="fa-solid fa-arrow-left fa-1x"></i></a>
+                        <a class="nextT" onclick="plusSlidesCable(1)"><i class="fa-solid fa-arrow-right fa-1x"></i></a>
+                    </div>
+                    <p>Routing some cables through the back of the case during the build process is a good first step toward a clean build. But this is where you'll also shove any extra cable slack through the back panel, break out the zip ties to neaten things up and, then, put the side panels back on. You could spend hours making your cable routing as perfect as possible. But just spending 15 minutes making an effort to clean up your cables after your system boots for the first time can make a huge visual difference in how your final build looks.</p>
+                    <h2 class="text-bg-dark text-center">Install an Operating System, Drivers and Updates</h2>
+                    <div class="imagecontainer">
+                        <img class="img-fluid" alt="OS Install" src="./img/buildtutorials/osinstall.jpg">
+                        <a class="expandicon" target="_blank" href="https://cdn.mos.cms.futurecdn.net/ApNXKmdnU7D8kR3mP6VQfE.jpg"><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i></a>
+                    </div>
+                    <p>You'll want to make a USB install drive for Windows 11, or your operating system of choice. For Windows 10 or Windows 11, simply navigate to Microsoft’s Download page and click the “Download Tool Now” button. You’ll want to download and run the Media Creation tool, which will turn any 8GB or larger USB drive into a Windows install disk. If you don’t already have a Windows 10 or 11 key, you can get one cheap or for free. If you have a problem with the OS, you can try to reset Windows to factory settings.</p>
+                    <div class="imagecontainer">
+                        <img class="img-fluid" alt="OS Install 2" src="./img/buildtutorials/osinstall2.jpg">
+                        <a class="expandiconspecial" target="_blank" href="https://cdn.mos.cms.futurecdn.net/hAD97GLJsa4pQjWFNBRJWD.jpg"><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i></a>
+                    </div>
+                    <p>Plug the USB drive with your operating system installer into your new computer, then power on and you should boot into your OS installer, which will step you through the process. If the system doesn’t access your installation drive, you may need to navigate to the BIOS and make sure your USB drive is visible as a boot device and that it's placed in the boot order before any internal drive or drives.</p>
+                    <p>Once you've installed your operating system, when you first connect to the internet, Windows 10 and Windows 11 are pretty good these days at getting device drivers. However, you should still go to the manufacturers’ product pages for your parts to make sure you have or get the latest updates. </p>
+                    <p>Finally, when your OS and drivers are all updated, it’s time to start using your PC! The one that you built. Install some games, stream some movies, edit some photos or video, chat on Discord — whatever it is you like to do with your PC. And remember: Whenever you’re ready to add more features or performance, you can always upgrade. </p>
+                    <div class="col-12 formwrapper p-2">
+                        <h2 class="mt-3">Stay on the Cutting Edge</h2>
+                        <p>Join the experts who read Tom's Hardware for the inside track on enthusiast PC tech news — and have for over 25 years. We'll send breaking news and in-depth reviews of CPUs, GPUs, AI, maker hardware and more straight to your inbox.</p>
+                        <div class="formcontainer">
+                            <!--Used BOOTSTRAP form to create partial of this form-->
+                            <form>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Contact me with news and offers from other Future brands</label>
+                                </div>
+                                <button type="submit" class="btn btn-dark ms-auto dealbuttons">SIGN ME UP</button>
+                                <p class="mt-3 p-2">By submitting your information you agree to the Terms & Conditions and Privacy Policy and are aged 16 or over.</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+        $('.popover-dismiss').popover({
+        trigger: 'focus'
+        })
+    </script>
+    <script src="./js/script.js"></script>
+    <script src="https://kit.fontawesome.com/8a0d306f17.js" crossorigin="anonymous"></script>
+    <script src="./js/buildtutorialSH.js"></script>
+</body>
+</html>
+
+
+
+

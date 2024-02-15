@@ -10,17 +10,17 @@
     <body>
         <div class="container">
             <!-- NAVBAR -->
-            <nav class="navbar navbar-expand-lg p-2 border-bottom border-body" id="navBarBG">
+            <nav class="navbar navbar-expand-lg p-2 border-bottom border-body">
                 <div class="container-fluid">
                     <ul class="nav nav-tabs">
                         <li class="nav-item">
-                        <a class="nav-link activeScript" aria-current="page" href="./index.html">Home</a>
+                            <a class="nav-link activeScript" aria-current="page" href="./index.html">Home</a>
                         </li>
                         
                         <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle activeScript" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Tutorials & more</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Build tutorials</a></li>
+                            <li><a class="dropdown-item" href="buildtutorial.html">Build tutorials</a></li>
                             <li><a class="dropdown-item" href="./topcards.html">GPUs</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="./bestdeals.html">Best Deals</a></li>
@@ -33,12 +33,13 @@
                 </div>
             </nav>
             <!-- END NAVBAR -->
-            
         
-            <!-- Top cards-->
+            <!--MAIN CONTENT TOP CARDS PAGE-->
+            <!--IMAGES AND CONTENT/INFO HAVE BEEN TAKEN FROM-->
+            <!--https://www.tomshardware.com/reviews/best-gpus,4380.html-->
             <div class="row row-cols-1">
                 <div class="col">
-                    <img alt="RTX 4070" src="./img/fpgpus.jpg" id="topgpus">
+                    <img alt="RTX 4070" src="./img/topcards/fpgpus.jpg" id="topgpus">
                 </div>
                 <div class="col">
                     <p>The best graphics cards are the beating heart of any gaming PC, and everything else comes second. Without a powerful GPU pushing pixels, even the fastest CPU won't manage much. While no one graphics card will be right for everyone, we'll provide options for every budget and mindset below. Whether you're after the fastest graphics card, the best value, or the best card at a given price, we've got you covered.</p>
@@ -47,12 +48,10 @@
                     <p>There are rumblings of various RTX 40-series Super cards, which will probably appear in January. These may replace the existing non-Super models. What's not clear is whether anything will happen at the top of the stack with the RTX 4090. Nvidia's RTX 4090 is now banned from export to China, though that has merely encouraged scalpers to hoard RTX 4090 cards. A faster RTX 4090 Ti / Super would likewise be banned, and would need to be assembled outside of China, but it could still happen.</p>
                     <p>On the AMD side of things, there are credible rumblings of an incoming RX 7600 XT. Specs remain a bit of a mystery, though we can't help but hope for a 12GB Navi 32-based variant. The existing RX 7600 already uses a maxed out Navi 33 configuration, so higher clocks would be the only option if AMD goes that route. Again, we anticipate cards arriving in January, around the CES timeframe.</p>
                     <p>Intel's Arc Alchemist GPUs rate more as previous generation hardware, as they're manufactured on TSMC N6 and compete more directly against the RTX 3060 and RX 6700 10GB instead of newer parts. However, Arc A750 priced at under $200 (we've seen it sell for as little as $179) remains a very competitive option, if you don't mind the occasional driver snafus and higher power use.</p>
-                </div>
-            
-                
+                </div>    
             </div>
             <div class="row row-cols-1">
-                <div class="table col">
+                <div class="col table-responsive">
                     <table>
                         <tr>
                             <th>Graphics Card</th>
@@ -173,7 +172,7 @@
                 <div class="col mb-5">
                     <h2>Best Graphics Cards for Gaming 2024</h2>
                     <div class="card" id="rtx4090">
-                        <img src="./Img/rtx4090.jpg" class="card-img-top" alt="RTX 4090">
+                        <img src="./Img/topcards/rtx4090.jpg" class="card-img-top" alt="RTX 4090">
                         <div class="card-body">
                             <h5 class="card-title">1. GeForce RTX 4090 &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
                             <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -248,7 +247,7 @@
                 </div>
                 <div class="col mb-4">
                     <div class="card" id="7900xtx">
-                    <img src="./Img/rx7900xtx.jpg" class="card-img-top" alt="RX 7900 XTX">
+                    <img src="./Img/topcards/rx7900xtx.jpg" class="card-img-top" alt="RX 7900 XTX">
                     <div class="card-body">
                         <h5 class="card-title">2. Radeon RX 7900 XTX &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -299,7 +298,7 @@
                 </div>
                 <div class="col mb-4">
                     <div class="card" id="rtx4070">
-                    <img src="./Img/rtx4070.jpg" class="card-img-top" alt="RTX 4070">
+                    <img src="./Img/topcards/rtx4070.jpg" class="card-img-top" alt="RTX 4070">
                     <div class="card-body">
                         <h5 class="card-title">3. GeForce RTX 4070  &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -361,7 +360,7 @@
                 </div>
                 <div class="col mb-4">
                     <div class="card">
-                    <img src="./Img/rtx4060.jpg" class="card-img-top" alt="RTX 4060">
+                    <img src="./Img/topcards/rtx4060.jpg" class="card-img-top" alt="RTX 4060">
                     <div class="card-body">
                         <h5 class="card-title">4. GeForce RTX 4060 &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -426,7 +425,7 @@
                 </div>
                 <div class="col mb-4">
                     <div class="card">
-                    <img src="./Img/7800xt.jpg" class="card-img-top" alt="RTX 4060">
+                    <img src="./Img/topcards/7800xt.jpg" class="card-img-top" alt="RX 7800XT">
                     <div class="card-body">
                         <h5 class="card-title">5. Radeon RX 7800 XT &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -488,7 +487,7 @@
                 </div>
                 <div class="col mb-4">
                     <div class="card">
-                    <img src="./Img/7900xt.jpg" class="card-img-top" alt="RTX 4060">
+                    <img src="./Img/topcards/7900xt.jpg" class="card-img-top" alt="RX 7900XT">
                     <div class="card-body">
                         <h5 class="card-title">6. Radeon RX 7900 XT &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -550,7 +549,7 @@
                 </div>
                 <div class="col mb-4">
                     <div class="card">
-                    <img src="./Img/6700xt.jpg" class="card-img-top" alt="RTX 4060">
+                    <img src="./Img/topcards/6700xt.jpg" class="card-img-top" alt="RX 6700XT">
                     <div class="card-body">
                         <h5 class="card-title">7. Radeon RX 6700 XT &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -606,7 +605,7 @@
                 </div>
                 <div class="col mb-4">
                     <div class="card">
-                    <img src="./Img/arca750.jpg" class="card-img-top" alt="RTX 4060">
+                    <img src="./Img/topcards/arca750.jpg" class="card-img-top" alt="Intel Arc A750">
                     <div class="card-body">
                         <h5 class="card-title">8. Intel Arc A750 &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -665,7 +664,7 @@
                 </div>
                 <div class="col mb-4">
                     <div class="card">
-                    <img src="./Img/rx7600.jpg" class="card-img-top" alt="RTX 4060">
+                    <img src="./Img/topcards/rx7600.jpg" class="card-img-top" alt="RX 7600">
                     <div class="card-body">
                         <h5 class="card-title">9. Radeon RX 7600 &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -727,7 +726,7 @@
                 </div>
                 <div class="col mb-4">
                     <div class="card">
-                    <img src="./Img/rtx4080.jpg" class="card-img-top" alt="RTX 4060">
+                    <img src="./Img/topcards/rtx4080.jpg" class="card-img-top" alt="RTX 4080">
                     <div class="card-body">
                         <h5 class="card-title">10. Nvidia RTX 4080 &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -786,7 +785,7 @@
                 </div>
                 <div class="col mb-4">
                     <div class="card">
-                    <img src="./Img/rtx4060ti.jpg" class="card-img-top" alt="RTX 4060">
+                    <img src="./Img/topcards/rtx4060ti.jpg" class="card-img-top" alt="RTX 4060ti">
                     <div class="card-body">
                         <h5 class="card-title">11. Nvidia RTX 4060 Ti &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -848,7 +847,7 @@
                 </div>
                 <div class="col mb-4">
                     <div class="card">
-                    <img src="./Img/arca380.jpg" class="card-img-top" alt="RTX 4060">
+                    <img src="./Img/topcards/arca380.jpg" class="card-img-top" alt="Intel Arc A380">
                     <div class="card-body">
                         <h5 class="card-title">12. Intel Arc A380 &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -983,75 +982,75 @@
 
                         <!-- Full-width images -->
                         <div class="mySlides fadee">
-                            <img src="/img/firstimg.jpg" style="width:100%">
+                            <img src="/img/topcards/firstimg.jpg" style="width:100%">
                         </div>
                     
                         <div class="mySlides fadee">
-                            <img src="/img/secondimg.jpg" style="width:100%">
+                            <img src="/img/topcards/secondimg.jpg" style="width:100%">
                         </div>
                     
                         <div class="mySlides fadee">
-                            <img src="/img/thirdimg.jpg" style="width:100%">
+                            <img src="/img/topcards/thirdimg.jpg" style="width:100%">
                         </div>
 
                         <div class="mySlides fadee">
-                            <img src="/img/fourthimg.jpg" style="width:100%">
+                            <img src="/img/topcards/fourthimg.jpg" style="width:100%">
                         </div>
 
                         <div class="mySlides fadee">
-                            <img src="/img/fifthimg.jpg" style="width:100%">
+                            <img src="/img/topcards/fifthimg.jpg" style="width:100%">
                         </div>
 
                         <div class="mySlides fadee">
-                            <img src="/img/sixthimg.jpg" style="width:100%">
+                            <img src="/img/topcards/sixthimg.jpg" style="width:100%">
                         </div>
 
                         <div class="mySlides fadee">
-                            <img src="/img/seventhimg.jpg" style="width:100%">
+                            <img src="/img/topcards/seventhimg.jpg" style="width:100%">
                         </div>
 
                         <div class="mySlides fadee">
-                            <img src="/img/eigthimg.jpg" style="width:100%">
+                            <img src="/img/topcards/eigthimg.jpg" style="width:100%">
                         </div>
 
                         <div class="mySlides fadee">
-                            <img src="/img/ninthimg.jpg" style="width:100%">
+                            <img src="/img/topcards/ninthimg.jpg" style="width:100%">
                         </div>
                         
                         <div class="mySlides fadee">
-                            <img src="/img/tenthimg.jpg" style="width:100%">
+                            <img src="/img/topcards/tenthimg.jpg" style="width:100%">
                         </div>
 
                         <div class="mySlides fadee">
-                            <img src="/img/eleventhimg.jpg" style="width:100%">
+                            <img src="/img/topcards/eleventhimg.jpg" style="width:100%">
                         </div>
 
                         <div class="mySlides fadee">
-                            <img src="/img/twelveimg.jpg" style="width:100%">
+                            <img src="/img/topcards/twelveimg.jpg" style="width:100%">
                         </div>
 
                         <div class="mySlides fadee">
-                            <img src="/img/13img.jpg" style="width:100%">
+                            <img src="/img/topcards/13img.jpg" style="width:100%">
                         </div>
 
                         <div class="mySlides fadee">
-                            <img src="/img/14img.jpg" style="width:100%">
+                            <img src="/img/topcards/14img.jpg" style="width:100%">
                         </div>
 
                         <div class="mySlides fadee">
-                            <img src="/img/15img.jpg" style="width:100%">
+                            <img src="/img/topcards/15img.jpg" style="width:100%">
                         </div>
 
                         <div class="mySlides fadee">
-                            <img src="/img/16img.jpg" style="width:100%">
+                            <img src="/img/topcards/16img.jpg" style="width:100%">
                         </div>
 
                         <div class="mySlides fadee">
-                            <img src="/img/17img.jpg" style="width:100%">
+                            <img src="/img/topcards/17img.jpg" style="width:100%">
                         </div>
 
                         <div class="mySlides fadee">
-                            <img src="/img/18img.jpg" style="width:100%">
+                            <img src="/img/topcards/18img.jpg" style="width:100%">
                         </div>
                     
                         <!-- Next and previous buttons -->
@@ -1088,75 +1087,75 @@
 
                         <!-- Full-width images-->
                         <div class="mySlides2 fadee">
-                            <img src="/img/1img4k.jpg" style="width:100%">
+                            <img src="/img/topcards/1img4k.jpg" style="width:100%">
                         </div>
                     
                         <div class="mySlides2 fadee">
-                            <img src="/img/2img4k.jpg" style="width:100%">
+                            <img src="/img/topcards/2img4k.jpg" style="width:100%">
                         </div>
                     
                         <div class="mySlides2 fadee">
-                            <img src="/img/3img4k.jpg" style="width:100%">
+                            <img src="/img/topcards/3img4k.jpg" style="width:100%">
                         </div>
 
                         <div class="mySlides2 fadee">
-                            <img src="/img/4img4k.jpg" style="width:100%">
+                            <img src="/img/topcards/4img4k.jpg" style="width:100%">
                         </div>
 
                         <div class="mySlides2 fadee">
-                            <img src="/img/5img4k.jpg" style="width:100%">
+                            <img src="/img/topcards/5img4k.jpg" style="width:100%">
                         </div>
 
                         <div class="mySlides2 fadee">
-                            <img src="/img/6img4k..jpg" style="width:100%">
+                            <img src="/img/topcards/6img4k..jpg" style="width:100%">
                         </div>
 
                         <div class="mySlides2 fadee">
-                            <img src="/img/7img4k.jpg" style="width:100%">
+                            <img src="/img/topcards/7img4k.jpg" style="width:100%">
                         </div>
 
                         <div class="mySlides2 fadee">
-                            <img src="/img/8img4k.jpg" style="width:100%">
+                            <img src="/img/topcards/8img4k.jpg" style="width:100%">
                         </div>
 
                         <div class="mySlides2 fadee">
-                            <img src="/img/9img4k.jpg" style="width:100%">
+                            <img src="/img/topcards/9img4k.jpg" style="width:100%">
                         </div>
                         
                         <div class="mySlides2 fadee">
-                            <img src="/img/10img4k.jpg" style="width:100%">
+                            <img src="/img/topcards/10img4k.jpg" style="width:100%">
                         </div>
 
                         <div class="mySlides2 fadee">
-                            <img src="/img/11img4k.jpg" style="width:100%">
+                            <img src="/img/topcards/11img4k.jpg" style="width:100%">
                         </div>
 
                         <div class="mySlides2 fadee">
-                            <img src="/img/12img4k.jpg" style="width:100%">
+                            <img src="/img/topcards/12img4k.jpg" style="width:100%">
                         </div>
 
                         <div class="mySlides2 fadee">
-                            <img src="/img/13img4k.jpg" style="width:100%">
+                            <img src="/img/topcards/13img4k.jpg" style="width:100%">
                         </div>
 
                         <div class="mySlides2 fadee">
-                            <img src="/img/14img4k.jpg" style="width:100%">
+                            <img src="/img/topcards/14img4k.jpg" style="width:100%">
                         </div>
 
                         <div class="mySlides2 fadee">
-                            <img src="/img/15img4k.jpg" style="width:100%">
+                            <img src="/img/topcards/15img4k.jpg" style="width:100%">
                         </div>
 
                         <div class="mySlides2 fadee">
-                            <img src="/img/16img4k.jpg" style="width:100%">
+                            <img src="/img/topcards/16img4k.jpg" style="width:100%">
                         </div>
 
                         <div class="mySlides2 fadee">
-                            <img src="/img/17img4k.jpg" style="width:100%">
+                            <img src="/img/topcards/17img4k.jpg" style="width:100%">
                         </div>
 
                         <div class="mySlides2 fadee">
-                            <img src="/img/18img4k.jpg" style="width:100%">
+                            <img src="/img/topcards/18img4k.jpg" style="width:100%">
                         </div>
                     
                         <!-- Next and previous buttons -->

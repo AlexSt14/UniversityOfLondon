@@ -12,46 +12,51 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.development.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.development.js"></script>
+    <!--W3 Icons CND https://www.w3schools.com/w3css/w3css_icons.asp-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- Babel required to run JSX -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
     <title>Best Deals!</title>
   </head>
 <body>
-    <div class="container"  id="home">
-
+    <div class="container">
         <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-lg p-2 border-bottom border-body" id="navBarBG">
+        <nav class="navbar navbar-expand-lg p-2 border-bottom border-body">
             <div class="container-fluid">
                 <ul class="nav nav-tabs">
                     <li class="nav-item">
-                    <a class="nav-link activeScript" aria-current="page" href="./index.html">Home</a>
+                        <a class="nav-link activeScript" aria-current="page" href="./index.html">Home</a>
                     </li>
                     
                     <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle activeScript" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Tutorials & more</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Build tutorials</a></li>
-                        <li><a class="dropdown-item" href="./topcards.html">GPUs</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="./bestdeals.html">Best Deals</a></li>
-                    </ul>
+                        <a class="nav-link dropdown-toggle activeScript" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Tutorials & more</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="buildtutorial.html">Build tutorials</a></li>
+                            <li><a class="dropdown-item" href="./topcards.html">GPUs</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="./bestdeals.html">Best Deals</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link activeScript" href="./systembuilder.html">System Builder</a>
+                        <a class="nav-link activeScript" href="./systembuilder.html">System Builder</a>
                     </li>                    
                 </ul>               
             </div>
         </nav>
         <!-- END NAVBAR -->
     </div>
+    <!--MAIN CONTENT BEST DEALS PAGE-->
+    <!--IMAGES AND CONTENT/INFO HAVE BEEN TAKEN FROM-->
+    <!--https://www.tomshardware.com/news/best-graphics-card-deals-now-->
     <div class="container">
         <div class="row">
             <div class="col">
                 <div id="bestdealsh1">
                     <h1>Best Graphics Card Deals 2024: Cheap Nvidia and AMD GPUs</h1>
                     <p>Save money on Radeon, RTX, and GTX graphics cards.</p>
-                    <img alt="4 GPUs Best Deals Image" src="./img/bestdealsmainimg.jpg">
+                    <img id="bestdealstopimg" alt="4 GPUs Best Deals Image" src="./img/bestdeals/bestdealsmainimg.jpg">
                 </div>
             </div>
         </div>
@@ -87,210 +92,268 @@
                     <li>Newegg: <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-4271844846088254000&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%25201100858365%2520601406710%26Order%3D1" target="_blank">Intel Arc A750 from $179</a></li>
                 </ul>
             </div>
+            <!--LOWEST GPU PRICES CONTENT, NVIDIA, AMD and INTEL-->
             <div class="col mt-5">
                 <h3>Lowest Graphics Card Prices by GPU </h3>
                 <p>We've highlighted our favorite deals below, but if you're trying to find the lowest price on a particular GPU right now, we've got tables below for all the major Nvidia and AMD cards. Each card's performance is listed, using the combined (geometric mean) of the 1080p and 1440p fps from our GPU benchmarks hierarchy.  </p>
+                <!--NVIDIA GPUs-->
                 <h2 class="text-bg-dark text-center" id="bestnvidiagpu">Best Nvidia Graphics Card Prices</h2>
-                <table class="mb-3">
-                    <tr>
-                        <th>GPU</th>
-                        <th>Performance</th>
-                        <th>Best Price</th>
-                        <th>Get Latest Prices</th>
-                    </tr>
-                    <tr>
-                        <td>GeForce RTX 4090</td>
-                        <td>162.7</td>
-                        <td>£1,755 <a href="https://www.amazon.co.uk/GIGABYTE-GeForce-WINDFORCE-Graphics-GV-N4090WF3V2-24GD/dp/B0C717J7V5/ref=sr_1_63?crid=3748M22MN7T2I&keywords=rtx+4090&qid=1707616380&refinements=p_36%3A85000-&rnid=428432031&s=computers&sprefix=rtx+4090%2Ccomputers%2C387&sr=1-63&ufe=app_do%3Aamzn1.fos.d7e5a2de-8759-4da3-993c-d11b6e3d217f" target="_blank">(GIGABYTE RTX 4090 Windforce V2)</a></td>
-                        <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DGeForce%2BRTX%2B4090%26rh%3Dn%253A284822%252Cp_n_condition-type%253A2224371011%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-9788276425301332000-20" target="_blank">Amazon</a> |<a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-1232480831734268200&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%2520601408874%25201100858365%26Order%3D1" target="_blank"> Newegg</a></td>
-                        
-                    </tr>
-                    <tr>
-                        <td>GeForce RTX 4080</td>
-                        <td>140.1</td>
-                        <td>£999 <a href="https://www.amazon.co.uk/MSI-GeForce-GAMING-Gaming-Graphics/dp/B0BHDXCXXF/ref=sr_1_60?crid=KY0MD6ME93L3&keywords=rtx+4080&qid=1707616654&refinements=p_36%3A75000-&rnid=428432031&s=computers&sprefix=rtx+4080%2Ccomputers%2C351&sr=1-60&ufe=app_do%3Aamzn1.fos.d7e5a2de-8759-4da3-993c-d11b6e3d217f" target="_blank">(MSI RTX 4080 Gaming X TRIO)</a></td>
-                        <td><a href="https://www.amazon.co.uk/MSI-GeForce-GAMING-Gaming-Graphics/dp/B0BHDXCXXF/ref=sr_1_60?crid=KY0MD6ME93L3&keywords=rtx+4080&qid=1707616654&refinements=p_36%3A75000-&rnid=428432031&s=computers&sprefix=rtx+4080%2Ccomputers%2C351&sr=1-60&ufe=app_do%3Aamzn1.fos.d7e5a2de-8759-4da3-993c-d11b6e3d217f" target="_blank">Amazon</a> | <a href="https://www.newegg.com/msi-geforce-rtx-4080-rtx-4080-16gb-gaming-x-trio/p/N82E16814137766" target="_blank">Newegg</a></td>
-                    </tr>
-                    <tr>
-                        <td>GeForce RTX 4070 Ti</td>
-                        <td>123.4</td>
-                        <td>£755 <a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fdp%2FB0BRKR14S1%2F%3Ftag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-5123784434830166000-20" target="_blank">(PNY RTX 4070 Ti 12GB XLR8 Gaming)</a></td>
-                        <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DGeForce%2BRTX%2B4070%2BTi%26rh%3Dn%253A284822%252Cp_n_condition-type%253A2224371011%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-3914862683798306300-20" target="_blank">Amazon</a> | <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-4878062426599805000&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%25201100858365%2520601408873%26Order%3D1" target="_blank">Newegg</a></td>
-                    </tr>
-                    <tr>
-                        <td>GeForce RTX 4070</td>
-                        <td>104.3</td>
-                        <td>£569 <a href="https://www.amazon.co.uk/Gigabyte-GeForce-WINDFORCE-Graphics-GV-N4070WF3OC-12GD/dp/B0BZDYZ4V5/ref=sr_1_7?crid=2W71MEMIA6UAQ&keywords=rtx+4070&qid=1707617282&refinements=p_36%3A50000-&rnid=428432031&s=computers&sprefix=rtx+4070%2Ccomputers%2C352&sr=1-7&ufe=app_do%3Aamzn1.fos.d7e5a2de-8759-4da3-993c-d11b6e3d217f" target="_blank">(GIGABYTE RTX 4070 Windforce OC)</a></td>
-                        <td><a href="https://www.amazon.co.uk/Gigabyte-GeForce-WINDFORCE-Graphics-GV-N4070WF3OC-12GD/dp/B0BZDYZ4V5/ref=sr_1_7?crid=2W71MEMIA6UAQ&keywords=rtx+4070&qid=1707617282&refinements=p_36%3A50000-&rnid=428432031&s=computers&sprefix=rtx+4070%2Ccomputers%2C352&sr=1-7&ufe=app_do%3Aamzn1.fos.d7e5a2de-8759-4da3-993c-d11b6e3d217f" target="_blank">Amazon</a> | <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-1194058915155939600&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%25201100858365%2520601408877%26Order%3D1" target="_blank">Newegg</a></td>
-                    </tr>
-                    <tr>
-                        <td>GeForce RTX 4060 Ti</td>
-                        <td>81.6</td>
-                        <td>£365 <a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2FMSI-GeForce-Lovelace-Architecture-Graphics%2Fdp%2FB0C5B4XNWR%3Ftag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-3565311678908876000-20" target="_blank">(MSI RTX 4060 Ti Ventus 2X)</a></td>
-                        <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DGeForce%2BRTX%2B3060%2B12GB%26rh%3Dn%253A284822%252Cp_n_condition-type%253A2224371011%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-9420410347156021000-20" target="_blank">Amazon</a> | <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-5132148357871287000&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%25201100858365%2520601408880%26Order%3D1" target="_blank">Newegg</a></td>
-                    </tr>
-                    <tr>
-                        <td>GeForce RTX 3060 12GB</td>
-                        <td>55.1</td>
-                        <td>£290 <a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2FMSI-GeForce-RTX-3060-12G%2Fdp%2FB08WPRMVWB%3Ftag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-1570774810656018400-20" target="_blank">(MSI RTX 3060 Ventus 2X)</a></td>
-                        <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DGeForce%2BRTX%2B3060%2B12GB%26rh%3Dn%253A284822%252Cp_n_condition-type%253A2224371011%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-9420410347156021000-20" target="_blank">Amazon</a> | <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-1380465814335172600&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%2520601361654%25201100858365%2520600499109%26Order%3D1" target="_blank">Newegg</a></td>
-                    </tr>
-                    <tr>
-                        <td>GeForce RTX 3060 8GB</td>
-                        <td>Not Tested</td>
-                        <td>$259 <a href="" target="_blank">(Zotac RTX 3060 Twin Edge)</a></td>
-                        <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DGeForce%2BRTX%2B3060%2B8GB%26rh%3Dn%253A284822%252Cp_n_condition-type%253A2224371011%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-9335838174660467000-20" target="_blank">Amazon</a> | <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-6187206502841815000&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%2520601361654%25201100858365%2520600494828%26Order%3D1" target="_blank">Newegg</a></td>
-                    </tr>
-                    <tr>
-                        <td>GeForce RTX 3050</td>
-                        <td>39.7</td>
-                        <td>£193 <a href="https://www.amazon.co.uk/MSI-GeForce-RTX-3050-VENTUS/dp/B0CSPNYB42/ref=sr_1_3?crid=1RA0DVI7YPH6J&keywords=rtx+3050&qid=1707617894&s=computers&sprefix=rtx+30%2Ccomputers%2C342&sr=1-3&ufe=app_do%3Aamzn1.fos.d7e5a2de-8759-4da3-993c-d11b6e3d217f" target="_blank">(MSI RTX 3050 Ventus 2X 6GB)</a></td>
-                        <td><a href="https://www.amazon.co.uk/MSI-GeForce-RTX-3050-VENTUS/dp/B0CSPNYB42/ref=sr_1_3?crid=1RA0DVI7YPH6J&keywords=rtx+3050&qid=1707617894&s=computers&sprefix=rtx+30%2Ccomputers%2C342&sr=1-3&ufe=app_do%3Aamzn1.fos.d7e5a2de-8759-4da3-993c-d11b6e3d217f" target="_blank">Amazon</a> | <a href="https://www.newegg.com/p/pl?N=100007709+4814+601399335+1100858365&Order=1&nm_mc=AFC-RAN-COM&cm_mmc=afc-ran-com-_-Future+Publishing+Ltd&utm_medium=affiliate&utm_campaign=afc-ran-com-_-Future+Publishing+Ltd&utm_source=afc-Future+Publishing+Ltd&AFFID=2294204&AFFNAME=Future+Publishing+Ltd&ACRID=1&ASUBID=tomshardware-gb-4034634196234641400&ASID=https%3A%2F%2Fwww.tomshardware.com%2Fnews%2Fbest-graphics-card-deals-now&ranMID=44583&ranEAID=2294204&ranSiteID=kXQk6.ivFEQ-JPFAKftq3riiD9SGg1pT8Q" target="_blank">Newegg</a></td>
-                    </tr>
-                </table> 
+                <div class="table-responsive">
+                    <table class="mb-3">
+                        <tr>
+                            <th>GPU</th>
+                            <th>Performance</th>
+                            <th>Best Price</th>
+                            <th>Get Latest Prices</th>
+                        </tr>
+                        <tr>
+                            <td>GeForce RTX 4090</td>
+                            <td>162.7</td>
+                            <td>£1,755 <a href="https://www.amazon.co.uk/GIGABYTE-GeForce-WINDFORCE-Graphics-GV-N4090WF3V2-24GD/dp/B0C717J7V5/ref=sr_1_63?crid=3748M22MN7T2I&keywords=rtx+4090&qid=1707616380&refinements=p_36%3A85000-&rnid=428432031&s=computers&sprefix=rtx+4090%2Ccomputers%2C387&sr=1-63&ufe=app_do%3Aamzn1.fos.d7e5a2de-8759-4da3-993c-d11b6e3d217f" target="_blank">(GIGABYTE RTX 4090 Windforce V2)</a></td>
+                            <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DGeForce%2BRTX%2B4090%26rh%3Dn%253A284822%252Cp_n_condition-type%253A2224371011%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-9788276425301332000-20" target="_blank">Amazon</a> |<a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-1232480831734268200&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%2520601408874%25201100858365%26Order%3D1" target="_blank"> Newegg</a></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>GeForce RTX 4080</td>
+                            <td>140.1</td>
+                            <td>£999 <a href="https://www.amazon.co.uk/MSI-GeForce-GAMING-Gaming-Graphics/dp/B0BHDXCXXF/ref=sr_1_60?crid=KY0MD6ME93L3&keywords=rtx+4080&qid=1707616654&refinements=p_36%3A75000-&rnid=428432031&s=computers&sprefix=rtx+4080%2Ccomputers%2C351&sr=1-60&ufe=app_do%3Aamzn1.fos.d7e5a2de-8759-4da3-993c-d11b6e3d217f" target="_blank">(MSI RTX 4080 Gaming X TRIO)</a></td>
+                            <td><a href="https://www.amazon.co.uk/MSI-GeForce-GAMING-Gaming-Graphics/dp/B0BHDXCXXF/ref=sr_1_60?crid=KY0MD6ME93L3&keywords=rtx+4080&qid=1707616654&refinements=p_36%3A75000-&rnid=428432031&s=computers&sprefix=rtx+4080%2Ccomputers%2C351&sr=1-60&ufe=app_do%3Aamzn1.fos.d7e5a2de-8759-4da3-993c-d11b6e3d217f" target="_blank">Amazon</a> | <a href="https://www.newegg.com/msi-geforce-rtx-4080-rtx-4080-16gb-gaming-x-trio/p/N82E16814137766" target="_blank">Newegg</a></td>
+                        </tr>
+                        <tr>
+                            <td>GeForce RTX 4070 Ti</td>
+                            <td>123.4</td>
+                            <td>£755 <a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fdp%2FB0BRKR14S1%2F%3Ftag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-5123784434830166000-20" target="_blank">(PNY RTX 4070 Ti 12GB XLR8 Gaming)</a></td>
+                            <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DGeForce%2BRTX%2B4070%2BTi%26rh%3Dn%253A284822%252Cp_n_condition-type%253A2224371011%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-3914862683798306300-20" target="_blank">Amazon</a> | <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-4878062426599805000&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%25201100858365%2520601408873%26Order%3D1" target="_blank">Newegg</a></td>
+                        </tr>
+                        <tr>
+                            <td>GeForce RTX 4070</td>
+                            <td>104.3</td>
+                            <td>£569 <a href="https://www.amazon.co.uk/Gigabyte-GeForce-WINDFORCE-Graphics-GV-N4070WF3OC-12GD/dp/B0BZDYZ4V5/ref=sr_1_7?crid=2W71MEMIA6UAQ&keywords=rtx+4070&qid=1707617282&refinements=p_36%3A50000-&rnid=428432031&s=computers&sprefix=rtx+4070%2Ccomputers%2C352&sr=1-7&ufe=app_do%3Aamzn1.fos.d7e5a2de-8759-4da3-993c-d11b6e3d217f" target="_blank">(GIGABYTE RTX 4070 Windforce OC)</a></td>
+                            <td><a href="https://www.amazon.co.uk/Gigabyte-GeForce-WINDFORCE-Graphics-GV-N4070WF3OC-12GD/dp/B0BZDYZ4V5/ref=sr_1_7?crid=2W71MEMIA6UAQ&keywords=rtx+4070&qid=1707617282&refinements=p_36%3A50000-&rnid=428432031&s=computers&sprefix=rtx+4070%2Ccomputers%2C352&sr=1-7&ufe=app_do%3Aamzn1.fos.d7e5a2de-8759-4da3-993c-d11b6e3d217f" target="_blank">Amazon</a> | <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-1194058915155939600&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%25201100858365%2520601408877%26Order%3D1" target="_blank">Newegg</a></td>
+                        </tr>
+                        <tr>
+                            <td>GeForce RTX 4060 Ti</td>
+                            <td>81.6</td>
+                            <td>£365 <a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2FMSI-GeForce-Lovelace-Architecture-Graphics%2Fdp%2FB0C5B4XNWR%3Ftag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-3565311678908876000-20" target="_blank">(MSI RTX 4060 Ti Ventus 2X)</a></td>
+                            <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DGeForce%2BRTX%2B3060%2B12GB%26rh%3Dn%253A284822%252Cp_n_condition-type%253A2224371011%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-9420410347156021000-20" target="_blank">Amazon</a> | <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-5132148357871287000&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%25201100858365%2520601408880%26Order%3D1" target="_blank">Newegg</a></td>
+                        </tr>
+                        <tr>
+                            <td>GeForce RTX 3060 12GB</td>
+                            <td>55.1</td>
+                            <td>£290 <a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2FMSI-GeForce-RTX-3060-12G%2Fdp%2FB08WPRMVWB%3Ftag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-1570774810656018400-20" target="_blank">(MSI RTX 3060 Ventus 2X)</a></td>
+                            <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DGeForce%2BRTX%2B3060%2B12GB%26rh%3Dn%253A284822%252Cp_n_condition-type%253A2224371011%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-9420410347156021000-20" target="_blank">Amazon</a> | <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-1380465814335172600&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%2520601361654%25201100858365%2520600499109%26Order%3D1" target="_blank">Newegg</a></td>
+                        </tr>
+                        <tr>
+                            <td>GeForce RTX 3060 8GB</td>
+                            <td>Not Tested</td>
+                            <td>$259 <a href="" target="_blank">(Zotac RTX 3060 Twin Edge)</a></td>
+                            <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DGeForce%2BRTX%2B3060%2B8GB%26rh%3Dn%253A284822%252Cp_n_condition-type%253A2224371011%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-9335838174660467000-20" target="_blank">Amazon</a> | <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-6187206502841815000&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%2520601361654%25201100858365%2520600494828%26Order%3D1" target="_blank">Newegg</a></td>
+                        </tr>
+                        <tr>
+                            <td>GeForce RTX 3050</td>
+                            <td>39.7</td>
+                            <td>£193 <a href="https://www.amazon.co.uk/MSI-GeForce-RTX-3050-VENTUS/dp/B0CSPNYB42/ref=sr_1_3?crid=1RA0DVI7YPH6J&keywords=rtx+3050&qid=1707617894&s=computers&sprefix=rtx+30%2Ccomputers%2C342&sr=1-3&ufe=app_do%3Aamzn1.fos.d7e5a2de-8759-4da3-993c-d11b6e3d217f" target="_blank">(MSI RTX 3050 Ventus 2X 6GB)</a></td>
+                            <td><a href="https://www.amazon.co.uk/MSI-GeForce-RTX-3050-VENTUS/dp/B0CSPNYB42/ref=sr_1_3?crid=1RA0DVI7YPH6J&keywords=rtx+3050&qid=1707617894&s=computers&sprefix=rtx+30%2Ccomputers%2C342&sr=1-3&ufe=app_do%3Aamzn1.fos.d7e5a2de-8759-4da3-993c-d11b6e3d217f" target="_blank">Amazon</a> | <a href="https://www.newegg.com/p/pl?N=100007709+4814+601399335+1100858365&Order=1&nm_mc=AFC-RAN-COM&cm_mmc=afc-ran-com-_-Future+Publishing+Ltd&utm_medium=affiliate&utm_campaign=afc-ran-com-_-Future+Publishing+Ltd&utm_source=afc-Future+Publishing+Ltd&AFFID=2294204&AFFNAME=Future+Publishing+Ltd&ACRID=1&ASUBID=tomshardware-gb-4034634196234641400&ASID=https%3A%2F%2Fwww.tomshardware.com%2Fnews%2Fbest-graphics-card-deals-now&ranMID=44583&ranEAID=2294204&ranSiteID=kXQk6.ivFEQ-JPFAKftq3riiD9SGg1pT8Q" target="_blank">Newegg</a></td>
+                        </tr>
+                    </table> 
+                </div>
                 <p>Nvidia's graphics cards — both the new RTX 4090/4080 and the previous generation RTX 30-series — often tend to be overpriced. We've axed most of the 30-series, as those cards have been displaced by the newer, better, and often cheaper 40-series parts. The RTX 4070 for instance trades blows with the RTX 3080 10GB, costs at least $100 less, and uses 30% less power; it also supports DLSS 3 Frame Generation and some other new features. Similar arguments can be made for the RTX 4060 Ti against the RTX 3060 Ti, RTX 4070 Ti against the RTX 3090, or the RTX 4080 and 4090 against any previous generation part.</p>
                 <p>The RTX 3060 and 3050 are really the only Nvidia cards from the Ampere generation that are still worth a look, and even then we have to exercise caution. Nvidia will launch the RTX 4060 in the next month, with a $299 MSRP. If the previously established patterns hold, it will likely easily beat the RTX 3060 12GB in performance and power, though we will miss the 12GB VRAM configuration.</p>
             </div>
             <div class="col mt-5">
+                <!--AMD GPUs-->
                 <h2 class="text-bg-dark text-center" id="bestamdgpu">Best AMD Graphics Card Prices</h2>
-                <table class="mb-3">
-                    <tr>
-                        <th>GPU</th>
-                        <th>Perfor$1059 <a href="" target="_blank"></a>mance</th>
-                        <th>Best Price</th>
-                        <th>Get Latest Price</th>
-                    </tr>
-                    <tr>
-                        <td>Radeon RX 7900 XTX</td>
-                        <td>126.3</td>
-                        <td>$939 <a href="https://www.newegg.com/asrock-radeon-rx-7900-xtx-rx7900xtx-pg-24go/p/N82E16814930081?cm_mmc=afc-ran-com-_-Future%20Publishing%20Ltd&utm_source=afc-Future%20Publishing%20Ltd&utm_medium=affiliate&AFFNAME=Future%20Publishing%20Ltd&utm_campaign=afc-ran-com-_-Future%20Publishing%20Ltd&ACRID=1&ASUBID=tomshardware-gb-7196047443992755000&ASID=https%3A%2F%2Fwww.tomshardware.com%2Fnews%2Fbest-graphics-card-deals-now&ranEAID=2294204&ranSiteID=kXQk6.ivFEQ-txYtFq3ewNs2_o5IsiKJGA&nm_mc=AFC-RAN-COM&ranMID=44583&AFFID=2294204" target="_blank">(ASRock RX 7900 XTX Phantom Gaming OC)</a></td>
-                        <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DRadeon%2BRX%2B7900%2BXTX%26rh%3Dn%253A284822%252Cp_n_condition-type%253A2224371011%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-5020709514150671000-20" target="_blank">Amazon</a> | <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-4690810056630016000&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%25201100858365%2520601410968%26Order%3D1" target="_blank">Newegg</a></td>
-                    </tr>
-                    <tr>
-                        <td>Radeon RX 7900 XT</td>
-                        <td>115.8</td>
-                        <td>$1059 <a href="https://www.newegg.com/msi-radeon-rx-7900-xt-rx-7900-xt-gaming-trio-classic-20g/p/N82E16814137782?utm_medium=affiliate&cm_mmc=afc-ran-com-_-Future%20Publishing%20Ltd&utm_campaign=afc-ran-com-_-Future%20Publishing%20Ltd&ASID=https%3A%2F%2Fwww.tomshardware.com%2Fnews%2Fbest-graphics-card-deals-now&ranEAID=2294204&ranMID=44583&ranSiteID=kXQk6.ivFEQ-GD1yDbU.M66KmDMU6r3dcg&ASUBID=tomshardware-gb-8873229861501139000&ACRID=1&nm_mc=AFC-RAN-COM&AFFID=2294204&AFFNAME=Future%20Publishing%20Ltd&utm_source=afc-Future%20Publishing%20Ltd" target="_blank">(MSI RX 7900 XT Gaming Trio)</a></td>
-                        <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DRadeon%2BRX%2B7900%2BXT%26rh%3Dn%253A284822%252Cp_n_condition-type%253A2224371011%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-1972003191533717000-20" target="_blank">Amazon</a> | <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-1451084590630065400&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%25201100858365%2520601410969%26Order%3D1" target="_blank">Newegg</a></td>
-                    </tr>
-                    <tr>
-                        <td>Radeon RX 6950 XT</td>
-                        <td>103.2</td>
-                        <td>£826 <a href="https://www.amazon.co.uk/MSI-Radeon-GAMING-Gaming-Graphics/dp/B09YHXFD19/ref=sr_1_4?ascsubtag=tomshardware-gb-5942955504867706000-20&geniuslink=true&keywords=Radeon+RX+6950+XT&qid=1707619856&sr=8-4&ufe=app_do%3Aamzn1.fos.d7e5a2de-8759-4da3-993c-d11b6e3d217f" target="_blank">(MSI RX 6950 XT Gaming X Trio)</a></td>
-                        <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DRadeon%2BRX%2B6950%2BXT%26rh%3Dn%253A284822%252Cp_n_condition-type%253A2224371011%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-5942955504867706000-20" target="_blank">Amazon</a> | <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-7325016693854133000&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%25201100858365%2520601403917%26Order%3D1" target="_blank">Newegg</a></td>
-                    </tr>
-                    <tr>
-                        <td>Radeon RX 6900 XT</td>
-                        <td>98.3</td>
-                        <td>$549 <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-1160853237650945000&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-radeon-rx-6800-xt-rx6900xt-pgd-16g%2Fp%2FN82E16814930052" target="_blank">(ASRock RX 6900 XT PHANTOM GAMING D)</a></td>
-                        <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DRadeon%2BRX%2B6900%2BXT%26rh%3Dn%253A284822%252Cp_n_condition-type%253A2224371011%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-1203904049747942000-20" target="_blank">Amazon</a> | <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-1554077362076373200&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%25201100858365%2520601359957%26Order%3D1" target="_blank">Newegg</a></td>
-                    </tr>
-                    <tr>
-                        <td>Radeon RX 6800 XT</td>
-                        <td>92.6</td>
-                        <td>$489 <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-3635409776473768000&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16814930049" target="_blank">(ASRock RX 6800 XT Phantom Gaming OC)</a></td>
-                        <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DRadeon%2BRX%2B6800%2BXT%26rh%3Dn%253A284822%252Cp_n_condition-type%253A2224371011%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-9229925548755778000-20" target="_blank">Amazon</a> | <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-1349281281231381200&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%25201100858365%2520601359422%26Order%3D1" target="_blank">Newegg</a></td>
-                    </tr>
-                    <tr>
-                        <td>Radeon RX 6800</td>
-                        <td>81.3</td>
-                        <td>$439 <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-6790001326319847000&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16814137732" target="_blank">(MSI RX 6800 Gaming Z Trio)</a></td>
-                        <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DRadeon%2BRX%2B6800%26rh%3Dn%253A284822%252Cp_n_condition-type%253A2224371011%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-9725740314803696000-20" target="_blank">Amazon</a> | <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-1090916620402138900&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%25201100858365%2520601359427%26Order%3D1" target="_blank">Newegg</a></td>
-                    </tr>
-                    <tr>
-                        <td>Radeon RX 6750 XT</td>
-                        <td>70.1</td>
-                        <td>$359 <a href="https://www.newegg.com/xfx-radeon-rx-6750-xt-rx-675xyjfde/p/N82E16814150887?Item=N82E16814150887" target="_blank">(XFX SpeedSter RX 6750 XT)</a></td>
-                        <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DRadeon%2BRX%2B6750%2BXT%26rh%3Dn%253A284822%252Cp_n_condition-type%253A2224371011%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-7180592037430369000-20" target="_blank">Amazon</a> | <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-1927250418289929000&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%25201100858365%2520601403422%26Order%3D1" target="_blank">Newegg</a></td>
-                    </tr>
-                    <tr>
-                        <td>Radeon RX 6700 XT</td>
-                        <td>65.9</td>
-                        <td>$339 <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-7086453069138040000&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16814930059" target="_blank">(ASRock RX 6700 XT Challenger D)</a></td>
-                        <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DRadeon%2BRX%2B6700%2BXT%26rh%3Dn%253A284822%252Cp_n_condition-type%253A2224371011%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-1790619941325935000-20" target="_blank">Amazon</a> | <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-3172629737393850000&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%25201100858365%2520601362404%26Order%3D1" target="_blank">Newegg</a></td>
-                    </tr>
-                    <tr>
-                        <td>Radeon RX 6650 XT</td>
-                        <td>52.7</td>
-                        <td>$254 <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-1026951051803542800&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16814930070" target="_blank">(ASRock RX 6650 XT Challenger D)</a></td>
-                        <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DRadeon%2BRX%2B6650%2BXT%26rh%3Dn%253A284822%252Cp_n_condition-type%253A2224371011%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-8425951866692878000-20" target="_blank">Amazon</a> | <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-3191258194162272000&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%25201100858365%2520601403620%26Order%3D1" target="_blank">Newegg</a></td>
-                    </tr>
-                    <tr>
-                        <td>Radeon RX 6600 XT</td>
-                        <td>50.8</td>
-                        <td>£234 <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-5219771129004839000&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16814930064" target="_blank">(ASRock RX 6600 XT Phantom Gaming D)</a></td>
-                        <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DRadeon%2BRX%2B6600%2BXT%26rh%3Dn%253A284822%252Cp_n_condition-type%253A2224371011%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-2490201695588148700-20" target="_blank">Amazon</a> | <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-1131146270421533800&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%25201100858365%2520601388251%26Order%3D1" target="_blank">Newegg</a></td>
-                    </tr>
-                    <tr>
-                        <td>Radeon RX 6600</td>
-                        <td>42.5</td>
-                        <td>$199 <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-1521772849043702000&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16814930066" target="_blank">(ASRock RX 6600 Challenger D)</a></td>
-                        <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DRadeon%2BRX%2B6600%26rh%3Dn%253A284822%252Cp_n_condition-type%253A2224371011%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-1118230638001378600-20" target="_blank">Amazon</a> | <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-1305454893931501300&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%25201100858365%2520601394871%26Order%3D1" target="_blank">Newegg</a></td>
-                    </tr>
-                    <tr>
-                        <td>Radeon RX 6500 XT</td>
-                        <td>25.1</td>
-                        <td>£174 <a href="(ASRock RX 6500 XT Challenger ITX)" target="_blank">(ASRock RX 6500 XT Challenger ITX)</a></td>
-                        <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DRadeon%2BRX%2B6500%2BXT%26rh%3Dn%253A284822%252Cp_n_condition-type%253A2224371011%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-1313415519902990800-20" target="_blank">Amazon</a> | <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-1383143068148513800&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%25201100858365%2520601399313%26Order%3D1" target="_blank">Newegg</a></td>
-                    </tr>
-                    <tr>
-                        <td>Radeon RX 6400</td>
-                        <td>15.8</td>
-                        <td>£156 <a href="(PowerColor RX 6400 ITX)" target="_blank">(PowerColor RX 6400 ITX)</a></td>
-                        <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DRadeon%2BRX%2B6400%26rh%3Dn%253A284822%252Cp_n_condition-type%253A2224371011%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-6737933355802202000-20" target="_blank">Amazon</a> | <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-1047956990543026400&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%25201100858365%2520601401722%26Order%3D1" target="_blank">Newegg</a></td>
-                    </tr>
-                </table>
+                <div class="table-responsive">
+                    <table class="mb-3">
+                        <tr>
+                            <th>GPU</th>
+                            <th>Perfor$1059 <a href="" target="_blank"></a>mance</th>
+                            <th>Best Price</th>
+                            <th>Get Latest Price</th>
+                        </tr>
+                        <tr>
+                            <td>Radeon RX 7900 XTX</td>
+                            <td>126.3</td>
+                            <td>$939 <a href="https://www.newegg.com/asrock-radeon-rx-7900-xtx-rx7900xtx-pg-24go/p/N82E16814930081?cm_mmc=afc-ran-com-_-Future%20Publishing%20Ltd&utm_source=afc-Future%20Publishing%20Ltd&utm_medium=affiliate&AFFNAME=Future%20Publishing%20Ltd&utm_campaign=afc-ran-com-_-Future%20Publishing%20Ltd&ACRID=1&ASUBID=tomshardware-gb-7196047443992755000&ASID=https%3A%2F%2Fwww.tomshardware.com%2Fnews%2Fbest-graphics-card-deals-now&ranEAID=2294204&ranSiteID=kXQk6.ivFEQ-txYtFq3ewNs2_o5IsiKJGA&nm_mc=AFC-RAN-COM&ranMID=44583&AFFID=2294204" target="_blank">(ASRock RX 7900 XTX Phantom Gaming OC)</a></td>
+                            <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DRadeon%2BRX%2B7900%2BXTX%26rh%3Dn%253A284822%252Cp_n_condition-type%253A2224371011%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-5020709514150671000-20" target="_blank">Amazon</a> | <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-4690810056630016000&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%25201100858365%2520601410968%26Order%3D1" target="_blank">Newegg</a></td>
+                        </tr>
+                        <tr>
+                            <td>Radeon RX 7900 XT</td>
+                            <td>115.8</td>
+                            <td>$1059 <a href="https://www.newegg.com/msi-radeon-rx-7900-xt-rx-7900-xt-gaming-trio-classic-20g/p/N82E16814137782?utm_medium=affiliate&cm_mmc=afc-ran-com-_-Future%20Publishing%20Ltd&utm_campaign=afc-ran-com-_-Future%20Publishing%20Ltd&ASID=https%3A%2F%2Fwww.tomshardware.com%2Fnews%2Fbest-graphics-card-deals-now&ranEAID=2294204&ranMID=44583&ranSiteID=kXQk6.ivFEQ-GD1yDbU.M66KmDMU6r3dcg&ASUBID=tomshardware-gb-8873229861501139000&ACRID=1&nm_mc=AFC-RAN-COM&AFFID=2294204&AFFNAME=Future%20Publishing%20Ltd&utm_source=afc-Future%20Publishing%20Ltd" target="_blank">(MSI RX 7900 XT Gaming Trio)</a></td>
+                            <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DRadeon%2BRX%2B7900%2BXT%26rh%3Dn%253A284822%252Cp_n_condition-type%253A2224371011%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-1972003191533717000-20" target="_blank">Amazon</a> | <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-1451084590630065400&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%25201100858365%2520601410969%26Order%3D1" target="_blank">Newegg</a></td>
+                        </tr>
+                        <tr>
+                            <td>Radeon RX 6950 XT</td>
+                            <td>103.2</td>
+                            <td>£826 <a href="https://www.amazon.co.uk/MSI-Radeon-GAMING-Gaming-Graphics/dp/B09YHXFD19/ref=sr_1_4?ascsubtag=tomshardware-gb-5942955504867706000-20&geniuslink=true&keywords=Radeon+RX+6950+XT&qid=1707619856&sr=8-4&ufe=app_do%3Aamzn1.fos.d7e5a2de-8759-4da3-993c-d11b6e3d217f" target="_blank">(MSI RX 6950 XT Gaming X Trio)</a></td>
+                            <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DRadeon%2BRX%2B6950%2BXT%26rh%3Dn%253A284822%252Cp_n_condition-type%253A2224371011%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-5942955504867706000-20" target="_blank">Amazon</a> | <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-7325016693854133000&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%25201100858365%2520601403917%26Order%3D1" target="_blank">Newegg</a></td>
+                        </tr>
+                        <tr>
+                            <td>Radeon RX 6900 XT</td>
+                            <td>98.3</td>
+                            <td>$549 <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-1160853237650945000&murl=https%3A%2F%2Fwww.newegg.com%2Fasrock-radeon-rx-6800-xt-rx6900xt-pgd-16g%2Fp%2FN82E16814930052" target="_blank">(ASRock RX 6900 XT PHANTOM GAMING D)</a></td>
+                            <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DRadeon%2BRX%2B6900%2BXT%26rh%3Dn%253A284822%252Cp_n_condition-type%253A2224371011%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-1203904049747942000-20" target="_blank">Amazon</a> | <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-1554077362076373200&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%25201100858365%2520601359957%26Order%3D1" target="_blank">Newegg</a></td>
+                        </tr>
+                        <tr>
+                            <td>Radeon RX 6800 XT</td>
+                            <td>92.6</td>
+                            <td>$489 <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-3635409776473768000&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16814930049" target="_blank">(ASRock RX 6800 XT Phantom Gaming OC)</a></td>
+                            <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DRadeon%2BRX%2B6800%2BXT%26rh%3Dn%253A284822%252Cp_n_condition-type%253A2224371011%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-9229925548755778000-20" target="_blank">Amazon</a> | <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-1349281281231381200&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%25201100858365%2520601359422%26Order%3D1" target="_blank">Newegg</a></td>
+                        </tr>
+                        <tr>
+                            <td>Radeon RX 6800</td>
+                            <td>81.3</td>
+                            <td>$439 <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-6790001326319847000&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16814137732" target="_blank">(MSI RX 6800 Gaming Z Trio)</a></td>
+                            <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DRadeon%2BRX%2B6800%26rh%3Dn%253A284822%252Cp_n_condition-type%253A2224371011%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-9725740314803696000-20" target="_blank">Amazon</a> | <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-1090916620402138900&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%25201100858365%2520601359427%26Order%3D1" target="_blank">Newegg</a></td>
+                        </tr>
+                        <tr>
+                            <td>Radeon RX 6750 XT</td>
+                            <td>70.1</td>
+                            <td>$359 <a href="https://www.newegg.com/xfx-radeon-rx-6750-xt-rx-675xyjfde/p/N82E16814150887?Item=N82E16814150887" target="_blank">(XFX SpeedSter RX 6750 XT)</a></td>
+                            <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DRadeon%2BRX%2B6750%2BXT%26rh%3Dn%253A284822%252Cp_n_condition-type%253A2224371011%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-7180592037430369000-20" target="_blank">Amazon</a> | <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-1927250418289929000&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%25201100858365%2520601403422%26Order%3D1" target="_blank">Newegg</a></td>
+                        </tr>
+                        <tr>
+                            <td>Radeon RX 6700 XT</td>
+                            <td>65.9</td>
+                            <td>$339 <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-7086453069138040000&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16814930059" target="_blank">(ASRock RX 6700 XT Challenger D)</a></td>
+                            <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DRadeon%2BRX%2B6700%2BXT%26rh%3Dn%253A284822%252Cp_n_condition-type%253A2224371011%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-1790619941325935000-20" target="_blank">Amazon</a> | <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-3172629737393850000&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%25201100858365%2520601362404%26Order%3D1" target="_blank">Newegg</a></td>
+                        </tr>
+                        <tr>
+                            <td>Radeon RX 6650 XT</td>
+                            <td>52.7</td>
+                            <td>$254 <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-1026951051803542800&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16814930070" target="_blank">(ASRock RX 6650 XT Challenger D)</a></td>
+                            <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DRadeon%2BRX%2B6650%2BXT%26rh%3Dn%253A284822%252Cp_n_condition-type%253A2224371011%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-8425951866692878000-20" target="_blank">Amazon</a> | <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-3191258194162272000&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%25201100858365%2520601403620%26Order%3D1" target="_blank">Newegg</a></td>
+                        </tr>
+                        <tr>
+                            <td>Radeon RX 6600 XT</td>
+                            <td>50.8</td>
+                            <td>£234 <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-5219771129004839000&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16814930064" target="_blank">(ASRock RX 6600 XT Phantom Gaming D)</a></td>
+                            <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DRadeon%2BRX%2B6600%2BXT%26rh%3Dn%253A284822%252Cp_n_condition-type%253A2224371011%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-2490201695588148700-20" target="_blank">Amazon</a> | <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-1131146270421533800&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%25201100858365%2520601388251%26Order%3D1" target="_blank">Newegg</a></td>
+                        </tr>
+                        <tr>
+                            <td>Radeon RX 6600</td>
+                            <td>42.5</td>
+                            <td>$199 <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-1521772849043702000&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16814930066" target="_blank">(ASRock RX 6600 Challenger D)</a></td>
+                            <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DRadeon%2BRX%2B6600%26rh%3Dn%253A284822%252Cp_n_condition-type%253A2224371011%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-1118230638001378600-20" target="_blank">Amazon</a> | <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-1305454893931501300&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%25201100858365%2520601394871%26Order%3D1" target="_blank">Newegg</a></td>
+                        </tr>
+                        <tr>
+                            <td>Radeon RX 6500 XT</td>
+                            <td>25.1</td>
+                            <td>£174 <a href="(ASRock RX 6500 XT Challenger ITX)" target="_blank">(ASRock RX 6500 XT Challenger ITX)</a></td>
+                            <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DRadeon%2BRX%2B6500%2BXT%26rh%3Dn%253A284822%252Cp_n_condition-type%253A2224371011%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-1313415519902990800-20" target="_blank">Amazon</a> | <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-1383143068148513800&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%25201100858365%2520601399313%26Order%3D1" target="_blank">Newegg</a></td>
+                        </tr>
+                        <tr>
+                            <td>Radeon RX 6400</td>
+                            <td>15.8</td>
+                            <td>£156 <a href="(PowerColor RX 6400 ITX)" target="_blank">(PowerColor RX 6400 ITX)</a></td>
+                            <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DRadeon%2BRX%2B6400%26rh%3Dn%253A284822%252Cp_n_condition-type%253A2224371011%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-6737933355802202000-20" target="_blank">Amazon</a> | <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-1047956990543026400&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%25201100858365%2520601401722%26Order%3D1" target="_blank">Newegg</a></td>
+                        </tr>
+                    </table>
+                </div>
                 <p>AMD often offers more value for your money, and it has some excellent deals in the budget to midrange bracket. The RX 6600 dipped as low as $189 on Black Friday, and the cheapest we're seeing is now $199. The RX 6650 XT at $259 is a good value as well if you can spend more. </p>
                 <p>All of AMD's GPUs are selling below their original MSRPs these days, which they should be considering some of the GPUs are two years old. Of course, some of those MSRPs were inflated thanks to the GPU shortages of the past two years.</p>
                 <p>There's also the Radeon RX 7900-series to contend with, priced at $899 and $999 and potentially delivering up to 50% more performance than the RX 6950 XT. That's pushing prices down on the older GPUs, which is what we'd expect, whereas Nvidia prices have shot up to "leave room" for the 30-series.</p>
             </div>
             <div class="col mt-5">
+                <!--INTEL GPUs-->
                 <h2 class="text-bg-dark text-center" id="bestintelgpu">Best Intel Graphics Card Prices</h2>
-                <table class="mb-3">
-                    <tr>
-                        <th>GPU</th>
-                        <th>Performance</th>
-                        <th>Best Price</th>
-                        <th>Get Latest Price</th>
-                    </tr>
-                    <tr>
-                        <td>Intel Arc A770 16GB</td>
-                        <td>56.3</td>
-                        <td>$329 <a href="https://go.redirectingat.com/?id=92X1584492&xcust=tomshardware_gb_3178814240793178000&xs=1&url=https%3A%2F%2Fwww.bhphotovideo.com%2Fc%2Fproduct%2F1738741-REG%2F&sref=https%3A%2F%2Fwww.tomshardware.com%2Fnews%2Fbest-graphics-card-deals-now%23section-graphics-card-deals-quick-links" target="_blank">(Intel Arc A770 Limited Edition)</a></td>
-                        <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DIntel%2BArc%2BA770%2B16GB%26rh%3Dn%253A284822%252Cp_n_condition-type%253A2224371011%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-8753978843771342000-20" target="_blank">Amazon</a> | <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-9529775942225388000&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%25201100858365%2520601406707%26Order%3D1" target="_blank">Newegg</a></td>
-                    </tr>
-                    <tr>
-                        <td>Intel Arc A770 8GB</td>
-                        <td>54.1</td>
-                        <td>$239 <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-1171010377244410000&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16814930077" target="">(ASRock Arc A770 8GB Phantom Gaming)</a></td>
-                        <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DIntel%2BArc%2BA770%2B8GB%26rh%3Dn%253A284822%252Cp_n_condition-type%253A2224371011%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-2393253218138282500-20" target="_blank">Amazon</a> | <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-9529775942225388000&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%25201100858365%2520601406707%26Order%3D1" target="_blank">Newegg</a></td>
-                    </tr>
-                    <tr>
-                        <td>Intel Arc A750</td>
-                        <td>49.6</td>
-                        <td>$239 <a href="https://www.newegg.com/intel-arc-a750-21p02j00ba/p/N82E16814883002?ASID=https%3A%2F%2Fwww.tomshardware.com%2Fnews%2Fbest-graphics-card-deals-now&cm_mmc=afc-ran-com-_-Future%20Publishing%20Ltd&ranEAID=2294204&ranSiteID=kXQk6.ivFEQ-7xGbs7SwO5JdRRGcpU.cfw&ranMID=44583&nm_mc=AFC-RAN-COM&AFFID=2294204&ASUBID=tomshardware-gb-7564808305362855000&utm_source=afc-Future%20Publishing%20Ltd&utm_medium=affiliate&ACRID=1&utm_campaign=afc-ran-com-_-Future%20Publishing%20Ltd&AFFNAME=Future%20Publishing%20Ltd" target="_blank">(Intel Arc A750 Limited Edition)</a></td>
-                        <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DIntel%2BArc%2BA750%26rh%3Dn%253A284822%252Cp_n_condition-type%253A2224371011%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-7816693302372874000-20" target="_blank">Amazon</a> | <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-6695547254006778000&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%25201100858365%2520601406710%26Order%3D1" target="_blank">Newegg</a></td>
-                    </tr>
-                    <tr>
-                        <td>Intel Arc A380</td>
-                        <td>21.3</td>
-                        <td>$119 <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-3437174485654081500&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16814930076" target="_blank">(ASRock Arc A380 Challenger)</a></td>
-                        <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DIntel%2BArc%2BA380%26rh%3Dn%253A284822%252Cp_n_condition-type%253A2224371011%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-1057153506423836300-20" target="_blank">Amazon</a> | <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-1047956990543026400&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%25201100858365%2520601401722%26Order%3D1" target="_blank">Newegg</a></td>
-                    </tr>
-                </table>
+                <div class="table-responsive">
+                    <table class="mb-3">
+                        <tr>
+                            <th>GPU</th>
+                            <th>Performance</th>
+                            <th>Best Price</th>
+                            <th>Get Latest Price</th>
+                        </tr>
+                        <tr>
+                            <td>Intel Arc A770 16GB</td>
+                            <td>56.3</td>
+                            <td>$329 <a href="https://go.redirectingat.com/?id=92X1584492&xcust=tomshardware_gb_3178814240793178000&xs=1&url=https%3A%2F%2Fwww.bhphotovideo.com%2Fc%2Fproduct%2F1738741-REG%2F&sref=https%3A%2F%2Fwww.tomshardware.com%2Fnews%2Fbest-graphics-card-deals-now%23section-graphics-card-deals-quick-links" target="_blank">(Intel Arc A770 Limited Edition)</a></td>
+                            <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DIntel%2BArc%2BA770%2B16GB%26rh%3Dn%253A284822%252Cp_n_condition-type%253A2224371011%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-8753978843771342000-20" target="_blank">Amazon</a> | <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-9529775942225388000&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%25201100858365%2520601406707%26Order%3D1" target="_blank">Newegg</a></td>
+                        </tr>
+                        <tr>
+                            <td>Intel Arc A770 8GB</td>
+                            <td>54.1</td>
+                            <td>$239 <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-1171010377244410000&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16814930077" target="">(ASRock Arc A770 8GB Phantom Gaming)</a></td>
+                            <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DIntel%2BArc%2BA770%2B8GB%26rh%3Dn%253A284822%252Cp_n_condition-type%253A2224371011%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-2393253218138282500-20" target="_blank">Amazon</a> | <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-9529775942225388000&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%25201100858365%2520601406707%26Order%3D1" target="_blank">Newegg</a></td>
+                        </tr>
+                        <tr>
+                            <td>Intel Arc A750</td>
+                            <td>49.6</td>
+                            <td>$239 <a href="https://www.newegg.com/intel-arc-a750-21p02j00ba/p/N82E16814883002?ASID=https%3A%2F%2Fwww.tomshardware.com%2Fnews%2Fbest-graphics-card-deals-now&cm_mmc=afc-ran-com-_-Future%20Publishing%20Ltd&ranEAID=2294204&ranSiteID=kXQk6.ivFEQ-7xGbs7SwO5JdRRGcpU.cfw&ranMID=44583&nm_mc=AFC-RAN-COM&AFFID=2294204&ASUBID=tomshardware-gb-7564808305362855000&utm_source=afc-Future%20Publishing%20Ltd&utm_medium=affiliate&ACRID=1&utm_campaign=afc-ran-com-_-Future%20Publishing%20Ltd&AFFNAME=Future%20Publishing%20Ltd" target="_blank">(Intel Arc A750 Limited Edition)</a></td>
+                            <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DIntel%2BArc%2BA750%26rh%3Dn%253A284822%252Cp_n_condition-type%253A2224371011%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-7816693302372874000-20" target="_blank">Amazon</a> | <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-6695547254006778000&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%25201100858365%2520601406710%26Order%3D1" target="_blank">Newegg</a></td>
+                        </tr>
+                        <tr>
+                            <td>Intel Arc A380</td>
+                            <td>21.3</td>
+                            <td>$119 <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-3437174485654081500&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2FN82E16814930076" target="_blank">(ASRock Arc A380 Challenger)</a></td>
+                            <td><a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fs%3Fk%3DIntel%2BArc%2BA380%26rh%3Dn%253A284822%252Cp_n_condition-type%253A2224371011%26tag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-1057153506423836300-20" target="_blank">Amazon</a> | <a href="https://click.linksynergy.com/deeplink?id=kXQk6%2AivFEQ&mid=44583&u1=tomshardware-gb-1047956990543026400&murl=https%3A%2F%2Fwww.newegg.com%2Fp%2Fpl%3FN%3D100007709%25204814%25201100858365%2520601401722%26Order%3D1" target="_blank">Newegg</a></td>
+                        </tr>
+                    </table>
+                </div>
                 <p>Like Nvidia, there aren't really many official "deals" as such on Intel's Arc GPUs. At least the Arc A770, A750, and A380 are all available for purchase, including the ASRock A770 8GB. MSRPs also dropped on some of those (the A750 and A770 8GB) to make the parts more competitive.</p>
                 <p> Performance from Arc GPUs continues to improve, with the A750 and A770 generally beating Nvidia's RTX 3060. They cost less than the Nvidia card as well, and (usually) deliver superior ray tracing performance compared to AMD's GPUs. But with rasterization performance roughly matching the RX 6650 XT, the Arc 700-series at best looks like a tie with its AMD competition.</p>
             </div>
         </div>
+        <!--BEST GRAPHICS CARDS DEAL OVERALL-->
         <div class="row">
-            <h2 class="text-bg-dark text-center" id="gpudeals">Best Graphics Card Deals</h2>
-            <div class="col-6 mt-5">
-                <img alt="RX 6700 XT" src="./img/bestdealsgpu1.jpg">
+            <div class="col-12">
+                <h2 class="text-bg-dark text-center" id="gpudeals">Best Graphics Card Deals</h2>
             </div>
-            <div class="col-6">
-                <p class="mt-5">PowerColor RX 6700 XT Fighter: <a href="https://target.georiot.com/Proxy.ashx?tsid=45723&GR_URL=https%3A%2F%2Famazon.com%2Fdp%2FB08Y91QVG8%3Ftag%3Dhawk-future-20%26ascsubtag%3Dtomshardware-gb-4385082903250359300-20" target="_blank">now $349 at Amazon</a> (was $369)</p>
-                <p> The RX 6700 XT represents one of the best GPU deals around right now. You also get 12GB of memory and 13 teraflops of compute, with performance that often beats the RTX 3060 Ti, never mind the new RTX 4060. </p>
+            <div class="col-lg-3 mt-5">
+                <img alt="RX 6800 XT" src="./img/bestdeals/bestdealsgpu1.jpg">
+            </div>
+            <div class="col-lg-9">
+                <p class="mt-5">ASRock RX 6800 XT Phantom Gaming OC: <a href="https://www.newegg.com/asrock-radeon-rx-6800-xt-rx6800xt-pgd-16go/p/N82E16814930049?AFFID=2974604&nm_mc=AFC-RAN-COM&AFFNAME=Future%20APAC%20-%20All%20Sites&ACRID=1&ASUBID=tomshardware-gb-9761894578832933000&ASID=https%3A%2F%2Fwww.tomshardware.com%2Fnews%2Fbest-graphics-card-deals-now&ranEAID=2974604&ranSiteID=HlvbvYZP82I-aZLLTtLkUNCD6xTcv52k.A&utm_medium=affiliate&cm_mmc=afc-ran-com-_-Future%20APAC%20-%20All%20Sites&utm_campaign=afc-ran-com-_-Future%20APAC%20-%20All%20Sites&utm_source=afc-Future%20APAC%20-%20All%20Sites&ranMID=44583" target="_blank">now $499 at Newegg</a> (was $579)</p>
+                <p> This card has 16GB of GDDR6 RAM and it comes with a free game bundle. It's 90% of the performance of the 6950 XT at 87% of the cost. </p>
                 <div class="btnwrapper">
-                    <a href="https://www.amazon.co.uk/dp/B08Y91QVG8?tag=georiot-trd-21&ascsubtag=tomshardware-gb-4032316992981113300-20&geniuslink=true" target="_blank" class="btn btn-dark ms-auto dealbuttons">View Deal</a>
+                    <a href="https://www.newegg.com/asrock-radeon-rx-6800-xt-rx6800xt-pgd-16go/p/N82E16814930049?AFFID=2974604&nm_mc=AFC-RAN-COM&AFFNAME=Future%20APAC%20-%20All%20Sites&ACRID=1&ASUBID=tomshardware-gb-9761894578832933000&ASID=https%3A%2F%2Fwww.tomshardware.com%2Fnews%2Fbest-graphics-card-deals-now&ranEAID=2974604&ranSiteID=HlvbvYZP82I-aZLLTtLkUNCD6xTcv52k.A&utm_medium=affiliate&cm_mmc=afc-ran-com-_-Future%20APAC%20-%20All%20Sites&utm_campaign=afc-ran-com-_-Future%20APAC%20-%20All%20Sites&utm_source=afc-Future%20APAC%20-%20All%20Sites&ranMID=44583&recaptcha=pass" target="_blank" class="btn btn-dark ms-auto dealbuttons">View Deal</a>
+                </div>
+            </div>
+            <hr>
+            <div class="col-lg-3 mt-5">
+                <img alt="RX 7900 XTX" src="./img/bestdeals/bestdealsgpu2.jpg">
+            </div>
+            <div class="col-lg-9">
+                <p class="mt-5"><strong>Gigabyte Radeon RX 7900 XTX Gaming OC:</strong> <a href="https://www.amazon.co.uk/dp/B0BRBXF3MW?tag=georiot-trd-21&ascsubtag=tomshardware-gb-7110771742038714000-20&geniuslink=true" target="_blank">now $999 at Amazon</a> (was $1,039)</p>
+                <p> The RX 7900 XTX is the current top-of-the-line GPU from AMD, with an ample 24GB of GDDR6 VRAM and a speedy 384-bit memory interface for high bandwidth. The RX 7900 XTX runs at a typical clock speed of 2330MHz and has the ability to boost to 2525MHz. See our review of the RX 7900 XTX for more information.  </p>
+                <div class="btnwrapper">
+                    <a href="https://www.amazon.co.uk/dp/B0BRBXF3MW?tag=georiot-trd-21&ascsubtag=tomshardware-gb-3874306605350715000-20&geniuslink=true" target="_blank" class="btn btn-dark ms-auto dealbuttons">View Deal</a>
+                </div>
+            </div>
+        </div>
+        <!--WHAT TO LOOK FOR CONTENT-->
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-bg-dark text-center mt-3" id="gpudeals">What to Look for in a Graphics Card Deal</h2>
+                <p>When shopping for a graphics card, consider the following. </p>
+                <!--Adding icons from w3 website https://www.w3schools.com/w3css/w3css_icons.asp-->
+                <ul class="w3-ul">
+                    <li class="w3-xlarge"><i class="fa fa-search w3-xlarge"></i><strong> What resolution, settings do you want to play at?</strong> A low-end budget graphics card can play games at 1080p in medium settings, but if you want to play at ultra settings, you'll need to get at least a mid-range card. As you move up the stack of cards, you can play at 2K resolution and higher settings or, with the priciest cards, 4K.</li>
+                    <li class="w3-xlarge"><i class="fa fa-search w3-xlarge"></i> <strong> How many fps do you consider smooth?</strong> Most people consider 30 fps the bare minimum for playability and 60 fps decent. However, if you want less lag for eSports gaming, you'll want to be able to go to over 100 fps at reasonable settings. See our GPU benchmark hierarchy to find out how each GPU fares. </li>
+                    <li class="w3-xlarge"><i class="fa fa-search w3-xlarge"></i> <strong>Do you have enough power?</strong> Make sure that you have enough capacity from your power supply to support the card. If you're not sure, use a tool such as Newegg's power supply calculator to see how much you need. If your power supply can't handle the card, either get a new PSU or a different card. </li>
+                    <li class="w3-xlarge"><i class="fa fa-search w3-xlarge"></i> <strong>Will it fit in your case?</strong> If you've got a small PC case, make sure you check the length of the card against the case's clearance numbers.</li>
+                </ul>
+            </div>
+            <div class="col-12 formwrapper">
+                <h2 class="mt-3">Stay on the Cutting Edge</h2>
+                <p>Join the experts who read Tom's Hardware for the inside track on enthusiast PC tech news — and have for over 25 years. We'll send breaking news and in-depth reviews of CPUs, GPUs, AI, maker hardware and more straight to your inbox.</p>
+                <div class="formcontainer">
+                    <!--Used BOOTSTRAP form to create partial of this form-->
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Contact me with news and offers from other Future brands</label>
+                        </div>
+                        <button type="submit" class="btn btn-dark ms-auto dealbuttons">SIGN ME UP</button>
+                        <p class="mt-3">By submitting your information you agree to the Terms & Conditions and Privacy Policy and are aged 16 or over.</p>
+                    </form>
                 </div>
             </div>
         </div>

@@ -18,10 +18,10 @@
     <title>GPUs Guru</title>
   </head>
   <body>
-    <div class="container"  id="home">
+    <div class="container">
 
         <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-lg p-2 border-bottom border-body" id="navBarBG">
+        <nav class="navbar navbar-expand-lg p-2 border-bottom border-body">
             <div class="container-fluid">
                 <ul class="nav nav-tabs">
                     <li class="nav-item">
@@ -31,7 +31,7 @@
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle activeScript" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Tutorials & more</a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Build tutorials</a></li>
+                        <li><a class="dropdown-item" href="buildtutorial.html">Build tutorials</a></li>
                         <li><a class="dropdown-item" href="./topcards.html">GPUs</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="./bestdeals.html">Best Deals</a></li>
@@ -55,10 +55,7 @@
         <div class="container my-5">
             <div class="row top3cards">
                 <div class="col-sm">
-                    <img src="./Img/pdx.jpg" class="img-fluid" alt="">
-
-
-
+                    <img src="./Img/index/pdx.jpg" class="img-fluid" alt="">
                 </div>
                 <div class="col-sm">
                 
@@ -85,16 +82,16 @@
                 </div>
             </div>
         </div>
-
-        
-
             <!-- CREATE ACCOUNT SECTION -->
             <div class="jumbotron bg-light p-5 text-center">
               <h1 class="display-4 text-center">Graphics Card Deals!</h1>
-              <p class="lead text-center">Check out our monthly deals...</p>
+              <p class="lead text-center">Check out our monthly deals as we are covering dozens of GPU prices. Find out what is the best GPU for you.</p>
+
+              <a href="./bestdeals.html" class="btn btn-primary ms-auto dealbuttons">Go to Deals</a>
+
               <hr class="my-4">
               <p class="text-center">Create an account with us to be able to see our monthly deals for top Graphics Cards!</p>
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 Create an account!
               </button>
             </div>
@@ -102,10 +99,10 @@
             <!-- MODAL -->
               <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg">
-                  <div class="modal-content">
+                  <div class="modal-content" id="modalJS">
                     <div class="modal-header">
                       <h5 class="modal-title" id="staticBackdropLabel">Fill in the details to create an account</h5>
-                      <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true"></span>
                       </button>
                     </div>
@@ -119,7 +116,7 @@
                         <label for="floatingInput">Last Name</label>
                       </div>
                       <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@example.com">
                         <label for="floatingInput">Email address</label>
                       </div>
                       <div class="form-floating">
@@ -128,14 +125,22 @@
                       </div>
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Create account</button>
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="submit" class="btn btn-primary" onclick="accountSubmit()">Create account</button>
                     </div>
                   </div>
                 </div>
               </div>
             <!-- END MODAL -->
-          
+            <!-- Build a PC Tutorial short -->
+            <div class="card border-0 mt-3">              
+              <div class="card-body">
+                <h4 class="card-title">Build a PC from scratch!</h4>
+                <p class="card-text">Have you ever wondered how can you build a PC? Have you ever thought you are unable to do it out of fear to not break something? Do not worry, our step by step guide will support you in building your very first PC, all by yourself.</p>
+                <p>You still need to prepare before starting out, all this is covered in our step by step guide.</p>
+                <a href="./buildtutorial.html" class="btn btn-primary">Go to Guide</a>
+              </div>
+            </div>  
           
             <!-- Stock Newsletter -->
           <div class="text-center" id="stock">

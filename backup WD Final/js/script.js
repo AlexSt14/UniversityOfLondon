@@ -1,20 +1,5 @@
 
 window.onload = function() {
-    //Accesing JSON file for website PC Parts database
-    var pcParts = [];
-
-    fetch("../db/video-card.json")
-        .then(response => response.json())
-        .then(data => {
-            assignJSON(data);
-        })
-    
-    function assignJSON(data) {
-        pcParts = data;
-        console.log(pcParts[0], "here it is");
-    }
-
-
     //Script changing the active class to the navbar where the user clicks
     var a = document.getElementsByClassName("activeScript");
 
@@ -55,8 +40,20 @@ window.onload = function() {
     }
     //END script
     
-     
+    //Small script to change navbar class for mobile users by adding a class
+    //Changing the width dynamically depending on the width 
+    var navbar = document.getElementsByClassName("nav-tabs");
+    window.addEventListener("resize", () => {
+        if (window.innerWidth < 500) {
+            navbar[0].classList.add("flex-column");
+        }
+        else {
+            navbar[0].classList.remove("flex-column");
+        }
+    })
+    
 };
+
 
 //Slideshow script for TopGPU page THE 1440p SLIDESHOW
 let slideIndex = 1;
@@ -116,4 +113,16 @@ function showSlides4k(n) {
     }
     slides[slideIndex4k-1].style.display = "block";
     dots[slideIndex4k-1].className += " activee";
+}
+
+//Index page form submission
+//This is obviously imitating a real world scenario as I am not connected to a database
+//Made it like this to make it more believable
+function accountSubmit() {
+    let indexForm = document.getElementById("modalJS");
+    if (indexForm.childNodes[1].innerHTML === "<h5>Your account has been successfully created</h5>") {
+        alert("You have already created an account.");
+    }
+    indexForm.childNodes[1].innerHTML = "<h5>Your account has been successfully created</h5>";
+    indexForm.childNodes[3].innerHTML = "<p>You will receive details on your email on how to proceed. You can close this window.</p>";
 }
