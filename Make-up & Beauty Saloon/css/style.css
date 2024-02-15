@@ -1,0 +1,115 @@
+/* HOME SECTION */
+/* Navbar Styling */
+.navbar-elements .navbar-items, .navbar-items a {
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    margin: 10px;
+    color:rgb(156, 156, 156);
+    transition: transform 0.3s ease, color 0.3s ease;
+    position: relative;
+    left: 150px;
+}
+.navbar-items a:hover, .carousel-interactivity i:hover {
+    transform: scale(1.1);
+    color: black;
+}
+.navbar-elements {
+    margin: 0;
+    padding: 0;
+}
+.logo {
+    text-decoration: none;
+    list-style: none;
+    position: relative;
+    left: 170px;
+}
+
+/* Carousel Section */
+.carousel-wrapper {
+    margin-top: 0;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: red;
+    position: relative;
+    margin-bottom: 50px;
+}
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    width: auto;
+    padding: 10px;
+    color: black;
+    transition: 0.6s ease, transform 0.3s ease;
+    border-radius: 0 5px 5px 0;
+    user-select: none;
+    display: block;
+    margin-top: -22px;
+}
+.next {
+    right: 0;
+    border-radius: 5px 0 0 5px;
+}
+.prev:hover, .next:hover {
+    transform: scale(1.1);
+}
+.my-slides {
+    display: none;
+    position: relative;
+}
+.fadee {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.carousel-button {
+    width: 110px;
+} 
+.carousel-interactivity {
+    position: absolute;
+    right: 50px;
+    max-width: 200px;
+    margin-top: -175px;
+}
+.carousel-interactivity ul {
+    list-style: none;
+    display: flex;
+}
+.carousel-interactivity i {
+    margin-left: -20px;
+    margin-right: 40px;
+    color: black;
+    transition: transform 0.4 ease;
+}
+/* Services Section Homepage */
+.services-image-container {
+    padding: 90px;
+    display: flex;
+    justify-content: center;
+    color: rgb(228, 228, 228);
+    margin-bottom: 10px;
+}
+.services-image-container img {
+    padding-right: 70px;
+}
+.services-image-container {
+    text-align: center;
+}
+.image-container p, .image-container h5 {
+    max-width: 470px;
+    margin-left: -10px;
+}
+.services-image {
+    transition: filter 0.5s ease;
+}
+.image-container:hover .services-image {
+    filter: opacity(50%);
+}
+.services-section-button {
+    position: absolute;
+    margin-top: -60px;
+}
+.services-section-button:hover {
+    color: ;
+}
