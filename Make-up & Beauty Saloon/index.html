@@ -1,3 +1,5 @@
+<!--I have used Bootstrap for this project which makes it easier to create the layout of the website-->
+<!--While also maintaining a mobile first development-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
     <title>Natural Beauty</title>
 </head>
 <body>
@@ -41,19 +44,28 @@
     </div>
     <!--END NAVBAR-->
     <!--Carousel Section-->
+    <!--I have taken the bootstrap carousel structure and modified it to work with my JavaScript-->
+    <!--https://getbootstrap.com/docs/5.3/components/carousel/-->
     <div class="container-fuild carousel-wrapper">
         <div class="row">
             <div class="col-lg-12">
-                <div class="image-container my-slides fadee">
-                    <img class="img-fluid" alt="Make-up Picture 1" src="./assets/images/logo.PNG">
-                </div>
-                <div class="image-container my-slides fadee">
-                    <img src="./assets/images/makeup1.jpg" alt="Make-up Picture 2" class="img-fluid" width="300" height="300">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active my-slides fadee">
+                            <img src="./assets/images/logo.PNG" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item my-slides fadee">
+                            <img src="./assets/images/makeup1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item my-slides fadee">
+                            <img src="..." class="d-block w-100" alt="...">
+                        </div>
+                    </div>
                 </div>
                 <a class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-arrow-left fa-2x"></i></a>
                 <a class="next" onclick="plusSlides(1)"><i class="fa-solid fa-arrow-right fa-2x"></i></a>
                 <div class="carousel-interactivity">
-                    <h3 class="carousel-text">Are You Ready for a New & Better You?</h3>
+                    <h1 class="carousel-text">Are You Ready for a New & Better You?</h1>
                     <a href="#" class="btn btn-dark carousel-button">Contact Me</a>
                     <ul>
                         <a target="_blank" href="https://www.facebook.com/profile.php?id=100090452953234"><li><i class="fa-brands fa-facebook-f"></i></li></a>
@@ -64,33 +76,224 @@
             </div>
         </div>
     </div>
+    <!--END CAROUSEL-->
+    <!--Services Section-->
     <div class="container-fuild bg-dark">
         <div class="row">
             <div class="col-lg-12">
                 <div class="services-image-container">
-                    <div class="image-container">
-                        <img src="./assets/images/logo.PNG" alt="" class="img-fluid services-image">
-                        <h5 class="mt-3 mb-3">Everyday Make-Up</h5>
-                        <p>Unlock your natural glow! Everyday makeup by our experts enhances your features for a fresh, confident you.</p>
-                    </div>
-                    <div class="image-container">
-                        <img src="./assets/images/logo.PNG" alt="" class="img-fluid services-image">
-                        <h5 class="mt-3 mb-3">Bridal Make-Up</h5>
-                        <p>Radiate on your special day! Our bridal makeup artists create a timeless look that reflects your unique beauty and captures the magic of your love story.</p>
-                    </div>
-                    <div class="image-container">
-                        <img src="./assets/images/logo.PNG" alt="" class="img-fluid services-image">
-                        <h5 class="mt-3 mb-3">Henna Eyebrows</h5>
-                        <p>Frame your eyes flawlessly! Henna brows by our skilled artists define and enhance your natural beauty with a long-lasting, subtle tint.</p>
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card h-100 bg-dark image-container">
+                                <img src="./assets/images/logo.PNG" alt="" class="card-img-top services-image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Everyday Make-Up</h5>
+                                    <p class="card-text">Unlock your natural glow! Everyday makeup by our experts enhances your features for a fresh, confident you.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 bg-dark image-container">
+                                <img src="./assets/images/logo.PNG" class="card-img-top services-image" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bridal Make-Up</h5>
+                                    <p class="card-text">Radiate on your special day! Our bridal makeup artists create a timeless look that reflects your unique beauty and captures the magic of your love story.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 bg-dark image-container">
+                                <img src="./assets/images/logo.PNG" class="card-img-top services-image" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Henna Eyebrows</h5>
+                                    <p class="card-text">Frame your eyes flawlessly! Henna brows by our skilled artists define and enhance your natural beauty with a long-lasting, subtle tint.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-12">
-                    <a href="#" class="btn bg-dark-subtle services-section-button end-50">Services</a>
+                <div class="col-lg-12 btn-col">
+                    <a href="#" class="btn btn-secondary services-section-button end-50">Services</a>
                 </div>
             </div>
         </div>
     </div>
-
+    <div class="container-fuild popular-service-section">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="mb-5">Our Most Popular Service</h1>
+                <div class="card mb-3" style="max-width: 1440px;">
+                    <div class="row align-items-center g-0">
+                        <div class="col-md-8">
+                            <img src="./assets/images/index/popularservice.jpg" width="1200" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-body">
+                                <h2 class="card-title">Henna Eyebrows</h2>
+                                <p class="card-text">1 hr</p>
+                                <p class="card-text">£45</p>
+                                <a href="#" class="btn btn-dark carousel-button">Contact Me</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Testimonials Section including a slideshow of testimonials-->
+    <div class="container-fuild testimonials-section-wrapper">
+        <div class="testimonials-section">
+            <div class="row row-cols-1 row-cols-md-3 g-4 test-div">
+                <div class="col testimonial-first-col">
+                    <div class="card-body">
+                        <h1 class="card-title">The best Make-up Artist in town</h1>
+                    </div>
+                </div>
+                <div class="col testimonial-second-col">
+                    <div class="card h-100 bg-dark">
+                        <div class="card-body">
+                        </div>
+                    </div>
+                </div>
+                <div class="col testimonial-third-col">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="my-slides-testimonials">
+                                <p class="card-text">"Absolutely impressed by my everyday makeup artist! Their talent enhances natural beauty and creates flawless, long-lasting looks. My go-to for custom, glamorous yet understated styles that perfectly match my personal aesthetic. Simply the best."</p>
+                                <h2 class="card-title">Adelina</h2>
+                            </div>
+                            <div class="my-slides-testimonials">
+                                <p class="card-text">"Made me feel like the most beautiful bride for my special day! Skilled artistry accentuated my best features and created a timeless, glamorous look. Flawless, long-lasting makeup that captured the romance and magic of my wedding."</p>
+                                <h2 class="card-title">Rose</h2>
+                            </div>
+                            <div class="my-slides-testimonials">
+                                <p class="card-text">"The artist framed my eyes flawlessly with gorgeous henna brows, defining and enhancing my natural features with subtle, beautiful tinting. Long-lasting results perfected my arch and shape. Highly recommend for gorgeous, undone brows!"</p>
+                                <h2 class="card-title">Sasha</h2>
+                            </div>
+                            <div style="text-align:center">
+                                <span class="dot" onclick="currentSlide(1)"></span>
+                                <span class="dot" onclick="currentSlide(2)"></span>
+                                <span class="dot" onclick="currentSlide(3)"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container looks-presentation">
+        <div class="row-cols-1">
+            <h4>#NaturalBeauty</h4>
+            <h1>Looks and Services</h1>
+        </div>
+    </div>
+    <div class="container-fuild looks-wrapper">
+        <div class="row row-cols-1 row-cols-md-4" data-masonry='{"percentPosition": true }'>
+            <div class="col-* px-0">
+                <div class="card h-100">
+                    <img src="./assets/images/index/showedimage1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">Everyday Make-Up</h3>
+                        <p class="card-text">Subtlety reigns supreme. Smoky shades play around the eyes, deepening towards the corners for a touch of mystique.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-* px-0">
+                <div class="card">
+                    <img src="./assets/images/index/showedimage2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">Everyday Make-Up</h3>
+                        <p class="card-text">Bold black liner takes center stage, fading into a hazy whisper of brown at the edges, creating a dreamy, diffused effect.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-* px-0">
+                <div class="card h-100">
+                    <img src="./assets/images/index/showedimage3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">Henna Eyebrows</h3>
+                        <p class="card-text">This isn't just coloring, it's sculpting — defining and enhancing, all part of the transformation in the making.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-* px-0">
+                <div class="card h-100">
+                    <img src="./assets/images/index/showedimage4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">Everyday Make-Up</h3>
+                        <p class="card-text">Delicate liner defines, while light fades to playful pink - a flirty gradient for the eyes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-* px-0">
+                <div class="card h-100">
+                    <img src="./assets/images/index/showedimage1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">Everyday Make-Up</h3>
+                        <p class="card-text">Subtlety reigns supreme. Smoky shades play around the eyes, deepening towards the corners for a touch of mystique.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-* px-0">
+                <div class="card">
+                    <img src="./assets/images/index/showedimage2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">Everyday Make-Up</h3>
+                        <p class="card-text">Bold black liner takes center stage, fading into a hazy whisper of brown at the edges, creating a dreamy, diffused effect.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-* px-0">
+                <div class="card h-100">
+                    <img src="./assets/images/index/showedimage3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">Henna Eyebrows</h3>
+                        <p class="card-text">This isn't just coloring, it's sculpting — defining and enhancing, all part of the transformation in the making.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-* px-0">
+                <div class="card h-100">
+                    <img src="./assets/images/index/showedimage4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">Everyday Make-Up</h3>
+                        <p class="card-text">Delicate liner defines, while light fades to playful pink - a flirty gradient for the eyes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fuild bg-dark footer-wrapper">
+        <div class="row row-cols-1 row-cols-md-4">
+            <div class="col">
+                <h1>Natural Beauty</h1>
+                <div class="footer-col1-end">
+                    <p>© 2024 by <a href="https://alexst14.github.io/portfolio/" target="_blank">Alex Sthali.</p></a>
+                </div>
+            </div>
+            <div class="col footer-address">
+                <p>15 Finch Drive</p>
+                <p>Buckshaw Village, PR7 7NL</p>
+                <p>st.raluca@yahoo.com</p>
+            </div>
+            <div class="col">
+                <ul id="footer-nav-buttons">
+                    <a href="./index.html" target="_blank"><li>Home</li></a>
+                    <a href="" target="_blank"><li>About</li></a>
+                    <a href="" target="_blank"><li>Services</li></a>
+                    <a href="" target="_blank"><li>Contact</li></a>
+                    <a href="" target="_blank"><li>Shop</li></a>
+                </ul>
+            </div>
+            <div class="col">
+                <ul>
+                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100090452953234"><li><i class="fa-brands fa-facebook-f"></i></li></a>
+                    <a target="_blank" href="https://www.instagram.com/raluca_sthali?igsh=dmZ4ODU0YjRzbHJ4"><li><i class="fa-brands fa-instagram"></i></li></a>
+                    <a target="_blank" href="#"><li><i class="fa-brands fa-twitter"></i></li></a>
+                </ul>
+            </div>>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/8a0d306f17.js" crossorigin="anonymous"></script>

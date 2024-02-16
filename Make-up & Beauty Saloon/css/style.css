@@ -29,9 +29,6 @@
 /* Carousel Section */
 .carousel-wrapper {
     margin-top: 0;
-    margin-left: 200px;
-    margin-right: 200px;
-    background-color: red;
     position: relative;
     margin-bottom: 50px;
 }
@@ -55,7 +52,7 @@
 .prev:hover, .next:hover {
     transform: scale(1.1);
 }
-.my-slides {
+.my-slides, .my-slides-testimonials {
     display: none;
     position: relative;
 }
@@ -70,7 +67,7 @@
     position: absolute;
     right: 50px;
     max-width: 200px;
-    margin-top: -175px;
+    top: 50%;
 }
 .carousel-interactivity ul {
     list-style: none;
@@ -87,11 +84,12 @@
     padding: 90px;
     display: flex;
     justify-content: center;
-    color: rgb(228, 228, 228);
     margin-bottom: 10px;
+    padding-bottom: 150px;
 }
-.services-image-container img {
-    padding-right: 70px;
+.services-image-container .card {
+    color: white;
+    border: none;
 }
 .services-image-container {
     text-align: center;
@@ -108,8 +106,178 @@
 }
 .services-section-button {
     position: absolute;
-    margin-top: -60px;
+    margin-top: -90px;
 }
-.services-section-button:hover {
-   
+/* Popular Service Section Homepage */
+.popular-service-section {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
 }
+.popular-service-section img {
+    transition: filter 0.5s ease;
+}
+.popular-service-section img:hover {
+    filter:sepia(50%);
+}
+/* Testimonials Section Homepage */
+.testimonials-section-wrapper {
+    background-color: rgba(255, 227, 227, 0.922);
+    padding: 100px;
+}
+.testimonial-first-col, .testimonial-third-col {
+    background-color: white;
+    height: 600px;
+}
+.testimonials-section-wrapper .card {
+    border: none;
+}
+.testimonials-section-wrapper .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.testimonial-second-col .card-body::before {
+    content: "“";
+    font-size: 220px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+}
+/* Testimonial slideshow */
+/* The dots/bullets */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+/* Looks Section with photos on Homepage */
+.looks-presentation {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.looks-wrapper .card {
+    position: relative;
+    align-items: center;
+}
+.looks-wrapper .card-body {
+    position: absolute;
+    top: 50%;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    display: none;
+}
+.looks-wrapper .card:hover .card-body {
+    display:block;
+}
+.looks-wrapper img {
+    transition: filter 0.3s ease;
+}
+.looks-wrapper .card:hover img {
+    filter: blur(3px) opacity(90%);
+}
+/* FOOTER SECTION */
+.footer-wrapper {
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 1.2em;
+}
+.footer-wrapper col {
+    position: relative;
+}
+.footer-wrapper .footer-col1-end {
+    padding-top: 100px;
+}
+.footer-wrapper ul {
+    list-style: none;
+}
+.footer-wrapper a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    transition: color 0.3s ease;
+}
+.footer-wrapper a:hover {
+    color: #717171;
+}
+.footer-address {
+    text-align: start;
+}
+
+@media only screen and (max-width: 600px) {
+    /*Main carousel homepage */
+    .carousel-image {
+        width: 300px;
+        height: 300px;
+    }
+    /* Testimonials section Homepage */
+    .testimonials-section-wrapper {
+        padding: 0;
+        margin: 0;
+    }
+    .testimonial-first-col, .testimonial-second-col, .testimonial-third-col {
+        height: 300px;
+        padding: 0;
+    }
+    .testimonials-section-wrapper {
+        background-color: white;
+    }
+    .testimonial-first-col {
+        background-color: rgba(255, 227, 227, 0.922);
+    }
+    .g-4 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+    /*Services section Homepage */
+    .services-image-container {
+        padding: 0;
+        padding-top: 20px;
+    }
+    .services-section-button {
+        position:initial;
+        margin: 0;
+    }
+    .btn-col {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    /* Looks section Homepage */
+    .looks-presentation {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    /* Footer */
+    #footer-nav-buttons {
+        display: none;
+    }
+    .footer-wrapper .footer-col1-end {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .footer-wrapper ul {
+        display: flex;
+        justify-content: center;
+        margin-left: -30px;
+    }
+    /* NEED TO RESOLVE THE LOOKS SECTION FOR MOBILE CLICKABLE ENLARGE IMAGES */
+
+  }
