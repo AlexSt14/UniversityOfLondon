@@ -38,30 +38,31 @@
     <div class="container d-flex justify-content-center text-center video-wrapper">
         <div class="card mb-3" style="max-width: 1340px;">
             <div class="row align-items-center g-0">
-                <div class="col-md-4">
-                    <div class="video-interactivity">
-                        <h1 class="carousel-text">Are You Ready for a New & Better You?</h1>
-                        <a href="#" class="btn btn-dark video-button">Contact Me</a>
-                        <ul>
-                            <a target="_blank" href="https://www.facebook.com/profile.php?id=100090452953234"><li><i class="fa-brands fa-facebook-f"></i></li></a>
-                            <a target="_blank" href="https://www.instagram.com/raluca_sthali?igsh=dmZ4ODU0YjRzbHJ4"><li><i class="fa-brands fa-instagram"></i></li></a>
-                            <a target="_blank" href="#"><li><i class="fa-brands fa-twitter"></i></li></a>
-                        </ul>
-                    </div>
-                </div>
                 <div class="col-md-8">
-                    <div class="card-body">
-                        <!--VIDEO section-->
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12 video-container">
-                                    <video class="img-fluid" autoplay muted loop>
-                                        <source src="./assets/videos/indexvideof.mp4" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                </div>
+                    <!--VIDEO section-->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 video-container">
+                                <video class="img-fluid" autoplay muted loop>
+                                    <source src="./assets/videos/indexvideof.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-body">
+                        <div class="video-interactivity">
+                            <h1 class="carousel-text">Are You Ready for a New & Better You?</h1>
+                            <a href="#" class="btn btn-dark video-button">Contact Me</a>
+                            <ul>
+                                <a target="_blank" href="https://www.facebook.com/profile.php?id=100090452953234"><li><i class="fa-brands fa-facebook-f"></i></li></a>
+                                <a target="_blank" href="https://www.instagram.com/raluca_sthali?igsh=dmZ4ODU0YjRzbHJ4"><li><i class="fa-brands fa-instagram"></i></li></a>
+                                <a target="_blank" href="#"><li><i class="fa-brands fa-twitter"></i></li></a>
+                            </ul>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -98,7 +99,7 @@
                                 <img src="./assets/images/index/servicehenna.jpg" class="card-img-top services-image" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Henna Eyebrows</h5>
-                                    <p class="card-text">Frame your eyes flawlessly! Henna brows by our skilled artists define and enhance your natural beauty with a long-lasting, subtle tint.</p>
+                                    <p class="card-text">Frame your eyes flawlessly! Henna brows by a skilled artist, define and enhance your natural beauty with a long-lasting, subtle tint.</p>
                                 </div>
                             </div>
                         </div>
@@ -110,11 +111,12 @@
             </div>
         </div>
     </div>
+    <!--POPULAR Service SECTION-->
     <div class="container-fuild popular-service-section">
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="mb-5">Our Most Popular Service</h1>
-                <div class="card mb-3" style="max-width: 1440px;">
+                <div class="card mb-3" style="max-width: 940px;">
                     <div class="row align-items-center g-0">
                         <div class="col-md-8">
                             <img src="./assets/images/index/popularservice.jpg" width="1200" class="img-fluid rounded-start" alt="...">
@@ -173,6 +175,8 @@
             </div>
         </div>
     </div>
+    <!--LOOKS Section-->
+    <!-- Here I am taking advantage of the Mansory CDN to have all my cards arranged dynamically-->
     <div class="container looks-presentation">
         <div class="row-cols-1">
             <h4>#NaturalBeauty</h4>
@@ -257,7 +261,7 @@
     </div>
     <div class="container-fuild bg-dark footer-wrapper">
         <div class="row row-cols-1 row-cols-md-4">
-            <div class="col">
+            <div class="col ps-4">
                 <h1>Natural Beauty</h1>
                 <div class="footer-col1-end">
                     <p>© 2024 by <a href="https://alexst14.github.io/portfolio/" target="_blank">Alex Sthali.</p></a>
@@ -268,7 +272,7 @@
                 <p>Buckshaw Village, PR7 7NL</p>
                 <p>st.raluca@yahoo.com</p>
             </div>
-            <div class="col">
+            <div class="col footer-sec-3">
                 <ul id="footer-nav-buttons">
                     <a href="./index.html" target="_blank"><li>Home</li></a>
                     <a href="" target="_blank"><li>About</li></a>
@@ -277,7 +281,7 @@
                     <a href="" target="_blank"><li>Shop</li></a>
                 </ul>
             </div>
-            <div class="col">
+            <div class="col footer-sec-4">
                 <ul>
                     <a target="_blank" href="https://www.facebook.com/profile.php?id=100090452953234"><li><i class="fa-brands fa-facebook-f"></i></li></a>
                     <a target="_blank" href="https://www.instagram.com/raluca_sthali?igsh=dmZ4ODU0YjRzbHJ4"><li><i class="fa-brands fa-instagram"></i></li></a>
@@ -289,6 +293,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/8a0d306f17.js" crossorigin="anonymous"></script>
+    <!--MASONRY CDN for using it on looks section Homepage and Portfolio page-->
     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
     <script src="./js/script.js"></script>
 </body>
