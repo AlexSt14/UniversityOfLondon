@@ -1,0 +1,135 @@
+<!--I have used Bootstrap for this project which makes it easier to create the layout of the website-->
+<!--While also maintaining a mobile first development-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <title>Natural Beauty</title>
+</head>
+<body>
+    <!--NAVBAR-->
+    <div class="container-fuild navbar-elements">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="./index.html"><img alt="logo" id="logoo" class="img-fluid" src="./assets/images/logo.PNG" width="150" height="100"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav navbar-items">
+                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                            <a class="nav-link" href="./about.html">About</a>
+                            <a class="nav-link active" href="./services.html">Services</a>
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                            <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!--END NAVBAR-->
+    <!--SERVICE SECTION-->
+    <div class="container services-wrapper">
+        <div class="row row-cols-1">
+            <div class="col">
+                <h1>Our Services</h1>
+                <div class="services-list">
+                    <ul>
+                        <li class="clicked">Make-Up</li>
+                        <li>Eyebrows</li>
+                    </ul>
+                </div>
+            </div>
+            <!--SERVICE DESCRIPTION CARDS-->
+            <div class="col services-description service-makeup active-service">
+                <div class="card mb-3" style="max-width: 840px;">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <video src="./assets/videos/services1.mp4" loop autoplay muted></video>
+                        </div>
+                        <div class="col-md-6 service-card-description">
+                            <div class="card-body">
+                                <h5 class="card-title">Everyday Make-Up</h5>
+                                <h6>£50</h6>
+                                <p class="card-text">I enhance natural beauty with perfectly blended makeup for any occasion - elegant for evenings out, subtle for daytime wear.</p>
+                                <h5 class="card-title">Bridal Make-Up</h5>
+                                <h6>Personalized quote</h6>
+                                <p class="card-text">I create stunning, flawless makeup looks for brides - from natural elegance to glamorous styles - to make you glow on your special day.</p>
+                                <a href="./contact.html" class="btn btn-dark video-button">Contact Me</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col services-description service-eyebrows nonactive-service">
+                <div class="card mb-3" style="max-width: 840px;">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <img src="./assets/images/services/services2.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-6 service-card-description">
+                            <div class="card-body">
+                                <h5 class="card-title">Henna Eyebrows</h5>
+                                <h6>£35</h6>
+                                <p class="card-text"> I can shape and define your brows with carefully painted henna to subtly enhance your features.</p>
+                                <h5 class="card-title">Eyebrow Shaping</h5>
+                                <h6>£10</h6>
+                                <p class="card-text">My artistic talent sculpts brows to accentuate your natural beauty using gentle waxing and threading techniques.</p>
+                                <a href="./contact.html" class="btn btn-dark video-button">Contact Me</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--SERVICE CLOSING IMAGE SECTION-->
+    <!--The image was on purpose put outside of a container fluid to make it so that it starts from the edge of the screen-->
+    <img src="./assets/images/services/service3.jpg" class="img-fluid" alt="Closing Image">
+
+    <!--FOOTER SECTION-->
+    <div class="container-fuild bg-dark footer-wrapper">
+        <div class="row">
+            <div class="col-md-6 ps-4">
+                <h1>Natural Beauty</h1>
+                <div class="footer-col1-end">
+                    <p>© 2024 by <a href="https://alexst14.github.io/portfolio/" target="_blank">Alex Sthali.</p></a>
+                </div>
+            </div>
+            <div class="col-md-2 footer-address">
+                <p>15 Finch Drive</p>
+                <p>Buckshaw Village, PR7 7NL</p>
+                <p>st.raluca@yahoo.com</p>
+            </div>
+            <div class="col-md-2 footer-sec-3">
+                <ul id="footer-nav-buttons">
+                    <a href="./index.html"><li>Home</li></a>
+                    <a href="./about.html"><li>About</li></a>
+                    <a href="./services.html"><li>Services</li></a>
+                    <a href="./contact.html"><li>Contact</li></a>
+                    <a href="./portfolio.html"><li>Portfolio</li></a>
+                </ul>
+            </div>
+            <div class="col footer-sec-4">
+                <ul>
+                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100090452953234"><li><i class="fa-brands fa-facebook-f"></i></li></a>
+                    <a target="_blank" href="https://www.instagram.com/raluca_sthali?igsh=dmZ4ODU0YjRzbHJ4"><li><i class="fa-brands fa-instagram"></i></li></a>
+                    <a target="_blank" href="#"><li><i class="fa-brands fa-twitter"></i></li></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8a0d306f17.js" crossorigin="anonymous"></script>
+    <!--MASONRY CDN for using it on looks section Homepage and Portfolio page-->
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+    <script src="./js/servicesscript.js"></script>
+</body>
+</html>
