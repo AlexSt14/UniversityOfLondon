@@ -178,10 +178,12 @@ video {
 .footer-wrapper ul {
     list-style: none;
 }
+.footer-wrapper li {
+    padding-bottom: 10px;
+}
 .footer-wrapper a {
     color: white;
     text-decoration: none;
-    margin: 10px;
     transition: color 0.3s ease;
 }
 .footer-wrapper a:hover {
@@ -326,7 +328,10 @@ video {
         justify-content: center;
         margin-left: -30px;
     }
-    .footer-address {
+    .footer-wrapper li {
+        padding-right: 10px;
+    }
+    .footer-address {   
         text-align: center;
     }
     /* Contact PAGE */
