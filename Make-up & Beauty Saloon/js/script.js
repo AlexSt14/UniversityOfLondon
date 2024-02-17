@@ -50,7 +50,7 @@ function showSlidesTestimonials(n) {
     dots[slideIndexTestimonials-1].className += " active";
 }
 
-//Removing g-4 class from
+//Removing g-4 class from homepage element
 let testimonialsWidth = window.innerWidth;
 let testimonialsDiv = document.getElementsByClassName("test-div")[0];
 console.log(testimonialsDiv);

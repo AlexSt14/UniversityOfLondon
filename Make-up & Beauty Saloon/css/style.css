@@ -190,8 +190,66 @@ video {
 .footer-sec-4, .footer-sec-3 {
     text-align: center;
 }
-
-
+/* ABOUT & CONTACT PAGE !!!! */
+.about-card-wrapper {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.about-card-wrapper .card, .contact-wrapper .card {
+    border: none;
+}
+.about-card-wrapper .g-0 {
+    align-items: center;
+}
+.about-wrapper .about-paragraphs, .contact-wrapper {
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+.about-paragraphs h1, .contact-wrapper h1 {
+    padding-bottom: 20px;
+}
+.about-wrapper, .contact-wrapper {
+    font-family: Garamond;
+    font-size: 1.14em;
+}
+.contact-wrapper .contact-paragraphs {
+    display: flex;
+    justify-content: center;
+}
+.contact-wrapper .contact-text {
+    width: 34em;
+}
+.contact-wrapper .bg-dark, .contact-wrapper a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.contact-wrapper a:hover {
+    color: rgb(191, 191, 191);
+}
+.contact-wrapper .h-100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.contact-wrapper .contact-times {
+    background-color: rgba(255, 227, 227, 0.922);
+}
+.contact-form button {
+    width: 100px;
+    margin: 50px;
+}
+.google-map {
+    position: relative;
+    padding-bottom: 450px;
+}
+.google-map iframe {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 450px;
+}
 @media only screen and (max-width: 900px) {
     /* Navbar */
     .navbar-collapse {
@@ -270,6 +328,10 @@ video {
     }
     .footer-address {
         text-align: center;
+    }
+    /* Contact PAGE */
+    .contact-wrapper .card {
+        width: 22em;
     }
     /* NEED TO RESOLVE THE LOOKS SECTION FOR MOBILE CLICKABLE ENLARGE IMAGES */
 
