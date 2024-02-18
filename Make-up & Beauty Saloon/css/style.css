@@ -60,13 +60,14 @@ video {
 .services-image-container .card {
     color: white;
     border: none;
-}
-.services-image-container {
     text-align: center;
 }
-.image-container p, .image-container h5 {
-    max-width: 470px;
-    margin-left: -10px;
+.services-image-container .card-body-text {
+    max-width: 510px;
+}
+.services-image-container .card-body {
+    display: flex;
+    justify-content: center;
 }
 .services-image {
     transition: filter 0.5s ease;
@@ -298,7 +299,7 @@ video {
 .services-description p {
     padding-bottom: 40px;
 }
-/*Required for the javascript to work as wanted */
+/*Required for the javascript to work as wanted, within Services page */
 .services-wrapper .active-service {
     display: flex;
 }
