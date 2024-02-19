@@ -1,7 +1,7 @@
 // Changing and applying the active class to the clicked elements
 let items = document.querySelectorAll(".services-list li");
 let description = Array.from(document.getElementsByClassName("services-description"));
-console.log(description);
+console.log(description); //debugging purposes
 
 items.forEach(item => {
     item.addEventListener("click", function() {

@@ -1,22 +1,3 @@
-// //Homepage MAIN carousel/slideshow
-// let slideIndex = 1;
-// showSlides(slideIndex);
-
-// //Next/previous controls
-// function plusSlides(n) {
-//     showSlides(slideIndex += n);
-// }
-
-// function showSlides(n) {
-//     let slides = document.getElementsByClassName("my-slides");
-//     if (n > slides.length) {slideIndex = 1};
-//     if (n < 1) {slideIndex = slides.length};
-//     for (var i = 0; i < slides.length; i++) {
-//         slides[i].style.display = "none";
-//     }
-//     slides[slideIndex-1].style.display = "block";
-// }
-
 //Short slideshow for testimonials Homepage
 let slideIndexTestimonials = 1;
 showSlidesTestimonials(slideIndexTestimonials);
@@ -34,7 +15,7 @@ let slideInterval = setInterval(function() {
 function plusSlidesTestimonials(n) {
     showSlidesTestimonials(slideIndexTestimonials += n);
 }
-
+//Function will display slides, hide other slides
 function showSlidesTestimonials(n) {
     let slides = document.getElementsByClassName("my-slides-testimonials");
     let dots = document.getElementsByClassName("dot");

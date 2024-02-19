@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+    
     <title>Natural Beauty</title>
 </head>
-<body>
+<body class="portfolio-background">
     <!--NAVBAR-->
     <div class="container-fuild navbar-elements">
         <div class="row">
             <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
+                <div class="container">
                     <a class="navbar-brand" href="./index.html"><img alt="logo" id="logoo" class="img-fluid" src="./assets/images/logo.PNG" width="150" height="100"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -23,9 +23,9 @@
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav navbar-items">
                             <a class="nav-link" aria-current="page" href="./index.html">Home</a>
-                            <a class="nav-link" href="#">About</a>
-                            <a class="nav-link" href="#">Services</a>
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="./about.html">About</a>
+                            <a class="nav-link" href="./services.html">Services</a>
+                            <a class="nav-link" href="./contact.html">Contact</a>
                             <a class="nav-link active" href="./portfolio.html">Portfolio</a>
                         </div>
                     </div>
@@ -34,7 +34,6 @@
         </div>
     </div>
     <!--END NAVBAR-->
-    
     <!--Carousel Section-->
     <!--I have taken the bootstrap carousel structure and modified it to work with my JavaScript-->
     <!--https://getbootstrap.com/docs/5.3/components/carousel/-->
@@ -43,33 +42,208 @@
             <div class="col-lg-12">
                 <div id="carouselExample" class="carousel slide">
                     <div class="carousel-inner">
-                        <div class="carousel-item active my-slides fadee">
-                            <img src="./assets/images/logo.PNG" class="d-block w-100" alt="...">
+                        <div class="carousel-item my-slides fadee">
+                            <img src="./assets/images/portfolio/slideshow1.jpeg" class="" alt="...">
                         </div>
                         <div class="carousel-item my-slides fadee">
-                            <img src="./assets/images/makeup1.jpg" class="d-block w-100" alt="...">
+                            <img src="./assets/images/portfolio/slideshow2.jpeg" class="" alt="...">
                         </div>
                         <div class="carousel-item my-slides fadee">
-                            <img src="..." class="d-block w-100" alt="...">
+                            <img src="./assets/images/portfolio/slideshow3.jpeg" class="" alt="...">
+                        </div>
+                        <div class="carousel-item my-slides fadee">
+                            <img src="./assets/images/portfolio/slideshow4.jpeg" class="" alt="...">
                         </div>
                     </div>
                 </div>
-                <a class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-arrow-left fa-2x"></i></a>
-                <a class="next" onclick="plusSlides(1)"><i class="fa-solid fa-arrow-right fa-2x"></i></a>
+                <!--Buttons for slideshow-->
+                <a class="prev" onclick="plusSlides(-1)"><div id="previous"><i class="fa-solid fa-arrow-left fa-2x"></i></div></a>
+                <a class="next" onclick="plusSlides(1)"><div id="nextbutton"><i class="fa-solid fa-arrow-right fa-2x"></i></div></a>
                 <div class="carousel-interactivity">
-                    <h1 class="carousel-text">Are You Ready for a New & Better You?</h1>
-                    <a href="#" class="btn btn-dark carousel-button">Contact Me</a>
-                    <ul>
-                        <a target="_blank" href="https://www.facebook.com/profile.php?id=100090452953234"><li><i class="fa-brands fa-facebook-f"></i></li></a>
-                        <a target="_blank" href="https://www.instagram.com/raluca_sthali?igsh=dmZ4ODU0YjRzbHJ4"><li><i class="fa-brands fa-instagram"></i></li></a>
-                        <a target="_blank" href="#"><li><i class="fa-brands fa-twitter"></i></li></a>
-                    </ul>
+                    <!-- The dots/circles -->
+                    <div class="carousel-dot-controls">
+                        <ul>
+                            <li><span class="dot" onclick="slideSelected(1)"></span></li>
+                            <li><span class="dot" onclick="slideSelected(2)"></span></li>
+                            <li><span class="dot" onclick="slideSelected(3)"></span></li>
+                            <li><span class="dot" onclick="slideSelected(4)"></span></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!--END CAROUSEL-->
-    
+    <!--FULL SCREEN BOOTSTRAP MODAL FOR PHOTOS WHEN CLICKED-->
+    <!-- Full screen modal -->    
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Fullscreen Images</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--PORTFOLIO SECTION WITH PHOTOS-->
+    <div class="container-fuild looks-wrapper" id="portfolio">
+        <div class="row row-cols-1 row-cols-md-4" data-masonry='{"percentPosition": true }'>
+            <div class="col-* px-0">
+                <div class="card clickable-image" onclick="openModal()" data-image="./assets/images/index/showedimage1.jpg">
+                    <img src="./assets/images/index/showedimage1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">Everyday Make-Up</h3>
+                        <p class="card-text">Subtlety reigns supreme. Smoky shades play around the eyes, deepening towards the corners for a touch of mystique.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-* px-0">
+                <div class="card clickable-image" onclick="openModal()" data-image="./assets/images/index/showedimage2.jpg">
+                    <img src="./assets/images/index/showedimage2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">Everyday Make-Up</h3>
+                        <p class="card-text">Bold black liner takes center stage, fading into a hazy whisper of brown at the edges, creating a dreamy, diffused effect.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-* px-0">
+                <div class="card clickable-image" onclick="openModal()" data-image="./assets/images/index/showedimage3.jpg">
+                    <img src="./assets/images/index/showedimage3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">Henna Eyebrows</h3>
+                        <p class="card-text">This isn't just coloring, it's sculpting — defining and enhancing, all part of the transformation in the making.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-* px-0">
+                <div class="card clickable-image" onclick="openModal()" data-image="./assets/images/index/showedimage4.jpeg">
+                    <img src="./assets/images/index/showedimage4.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">Everyday Make-Up</h3>
+                        <p class="card-text">Delicate liner defines, while light fades to playful pink - a flirty gradient for the eyes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-* px-0">
+                <div class="card clickable-image" onclick="openModal()" data-image="./assets/images/index/showedimage5.jpg">
+                    <img src="./assets/images/index/showedimage5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">Everyday Make-Up</h3>
+                        <p class="card-text">Subtlety reigns supreme. Smoky shades play around the eyes, deepening towards the corners for a touch of mystique.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-* px-0">
+                <div class="card clickable-image" onclick="openModal()" data-image="./assets/images/index/showedimage6.jpg">
+                    <img src="./assets/images/index/showedimage6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">Everyday Make-Up</h3>
+                        <p class="card-text">Bold and sultry, this look takes center stage. Deep black paints the outer corners, smudging into a hazy whisper of warm brown as it meets the crease. The contrast intensifies, eyes looking deeper and more defined, making a statement with a touch of mystery.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-* px-0">
+                <div class="card clickable-image" onclick="openModal()" data-image="./assets/images/index/showedimage7.jpeg">
+                    <img src="./assets/images/index/showedimage7.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">Everyday Make-Up</h3>
+                        <p class="card-text">Eyes take center stage! Playful lines dance outward, kissed with blue and pink below. Soft browns frame above, a harmonious blend for a touch of whimsy.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-* px-0">
+                <div class="card clickable-image" onclick="openModal()" data-image="./assets/images/index/showedimage8.jpg">
+                    <img src="./assets/images/index/showedimage8.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">Bridal Make-Up</h3>
+                        <p class="card-text">Delicate wings flutter outward, framing eyes with timeless grace. The gradient deepens, whispering sweet secrets towards the inner corners. Each stroke, a promise whispered, blooming into a radiant bride ready to say "I do."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-* px-0">
+                <div class="card clickable-image" onclick="openModal()" data-image="./assets/images/index/showedimage9.jpeg">
+                    <img src="./assets/images/index/showedimage9.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">Henna Eyebrows</h3>
+                        <p class="card-text">This isn't just coloring, it's sculpting — defining and enhancing, all part of the transformation in the making.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-* px-0">
+                <div class="card clickable-image" onclick="openModal()" data-image="./assets/images/index/showedimage10.jpg">
+                    <img src="./assets/images/index/showedimage10.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">Henna Eyebrows</h3>
+                        <p class="card-text">From wispy to wow! Henna magic sculpts brows, filling and framing with confidence. Deep hues linger, leaving you picture-perfect for weeks.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-* px-0">
+                <div class="card clickable-image" onclick="openModal()" data-image="./assets/images/index/showedimage11.jpeg">
+                    <img src="./assets/images/index/showedimage11.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">Bridal Make-Up</h3>
+                        <p class="card-text">Bridal glow unfolds. Soft hues whisper inward, bold line takes flight at the edge. Ethereal meets striking, ready to say "I do."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-* px-0">
+                <div class="card clickable-image" onclick="openModal()" data-image="./assets/images/index/showedimage12.jpg">
+                    <img src="./assets/images/index/showedimage12.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">Bridal Make-Up</h3>
+                        <p class="card-text">Electric blue glitter ignites the inner eye, clashing with playful pink as it meets the outer edge. Razor-sharp liner frames the explosion, a daring statement defying the ordinary.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-* px-0">
+                <div class="card clickable-image" onclick="openModal()" data-image="./assets/images/portfolio/5smoke-2.jpeg">
+                    <img src="./assets/images/portfolio/5smoke-2.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">Everyday Make-Up</h3>
+                        <p class="card-text">Dark back eyeshadow blending outwards into a green shadow towards the outer corners.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-* px-0">
+                <div class="card clickable-image" onclick="openModal()" data-image="./assets/images/portfolio/eyebrows1.jpeg">
+                    <img src="./assets/images/portfolio/eyebrows1.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">Henna Eyebrows</h3>
+                        <p class="card-text">This isn't just coloring, it's sculpting — defining and enhancing, all part of the transformation in the making.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-* px-0">
+                <div class="card clickable-image" onclick="openModal()" data-image="./assets/images/portfolio/eyebrows2.jpeg">
+                    <img src="./assets/images/portfolio/eyebrows2.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">Henna Eyebrows</h3>
+                        <p class="card-text">This isn't just coloring, it's sculpting — defining and enhancing, all part of the transformation in the making.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- REVIEW IF NEEDED TO BE DELETED DUE TO SPACING -->
+            <!-- <div class="col-* px-0">
+                <div class="card">
+                    <img src="./assets/images/portfolio/5somke-3.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">Everyday Make-Up</h3>
+                        <p class="card-text">Winged black eyeliner extending upwards from the inner corners, fading into brown then light brown eyeshadow towards the outer corners.</p>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
     <!--FOOTER SECTION-->
     <div class="container-fuild bg-dark footer-wrapper">
         <div class="row">
@@ -86,11 +260,11 @@
             </div>
             <div class="col-md-2 footer-sec-3">
                 <ul id="footer-nav-buttons">
-                    <a href="./index.html" target="_blank"><li>Home</li></a>
-                    <a href="" target="_blank"><li>About</li></a>
-                    <a href="" target="_blank"><li>Services</li></a>
-                    <a href="" target="_blank"><li>Contact</li></a>
-                    <a href="" target="_blank"><li>Shop</li></a>
+                    <a href="./index.html"><li>Home</li></a>
+                    <a href="./about.html"><li>About</li></a>
+                    <a href="./services.html"><li>Services</li></a>
+                    <a href="./contact.html"><li>Contact</li></a>
+                    <a href="./portfolio.html"><li>Portfolio</li></a>
                 </ul>
             </div>
             <div class="col footer-sec-4">
@@ -102,8 +276,11 @@
             </div>
         </div>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/8a0d306f17.js" crossorigin="anonymous"></script>
-    <script src="./js/script.js"></script>
+    <!--MASONRY CDN for using it on looks section Homepage and Portfolio page-->
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+    <script src="./js/portfolioscript.js"></script>
 </body>
 </html>
