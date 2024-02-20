@@ -389,7 +389,7 @@ video {
     backdrop-filter: blur(5px);
 }
 #staticBackdrop img {
-    max-width: 100%;
+    max-width: 100vw;
     max-height: 100vh;
 }
 #staticBackdrop .btn-close {
@@ -528,6 +528,12 @@ the size of a laptop screen thus part of the website on laptop screen needed adj
     .carousel-wrapper {
         margin-bottom: 550px !important;
     }
+    /* Modal text styling */
+    #staticBackdrop .modal-slide-text {
+        right: 1%;
+        top: 17%;
+        max-width: 200px;
+    }
 }
 /* TABLET VIEW in between 1300px and 900px */
 @media screen and (max-width: 1150px) {
@@ -584,6 +590,11 @@ the size of a laptop screen thus part of the website on laptop screen needed adj
     }
     .portfolio-background {
         background-position-y: -200px !important;
+    }
+    #staticBackdrop .modal-slide-text {
+        right: 25%;
+        top: 86vh;
+        max-width: 400px;
     }
 }
 /* MOBILE VIEW */
@@ -696,5 +707,10 @@ the size of a laptop screen thus part of the website on laptop screen needed adj
     }
     .carousel-wrapper {
         margin-bottom: 400px !important;
+    }
+    #staticBackdrop .modal-slide-text {
+        right: 13% !important;
+        top: 75vh !important;
+        max-width: 300px !important;
     }
 }
