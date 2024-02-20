@@ -309,7 +309,7 @@ video {
 }
 /* PORTFOLIO PAGE */
 .portfolio-background {
-    background-image: url("/assets/images/portfolio/background.jpeg");
+    background-image: url("../assets/images/portfolio/background.jpeg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position-x: center;
