@@ -601,7 +601,7 @@ the size of a laptop screen thus part of the website on laptop screen needed adj
 @media only screen and (max-width: 600px) {
     /* Navbar */
     .navbar-elements .navbar-collapse {
-        padding-left: 0;
+        padding-left: 0 !important;
     }
     .navbar-items a:hover {
         transform: none;
