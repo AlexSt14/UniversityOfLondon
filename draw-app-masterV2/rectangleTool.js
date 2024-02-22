@@ -40,8 +40,7 @@ function RectangleTool() {
     //adds a button and click handler to the options area. When clicked
 	//toggle the fill of the square
 	this.populateOptions = function() {
-		select(".options").html(
-			"<button id='rectangleButton'>Filled Rectangle</button>");
+		select(".options").html("<p>Rectangle Tool</p><button id='rectangleButton'>Filled Rectangle</button>");
 			//click handler
 		select("#rectangleButton").mouseClicked(function() {
 			var button = select("#" + this.elt.id);  

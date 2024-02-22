@@ -8,6 +8,7 @@ function Scissors() {
     this.name = "scissorsTool";
     this.icon = "./assets/scissors.png";
     this.selectButton = createButton("Select area");
+    this.displayName = "Scissors Tool";
     //defining the object itself to a variable
     var self = this;
     selectedArea = {x: 0, y: 0, w: 100, h: 100};
@@ -81,15 +82,17 @@ function Scissors() {
         }
     }
     
-     //This will clear the button from the canvas when scissorsTool is unselected
-     this.unselectTool = function() {
+    //This will clear the button from the canvas when scissorsTool is unselected and clear the name
+    this.unselectTool = function() {
 		updatePixels();
 		//clear options
 		select(".options2").html("");
+        select(".options").html("");
 	};
-     //adds a button
+     //adds a button and name of the tool
 	this.populateOptions = function() {
         select(".options2").html("<p>Select area to cut</p>")        
 		this.selectButton.parent("#optionsSize");	
+        select(".options").html(this.displayName);
 	};
 }
