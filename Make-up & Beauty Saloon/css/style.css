@@ -1,5 +1,8 @@
+/* Web Development FINAL PROJECT Website for a business */
+/* External style sheet. All html pages are contained within this same css style page */
 /* HOME SECTION */
 /* Navbar Styling */
+/* Bootstrap settings were completely changed and navbar was revamped for my needs */
 .navbar-elements .navbar-items, .navbar-items a {
     text-align: center;
     text-decoration: none;
@@ -10,18 +13,23 @@
     transition: transform 0.3s ease, color 0.3s ease;
     position: relative;
 }
+/* Changing padding of navbar for desktop view */
 .navbar-collapse {
     padding-left: 255px;
 }
+/* Creating scale and color effect on hover of navbar elements */
 .navbar-items a:hover, .carousel-interactivity i:hover {
     transform: scale(1.1);
     color: black;
 }
+/* navbar element itself styling with color background */
 .navbar-elements {
     margin: 0;
     padding: 0;
     background-color: white;
 }
+/* END NAVBAR Styling */
+/* Video Section of Homepage, styling the video, positioning it and styling and positioning the interactivity part next to video */
 .video-wrapper .card {
     border: none;
 }
@@ -29,6 +37,7 @@
     padding-top: 70px;
     padding-bottom: 70px;
 }
+/* Styling the list of text that appears next to video */
 .video-wrapper ul {
     list-style: none;
     display: flex;
@@ -36,21 +45,27 @@
     font-size: 2em;
     margin-left: -40px;
 }
+/* Making anchors clickable area a bit larger by padding */
 .video-wrapper a {
     padding: 10px;
 }
+/* Adding transition effect to icons next to the video */
 .video-interactivity i {
     color: black;
     transition: color 0.3s ease;
 }
+/* Adding hover effect when hovering over icons */
 .video-wrapper a:hover i {
     color:#6d6d6d
 }
+/* Setting the video dimensions for desktop view */
 video {
     width: 60%;
     height: 60%;
 }
+/* END VIDEO SECTION */
 /* Services Section Homepage */
+/* Styling and modifying the bootstrap cards to my needs from the homepage services section, also adding effects to images and hover*/
 .services-image-container {
     padding: 90px;
     display: flex;
@@ -63,24 +78,30 @@ video {
     border: none;
     text-align: center;
 }
+/* Setting a max width to bootstrap cards to avoid issues with them looking strange on big screens */
 .services-image-container .card-body-text {
     max-width: 510px;
 }
+/* Displaying them on the center of the column */
 .services-image-container .card-body {
     display: flex;
     justify-content: center;
 }
+/* Applying a transition filter for images, when hovering over the image container */
 .services-image {
     transition: filter 0.5s ease;
 }
 .image-container:hover .services-image {
     filter: opacity(50%);
 }
+/* Setting the button position absolute to its parent element */
 .services-section-button {
     position: absolute;
     margin-top: -90px;
 }
+/* END SERVICES SECTION */
 /* Popular Service Section Homepage */
+/* Styling the bootstrap card for the most popular service section */
 .popular-service-section {
     position: relative;
     text-align: center;
@@ -89,17 +110,21 @@ video {
     padding-top: 50px;
     padding-bottom: 100px;
 }
+/* Adding a transition effect for when the image of this card is hovered */
 .popular-service-section img {
     transition: filter 0.5s ease;
 }
 .popular-service-section img:hover {
     filter:sepia(50%);
 }
+/* END POPULAR SERVICE */
 /* Testimonials Section Homepage */
+/* Styling the div of the bootstrap cards and the bootstrap cards themselves */
 .testimonials-section-wrapper {
     background-color: rgba(255, 227, 227, 0.922);
     padding: 100px;
 }
+/* Setting different colors and height to first and third card only */
 .testimonial-first-col, .testimonial-third-col {
     background-color: white;
     height: 600px;
@@ -115,6 +140,7 @@ video {
     padding-right: 30px;
     padding-left: 30px;
 }
+/* Adding the content required and styling in for the second bootstrap card which is empty within the html file */
 .testimonial-second-col .card-body::before {
     content: "“";
     font-size: 220px;
@@ -123,8 +149,9 @@ video {
     text-align: center;
     margin-top: 100px;
 }
-/* Testimonial slideshow */
+/* Testimonial slideshow / Third card*/
 /* The dots/bullets */
+/* Dots styling were taken from https://www.w3schools.com/howto/howto_js_slideshow.asp */
 .dot {
     cursor: pointer;
     height: 15px;
@@ -138,15 +165,19 @@ video {
 .active, .dot:hover {
     background-color: #717171;
 }
+/* END TESTIMONIALS SECTION */
 /* Looks Section with photos on Homepage and Portfolio page */
+/* This styles the text before the images */
 .looks-presentation {
     padding-top: 100px;
     padding-bottom: 100px;
 }
+/* Styling the bootstrap cards */
 .looks-wrapper .card {
     position: relative;
     align-items: center;
-}
+}   
+/* Styling and hiding the card body by default */
 .looks-wrapper .card-body {
     position: absolute;
     top: 50%;
@@ -155,16 +186,20 @@ video {
     text-align: center;
     display: none;
 }
+/* Making the body visible only when hovering over the card itself */
 .looks-wrapper .card:hover .card-body {
     display:block;
 }
+/* Applying a transition effect to the image for when hovering the cards */
 .looks-wrapper img {
     transition: filter 0.3s ease;
 }
 .looks-wrapper .card:hover img {
     filter: blur(3px) opacity(90%);
 }
+/* END LOOKS SECTION */
 /* FOOTER SECTION */
+/* This section is used in all pages for footer styling */
 .footer-wrapper {
     color: white;
     padding-top: 100px;
@@ -194,7 +229,9 @@ video {
 .footer-sec-4, .footer-sec-3 {
     text-align: center;
 }
-/* ABOUT & CONTACT PAGE !!!! */
+/* END FOOTER STYLING */
+/* ABOUT & CONTACT PAGE And partial SERVICE page */
+/* Using the same code for both about and contact page in some instances */
 .about-card-wrapper {
     text-align: center;
     display: flex;
@@ -206,14 +243,17 @@ video {
 .about-card-wrapper .g-0 {
     align-items: center;
 }
+/* Setting up the styling for both about paragraphs and contact wrapper in the same time */
 .about-wrapper .about-paragraphs, .contact-wrapper {
     text-align: center;
     padding-bottom: 50px;
     padding-top: 20px;
 }
+/* Setting up the padding for h1 in both pages */
 .about-paragraphs h1, .contact-wrapper h1 {
     padding-bottom: 20px;
 }
+/* Setting the font in 3 pages, the about page, contact page and service page */
 .about-wrapper, .contact-wrapper, .services-wrapper {
     font-family: Garamond;
     font-size: 1.14em;
@@ -225,6 +265,7 @@ video {
 .contact-wrapper .contact-text {
     width: 34em;
 }
+/* Styling the anchor of contact page and effect when hovered */
 .contact-wrapper .bg-dark, .contact-wrapper a {
     color: white;
     text-decoration: none;
@@ -233,6 +274,7 @@ video {
 .contact-wrapper a:hover {
     color: rgb(191, 191, 191);
 }
+/* Rest of contact styling */
 .contact-wrapper .h-100 {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -244,6 +286,7 @@ video {
     width: 100px;
     margin: 50px;
 }
+/* Google maps styling needed for my needs */
 .google-map {
     position: relative;
     padding-bottom: 450px;
@@ -254,10 +297,12 @@ video {
     width: 100%;
     height: 450px;
 }
+/* END ABOUT & CONTACT PAGE */
 /* Services PAGE */
 .services-wrapper {
     text-align: center;
 }
+/* Styling the list elements */
 .services-wrapper .services-list ul {
     display: flex;
     justify-content: center;
@@ -271,12 +316,15 @@ video {
     padding: 10px;
     cursor: pointer;
 }
+/* This is also used in javascript to apply the needed class */
+/* Styling the currently selected list element for a small visual effect */
 .services-list .clicked {
     border-bottom: 5px solid rgba(255, 227, 227, 0.922);;
 }
 .services-list li.clicked {
     transition: border-bottom 0.3s ease-in-out;
 }
+/* Styling the card description of the services */
 .services-wrapper .services-description {
     display: flex;
     justify-content: center;
@@ -287,6 +335,7 @@ video {
     width: 40em;
     border: none;
 }
+/* Styling the video from the first card */
 .services-wrapper video {
     width: 100%;
     height: 100%;
@@ -300,14 +349,16 @@ video {
 .services-description p {
     padding-bottom: 40px;
 }
-/*Required for the javascript to work as wanted, within Services page */
+/*Required for the javascript to work as wanted, within Services page and when the page initially loads, to hide one of the two divs */
 .services-wrapper .active-service {
     display: flex;
 }
 .services-wrapper .nonactive-service {
     display: none;
 }
+/* END SERVICES PAGE */
 /* PORTFOLIO PAGE */
+/* Setting up a 3D background effect */
 .portfolio-background {
     background-image: url("../assets/images/portfolio/background.jpeg");
     background-repeat: no-repeat;
@@ -316,7 +367,7 @@ video {
     background-position-y: -750px;
     background-size: cover;
 }
-/* Carousel Section */
+/* Carousel Section from Portfolio page*/
 .carousel-wrapper {
     margin-top: 0;
     position: relative;
@@ -325,6 +376,8 @@ video {
     margin-bottom: 1000px;
     text-align: center;
 }
+/* Part of the code for this carousel is taken from https://www.w3schools.com/howto/howto_js_slideshow.asp and adjusted for my page view */
+/* More specifically, the prev, next and next css code + my-slides and fadee */
 .prev, .next {
     position: absolute;
     top: 0;
@@ -353,9 +406,8 @@ video {
     animation-name: fade;
     animation-duration: 1.5s;
 }
-.carousel-button {
-    width: 110px;
-} 
+/* Styling the interactivity of the carousel which are the dots */
+/* The dot class is also indirectly styled for portfolio page, from within Homepage CSS code */
 .carousel-interactivity {
     position: absolute;
     right: 200px;
@@ -368,19 +420,23 @@ video {
 .carousel-interactivity li {
     padding-bottom: 20px;
 }
+/* Previous and next button position styling */
 #previous, #nextbutton {
     height: 1700px;
     display: flex;
     align-items: center;
     padding: 50px;
 }
+/* Image sizing for desktop view */
 .carousel-wrapper img {
     width: 50%;
 }
+/* Cursor styling for when cursor is over the images cards from portfolio page */
 .clickable-image, .clickable-image .card-body {
     cursor: pointer;
 }
 /* MODAL from PORTFOLIO / SLIDESHOW INSIDE MODAL */
+/* Here is were I am completely revamping the modal from bootstrap */
 #staticBackdrop .modal-content {
     background-color: rgba(255, 255, 255, 0.208) !important;
     text-align: center;
@@ -388,10 +444,12 @@ video {
     height: 100%;
     backdrop-filter: blur(5px);
 }
+/* This will ensure images are never bigger than the client screen size */
 #staticBackdrop img {
     max-width: 100vw;
     max-height: 100vh;
 }
+/* Main closing button styling */
 #staticBackdrop .btn-close {
     position: absolute;
     top: 5%;
@@ -399,11 +457,13 @@ video {
     /*Button was getting under the img element, needed for functionality */
     z-index: 99;
 }
+/* Secondary button styling */
 #staticBackdrop .btn-secondary {
     position: absolute;
     top: 94%;
     right: 1%;
 }
+/* Slides and the text styling */
 #staticBackdrop .modal-slides {
     width: 100%;
 }
@@ -418,6 +478,7 @@ video {
     right: 3%;
     color: white;
 }
+/* Making the modal full size according to screen size */
 #staticBackdrop .modal-dialog {
     width: 100%;
     max-width: none;
@@ -426,6 +487,7 @@ video {
     height: 100%;
     padding: 0;
 }
+/* Styling previous and next buttons within the modal slideshow */
 #staticBackdrop .modal-prev, #staticBackdrop .modal-next {
     position: absolute;
     top: 50%;
@@ -444,6 +506,7 @@ video {
 #staticBackdrop .modal-next {
     right: 0;
 }
+/* Adding hover effect to the prev and next buttons */
 #staticBackdrop .modal-next:hover, #staticBackdrop .modal-prev:hover {
     transform: scale(1.2);
 }
@@ -451,15 +514,16 @@ video {
 /* This is needed because I developed the website from a 27 inch desktop screen which is nearly double 
 the size of a laptop screen thus part of the website on laptop screen needed adjusting after completing it on 27 inch screen */
 @media screen and (max-width: 1600px) {
+    /*Decreasing padding for navbar to keep it in middle of screen */
     .navbar-elements .navbar-collapse {
         padding-left: 260px;
     }
-    /* Portfolio part for mobile view*/
+    /* Portfolio part for laptop view */
+    /* Adjusting parts of the portfolio carousel for laptop screen view */
     .carousel-wrapper #previous, .carousel-wrapper #nextbutton {
         height: 900px !important;
         padding: 0 !important;
     }
-       
     .carousel-wrapper .carousel-item img {
         width: 47% !important;
     }
@@ -476,10 +540,10 @@ the size of a laptop screen thus part of the website on laptop screen needed adj
 }
 /* VIEW IN BETWEEN DESKTOP AND TABLET/TABLET LANDSCAPE OPTIMIZATION */
 @media screen and (max-width: 1400px) { 
+    /* Adjusting navbar padding and Portfolio page carousel for screen in between table and laptop */
     .navbar-elements .navbar-collapse {
         padding-left: 160px;
     }
-    
     .carousel-wrapper #previous, .carousel-wrapper #nextbutton {
         height: 810px !important;
         padding: 10px !important;
@@ -504,6 +568,7 @@ the size of a laptop screen thus part of the website on laptop screen needed adj
 }
 /* TABLET VIEW @MEDIA SETTINGS */
 @media screen and (max-width: 1300px){
+    /* Reducing navbar padding and styling the Portfolio carousel, including some settings for the text within modal */
     .navbar-elements .navbar-collapse {
         padding-left: 100px;
     }
@@ -535,7 +600,7 @@ the size of a laptop screen thus part of the website on laptop screen needed adj
         max-width: 200px;
     }
 }
-/* TABLET VIEW in between 1300px and 900px */
+/* TABLET VIEW in between 1300px and 1150px */
 @media screen and (max-width: 1150px) {
     /* Navbar */
     .navbar-elements .navbar-collapse {
@@ -598,6 +663,7 @@ the size of a laptop screen thus part of the website on laptop screen needed adj
     }
 }
 /* MOBILE VIEW */
+/* Many more adjustments were needed for mobile view than any other views smaller than desktop */
 @media only screen and (max-width: 600px) {
     /* Navbar */
     .navbar-elements .navbar-collapse {
