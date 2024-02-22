@@ -1,4 +1,7 @@
-//Homepage MAIN carousel/slideshow
+//Homepage MAIN carousel/slideshow code
+//Slideshow code taken and modified from https://www.w3schools.com/howto/howto_js_slideshow.asp, I have modified this by also integrating setInterval 
+//For a cool effect
+//Initially setting index and calling the function to show the slide at index 0
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -33,7 +36,8 @@ function showSlides(n) {
     dots[slideIndex-1].classList.add("active");
 }
 
-//Opening modal when user clicks on an image
+//Opening modal when user clicks on an image script
+//Getting the modal element
 let myModal = new bootstrap.Modal(document.getElementById("staticBackdrop"));
 //Modal slideshow index
 let modalIndex = 1;
@@ -41,11 +45,12 @@ modalShowSlides(modalIndex);
 
 //Function to open the modal when image is clicked, will also update the index of the clicked image for the slideshow
 function openModal(n) {
-    console.log(n);
+    console.log(n); //debugging purposes
+    //Setting index to the same index of the clicked image
     modalIndex = n;
-    console.log(modalIndex);
-    modalShowSlides(modalIndex);
-    myModal.show();
+    console.log(modalIndex); //deubbing purposes
+    modalShowSlides(modalIndex); //calling the function to show the picture
+    myModal.show(); //And opening the modal
 }
 
 //Next/previous controls

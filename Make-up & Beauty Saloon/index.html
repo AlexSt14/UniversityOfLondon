@@ -1,25 +1,34 @@
-<!--I have used Bootstrap for this project which makes it easier to create the layout of the website-->
-<!--While also maintaining a mobile first development-->
+<!--WEB DEVELOPMENT MODULE FINAL PROJECT-->
+<!--Website created for a LOCAL BUSINESS as requested-->
+<!--ALL THE CONTENT AND IMAGES/VIDEOS INCLUDING CONTENT WERE PROVIDED BY THE LOCAL BUSINESS-->
+<!--I have used Bootstrap for this project which makes it easier to create the layout of the website while also maintaining -->
+<!--a mobile first development. I will specify along the code which elements are coming out of bootstrap and how I've modified them-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Reference to our external CSS file for styling-->
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!--Reference to Bootstrap CSS file, without this Bootstrap cannot work-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
+    <!--Title of the index page showing in the browser-->
     <title>Natural Beauty</title>
 </head>
 <body>
-    <!--NAVBAR-->
+    <!--NAVBAR section, this element comes from Bootstrap Navbar page: https://getbootstrap.com/docs/5.3/components/navbar/-->
+    <!--The code has been taken and modified for my needs and pages, including adding a logo inside the navbar-->
     <div class="container-fuild navbar-elements">
         <div class="row">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <a class="navbar-brand" href="./index.html"><img alt="logo" id="logoo" class="img-fluid" src="./assets/images/logo.PNG" width="150" height="100"></a>
+                    <!--LOGO of navbar-->
+                    <a class="navbar-brand" href="./index.html"><img alt="logo picture" id="logoo" class="img-fluid" src="./assets/images/logo.PNG" width="150" height="100"></a>
+                    <!--This button only shows up when website is navigated on a mobile or less than a certain amount of pixels in width-->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    <!--Actual buttons for web pages-->
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav navbar-items">
                             <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
@@ -33,8 +42,11 @@
             </nav>
         </div>
     </div>
-    <!--END NAVBAR-->
+    <!--END NAVBAR Section-->
     <!--VIDEO SECTION-->
+    <!--Content for this video was received from the local business I partnered with for this website, this video section is using a Bootstrap card-->
+    <!--which was modified to my needs to fit the video and some other relevant information and button. The link for the bootstrap card is:-->
+    <!--https://getbootstrap.com/docs/5.3/components/card/-->
     <div class="container d-flex justify-content-center text-center video-wrapper">
         <div class="card mb-3" style="max-width: 1340px;">
             <div class="row align-items-center g-0">
@@ -43,6 +55,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-12 video-container">
+                                <!--Actual video being loaded-->
                                 <video class="img-fluid" autoplay muted loop>
                                     <source src="./assets/videos/indexvideof.mp4" type="video/mp4">
                                     Your browser does not support the video tag.
@@ -53,6 +66,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card-body">
+                        <!--The interactive part alongside the video with buttons and necessary information-->
                         <div class="video-interactivity">
                             <h1 class="carousel-text">Are You Ready for a New & Better You?</h1>
                             <a href="./contact.html" class="btn btn-dark video-button">Contact Me</a>
@@ -68,17 +82,21 @@
             </div>
         </div>
     </div>
-    
+    <!--END VIDEO Section-->
     
     <!--Services Section-->
+    <!--This section is taking advantage of bootstrap cards from link: https://getbootstrap.com/docs/5.3/components/card/-->
+    <!--and I modified them to fit my needs and content, removed certain parts of the card such as footer and added interactivity with css over them-->
+    <!--Using a container-fluid part from bootstrap and 3 cards side by side (for desktop view) and underneath each other (mobile or tablet view)-->
     <div class="container-fuild bg-dark">
         <div class="row">
             <div class="col-lg-12">
                 <div class="services-image-container">
                     <div class="row row-cols-1 row-cols-md-3 g-4">
                         <div class="col">
+                            <!--Card 1 from services-->
                             <div class="card h-100 bg-dark image-container">
-                                <img src="./assets/images/index/serviceBmakeup.jpg" alt="" class="card-img-top services-image">
+                                <img src="./assets/images/index/serviceBmakeup.jpg" alt="Everyday Make-Up Picture Showcase" class="card-img-top services-image">
                                 <div class="card-body">
                                     <div class="card-body-text">
                                         <h5 class="card-title">Everyday Make-Up</h5>
@@ -88,8 +106,9 @@
                             </div>
                         </div>
                         <div class="col">
+                            <!--Card 2 from services-->
                             <div class="card h-100 bg-dark image-container">
-                                <img src="./assets/images/index/serviceEmakeup.jpg" class="card-img-top services-image" alt="...">
+                                <img src="./assets/images/index/serviceEmakeup.jpg" class="card-img-top services-image" alt="Bridal Make-Up Picture Showcase">
                                 <div class="card-body">
                                     <div class="card-body-text">
                                         <h5 class="card-title">Bridal Make-Up</h5>
@@ -99,8 +118,9 @@
                             </div>
                         </div>
                         <div class="col">
+                            <!--Card 3 from services-->
                             <div class="card h-100 bg-dark image-container">
-                                <img src="./assets/images/index/servicehenna.jpg" class="card-img-top services-image" alt="...">
+                                <img src="./assets/images/index/servicehenna.jpg" class="card-img-top services-image" alt="Henna Eyebrows Picture Showcase">
                                 <div class="card-body">
                                     <div class="card-body-text">
                                         <h5 class="card-title">Henna Eyebrows</h5>
@@ -111,13 +131,17 @@
                         </div>
                     </div>
                 </div>
+                <!--Button to redirect user to services page-->
                 <div class="col-lg-12 btn-col">
                     <a href="./services.html" class="btn btn-secondary services-section-button end-50">Services</a>
                 </div>
             </div>
         </div>
     </div>
+    <!--END SERVICES Section-->
     <!--POPULAR Service SECTION-->
+    <!--This section takes advantage of a bootstrap card to highlight the top service that the business is known for and performs the most-->
+    <!--https://getbootstrap.com/docs/5.3/components/card/ and the card has been modified by removing header/footer and css has been applied to for interactivity-->
     <div class="container-fuild popular-service-section">
         <div class="row">
             <div class="col-lg-12">
@@ -125,7 +149,7 @@
                 <div class="card mb-3" style="max-width: 940px;">
                     <div class="row align-items-center g-0">
                         <div class="col-md-8">
-                            <img src="./assets/images/index/popularservice.jpg" width="1200" class="img-fluid rounded-start" alt="...">
+                            <img src="./assets/images/index/popularservice.jpg" width="1200" class="img-fluid rounded-start" alt="Henna Eyebrows Most Popular Service">
                         </div>
                         <div class="col-md-4">
                             <div class="card-body">
@@ -140,22 +164,29 @@
             </div>
         </div>
     </div>
+    <!--END POPULAR Services Section-->
     <!--Testimonials Section including a slideshow of testimonials-->
+    <!--This section takes advantage of bootstrap cards that were modified to fit my content, such as header/footer and image section-->
+    <!--https://getbootstrap.com/docs/5.3/components/card/ where I modified and added a slideshow from testimonials and using javascript for-->
+    <!--Automated slide move-->
     <div class="container-fuild testimonials-section-wrapper">
         <div class="testimonials-section">
             <div class="row row-cols-1 row-cols-md-3 g-4 test-div">
                 <div class="col testimonial-first-col">
+                    <!--Card 1 from testimonials section-->
                     <div class="card-body">
                         <h1 class="card-title">The best Make-up Artist in town</h1>
                     </div>
                 </div>
                 <div class="col testimonial-second-col">
+                    <!--Card 2 from testimonials section, this card is empty because I am applying css to it to create the effect that I want-->
                     <div class="card h-100 bg-dark">
                         <div class="card-body">
                         </div>
                     </div>
                 </div>
                 <div class="col testimonial-third-col">
+                    <!--Card 3 from testimonials section where the slideshow is running for an automated effect with javascript-->
                     <div class="card h-100">
                         <div class="card-body">
                             <div class="my-slides-testimonials">
@@ -181,8 +212,11 @@
             </div>
         </div>
     </div>
+    <!--END TESTIMONIALS Section-->
     <!--LOOKS Section-->
-    <!-- Here I am taking advantage of the Mansory CDN to have all my cards arranged dynamically-->
+    <!--Here I am taking advantage of the Mansory CDN to have all my cards arranged dynamically: https://getbootstrap.com/docs/5.3/examples/masonry/-->
+    <!--This cool masonry integration (CDN for this is added at the end of Body tag) helps give a cool and dynamic effect to the cards with pictures-->
+    <!--https://getbootstrap.com/docs/5.3/components/card/ Bootstrap cards were used to create this effect alongside Masonry CDN-->
     <div class="container looks-presentation">
         <div class="row-cols-1">
             <h4>#NaturalBeauty</h4>
@@ -192,8 +226,9 @@
     <div class="container-fuild looks-wrapper">
         <div class="row row-cols-1 row-cols-md-4" data-masonry='{"percentPosition": true }'>
             <div class="col-* px-0">
+                <!--This is where cards start to be created-->
                 <div class="card">
-                    <img src="./assets/images/index/showedimage1.jpg" class="card-img-top" alt="...">
+                    <img src="./assets/images/index/showedimage1.jpg" class="card-img-top" alt="Everyday Make-Up Example 1">
                     <div class="card-body">
                         <h3 class="card-title">Everyday Make-Up</h3>
                         <p class="card-text">Subtlety reigns supreme. Smoky shades play around the eyes, deepening towards the corners for a touch of mystique.</p>
@@ -202,7 +237,7 @@
             </div>
             <div class="col-* px-0">
                 <div class="card">
-                    <img src="./assets/images/index/showedimage2.jpg" class="card-img-top" alt="...">
+                    <img src="./assets/images/index/showedimage2.jpg" class="card-img-top" alt="Everyday Make-Up Example 2">
                     <div class="card-body">
                         <h3 class="card-title">Everyday Make-Up</h3>
                         <p class="card-text">Bold black liner takes center stage, fading into a hazy whisper of brown at the edges, creating a dreamy, diffused effect.</p>
@@ -211,7 +246,7 @@
             </div>
             <div class="col-* px-0">
                 <div class="card">
-                    <img src="./assets/images/index/showedimage3.jpg" class="card-img-top" alt="...">
+                    <img src="./assets/images/index/showedimage3.jpg" class="card-img-top" alt="Henna Eyebrows Example 1">
                     <div class="card-body">
                         <h3 class="card-title">Henna Eyebrows</h3>
                         <p class="card-text">This isn't just coloring, it's sculpting — defining and enhancing, all part of the transformation in the making.</p>
@@ -220,7 +255,7 @@
             </div>
             <div class="col-* px-0">
                 <div class="card">
-                    <img src="./assets/images/index/showedimage4.jpeg" class="card-img-top" alt="...">
+                    <img src="./assets/images/index/showedimage4.jpeg" class="card-img-top" alt="Everyday Make-Up Example 3">
                     <div class="card-body">
                         <h3 class="card-title">Everyday Make-Up</h3>
                         <p class="card-text">Delicate liner defines, while light fades to playful pink - a flirty gradient for the eyes.</p>
@@ -229,7 +264,7 @@
             </div>
             <div class="col-* px-0">
                 <div class="card">
-                    <img src="./assets/images/index/showedimage5.jpg" class="card-img-top" alt="...">
+                    <img src="./assets/images/index/showedimage5.jpg" class="card-img-top" alt="Everyday Make-Up Example 4">
                     <div class="card-body">
                         <h3 class="card-title">Everyday Make-Up</h3>
                         <p class="card-text">Subtlety reigns supreme. Smoky shades play around the eyes, deepening towards the corners for a touch of mystique.</p>
@@ -238,7 +273,7 @@
             </div>
             <div class="col-* px-0">
                 <div class="card">
-                    <img src="./assets/images/index/showedimage6.jpg" class="card-img-top" alt="...">
+                    <img src="./assets/images/index/showedimage6.jpg" class="card-img-top" alt="Everyday Make-Up Example 5">
                     <div class="card-body">
                         <h3 class="card-title">Everyday Make-Up</h3>
                         <p class="card-text">Bold and sultry, this look takes center stage. Deep black paints the outer corners, smudging into a hazy whisper of warm brown as it meets the crease. The contrast intensifies, eyes looking deeper and more defined, making a statement with a touch of mystery.</p>
@@ -247,7 +282,7 @@
             </div>
             <div class="col-* px-0">
                 <div class="card">
-                    <img src="./assets/images/index/showedimage7.jpeg" class="card-img-top" alt="...">
+                    <img src="./assets/images/index/showedimage7.jpeg" class="card-img-top" alt="Everyday Make-Up Example 6">
                     <div class="card-body">
                         <h3 class="card-title">Everyday Make-Up</h3>
                         <p class="card-text">Eyes take center stage! Playful lines dance outward, kissed with blue and pink below. Soft browns frame above, a harmonious blend for a touch of whimsy.</p>
@@ -256,7 +291,7 @@
             </div>
             <div class="col-* px-0">
                 <div class="card">
-                    <img src="./assets/images/index/showedimage8.jpg" class="card-img-top" alt="...">
+                    <img src="./assets/images/index/showedimage8.jpg" class="card-img-top" alt="Bridal Make-Up Example 1">
                     <div class="card-body">
                         <h3 class="card-title">Bridal Make-Up</h3>
                         <p class="card-text">Delicate wings flutter outward, framing eyes with timeless grace. The gradient deepens, whispering sweet secrets towards the inner corners. Each stroke, a promise whispered, blooming into a radiant bride ready to say "I do."</p>
@@ -265,7 +300,7 @@
             </div>
             <div class="col-* px-0">
                 <div class="card">
-                    <img src="./assets/images/index/showedimage9.jpeg" class="card-img-top" alt="...">
+                    <img src="./assets/images/index/showedimage9.jpeg" class="card-img-top" alt="Henna Eyebrows Example 2">
                     <div class="card-body">
                         <h3 class="card-title">Henna Eyebrows</h3>
                         <p class="card-text">This isn't just coloring, it's sculpting — defining and enhancing, all part of the transformation in the making.</p>
@@ -274,7 +309,7 @@
             </div>
             <div class="col-* px-0">
                 <div class="card">
-                    <img src="./assets/images/index/showedimage10.jpg" class="card-img-top" alt="...">
+                    <img src="./assets/images/index/showedimage10.jpg" class="card-img-top" alt="Waxing Eyebrows Example 1">
                     <div class="card-body">
                         <h3 class="card-title">Waxing Eyebrows</h3>
                         <p class="card-text">From wispy to wow! Our eyebrow waxing expertise shapes and defines brows for a flawless frame. Precision waxing reveals your best brows by removing stray hairs and sculpting the perfect arch.</p>
@@ -283,7 +318,7 @@
             </div>
             <div class="col-* px-0">
                 <div class="card">
-                    <img src="./assets/images/index/showedimage11.jpeg" class="card-img-top" alt="...">
+                    <img src="./assets/images/index/showedimage11.jpeg" class="card-img-top" alt="Bridal Make-Up Example 2">
                     <div class="card-body">
                         <h3 class="card-title">Bridal Make-Up</h3>
                         <p class="card-text">Bridal glow unfolds. Soft hues whisper inward, bold line takes flight at the edge. Ethereal meets striking, ready to say "I do."</p>
@@ -292,16 +327,20 @@
             </div>
             <div class="col-* px-0">
                 <div class="card">
-                    <img src="./assets/images/index/showedimage12.jpg" class="card-img-top" alt="...">
+                    <img src="./assets/images/index/showedimage12.jpg" class="card-img-top" alt="Bridal Make-Up Example 3">
                     <div class="card-body">
                         <h3 class="card-title">Bridal Make-Up</h3>
                         <p class="card-text">Electric blue glitter ignites the inner eye, clashing with playful pink as it meets the outer edge. Razor-sharp liner frames the explosion, a daring statement defying the ordinary.</p>
                     </div>
                 </div>
+                <!--This is where cards END-->
             </div>
         </div>
     </div>
+    <!--LOOKS Section END-->
     <!--FOOTER SECTION-->
+    <!--This section only uses the basic bootstrap grid so that I can reach the desired look/aspect-->
+    <!--It contains info for the owner of the site alongside quick navigation buttons to other pages from the site-->
     <div class="container-fuild bg-dark footer-wrapper">
         <div class="row">
             <div class="col-md-6 ps-4">
@@ -333,11 +372,14 @@
             </div>
         </div>
     </div>
-
+    <!--This is required for certain aspects of Bootstrap like the navbar button for mobile view of website-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--This is needed in order for me to use fontawesome icons within the website-->
     <script src="https://kit.fontawesome.com/8a0d306f17.js" crossorigin="anonymous"></script>
     <!--MASONRY CDN for using it on looks section Homepage and Portfolio page-->
+    <!--https://getbootstrap.com/docs/5.3/examples/masonry/ -->
     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+    <!--This is the reference to my external javascript file-->
     <script src="./js/script.js"></script>
 </body>
 </html>
