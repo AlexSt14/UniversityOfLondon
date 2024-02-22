@@ -1,5 +1,5 @@
 # UniversityOfLondon
-Projects while studying at University of London in year 1
+Projects while studying at University of London in year 1 <br>
 Through many other small projects or algorithms such as search or sort algorithms, this repository contains 3 major projects done during my studies:
 
 - Introduction to Programming I --> [Browser game as a final project for the module](https://github.com/AlexSt14/UniversityOfLondon_Year1/tree/main/GameProject%20Final)
