@@ -2,7 +2,6 @@ function FreehandTool(){
 	//set an icon and a name for the object
 	this.icon = "assets/freehand.jpg";
 	this.name = "freehand";
-	this.displayName = "Freehand Tool";
 
 	//to smoothly draw we'll draw a line from the previous mouse location
 	//to the current mouse location. The following values store
@@ -35,15 +34,5 @@ function FreehandTool(){
 			previousMouseX = -1;
 			previousMouseY = -1;
 		}
-	};
-	//This will clear the name of the tool from the canvas
-	this.unselectTool = function() {
-		updatePixels();
-		//clear options
-        select(".options").html("");
-	};
-     //adds a tool name
-	this.populateOptions = function() {	
-        select(".options").html(this.displayName);
 	};
 }

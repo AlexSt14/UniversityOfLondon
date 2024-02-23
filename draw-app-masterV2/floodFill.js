@@ -1,5 +1,4 @@
-//The flood fill algorithm was taken and adapted to work with my colour palette from
-//Mainly I did not change the algorithm itself but the input that the algorithm receives. This algorithm expects rgba input while our colors were usually of the form of a string. I had to take that and convert it to an array where each part of rgba has one index in the array, r = 0, g = 1, b = 2, a = 3. You get the meaning
+//The flood fill algorithm was taken and adapted to work with my color palette from
 //https://www.reddit.com/r/p5js/comments/rhzvvr/a_flood_fill_algorithm_i_couldnt_find_any_for_p5/
 
 function arrayEquals(a, b) {

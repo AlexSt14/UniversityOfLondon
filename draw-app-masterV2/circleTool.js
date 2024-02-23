@@ -36,7 +36,8 @@ function CircleTool() {
     //adds a button and click handler to the options area. When clicked
 	//toggle the fill of the circle
 	this.populateOptions = function() {
-		select(".options").html("<p>Circle Tool</p><button id='circleButton'>Filled Circle</button>");
+		select(".options").html(
+			"<button id='circleButton'>Filled Circle</button>");
 		// 	//click handler
 		select("#circleButton").mouseClicked(function() {
 			var button = select("#" + this.elt.id);  

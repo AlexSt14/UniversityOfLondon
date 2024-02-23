@@ -62,7 +62,6 @@ function Toolbox() {
 					
 					//select the tool and highlight it on the toolbar
 					this.selectedTool = this.tools[i];
-					console.log(select(toolName));
 					select("#" + toolName + "sideBarItem").style("border", "2px solid blue");
 		
 					//if the tool has an options area. Populate it now.
