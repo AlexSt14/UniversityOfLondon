@@ -92,6 +92,7 @@ function Scissors() {
 	};
      //adds a button and name of the tool
 	this.populateOptions = function() {
+        this.selectButton.show();
         select(".options2").html("<p>Select area to cut</p>")        
 		this.selectButton.parent("#optionsSize");	
         select(".options").html(this.displayName);

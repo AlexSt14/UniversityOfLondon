@@ -82,6 +82,8 @@ function EditableShapes() {
 	};
      //adds a button and tool name
 	this.populateOptions = function() {
+        this.finishButton.show();
+        this.editButton.show();
         select(".options2").html("<p>Editable Shapes</p>")        
 		this.finishButton.parent("#optionsSize");	
         this.editButton.parent("#optionsSize");	
