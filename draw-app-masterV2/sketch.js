@@ -12,12 +12,6 @@ var scissors;
 var fillButtonState; 
 var c;
 
-function preload() {
-	circleImg = loadImage("./assets/amongus.png");
-	stampTool = new StampTool();
-	stampTool.image = loadImage("./assets/amongus.png");
-}
-
 function setup() {
 	//create a canvas to fill the content div from index.html
 	canvasContainer = select('#content');
@@ -44,10 +38,11 @@ function setup() {
 	toolbox.addTool(new CircleTool());
 	toolbox.addTool(new SquareTool());
 	toolbox.addTool(new RectangleTool());
-	toolbox.addTool(stampTool);
 	toolbox.addTool(new EraserTool());
 	toolbox.addTool(new EditableShapes());
 	toolbox.addTool(scissors);
+	toolbox.addTool(new BucketFilling());
+	toolbox.addTool(new TextTool());
 	background(255);
 
 }
@@ -65,26 +60,30 @@ function draw() {
 	
 	
 }
-function keyPressed(){  
-	if (keyCode == 71){
-		//getting the color object, transforming the color text into rgba
-		var fillColor = color(colourP.selectedColour);
-		//adding the alpha value to the levels array
-		fillColor[3] = 255;
-		//getting out the levels array only from the color object
-		var levels = fillColor.levels;
-		console.log(fillColor);
-		
-	  	floodFill(createVector(mouseX,mouseY),[...levels])
-	}  
-}
+
 function mousePressed() {
 	if (toolbox.selectedTool.name === "scissorsTool") {
 		scissors.mouseHasBeenPressed();
+	}
+	if (toolbox.selectedTool.name === "bucketFilling") {
+		toolbox.selectedTool.mouseHasBeenPressed();
+	}
+	if (toolbox.selectedTool.name === "textTool") {
+		toolbox.selectedTool.mouseHasBeenPressed();
 	}
 }
 function mouseDragged() {
 	if (toolbox.selectedTool.name === "scissorsTool") {
 		scissors.mouseHasBeenDragged();
+	}
+}
+function keyTyped() {
+	if (toolbox.selectedTool.name === "textTool") {
+		toolbox.selectedTool.keyTyped();
+	}
+}
+function keyPressed() {
+	if (toolbox.selectedTool.name === "textTool") {
+		toolbox.selectedTool.keyPressed();
 	}
 }
