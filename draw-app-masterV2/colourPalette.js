@@ -20,6 +20,11 @@ function ColourPalette() {
 				this.selectedColour = this.colours[colorIndex];
 			}
 		} else {
+			if (typeof self.selectedColour === "string") {
+				//remove the old border only if the previous color was a string
+				var current = select("#" + self.selectedColour + "Swatch");
+				current.style("border", "0");
+			}
 			//if it's a color object, directly set it
 			this.selectedColour = colour;
 		}
@@ -36,10 +41,13 @@ function ColourPalette() {
 		}	
 	};
 	var colourClick = function() {
-		//remove the old border
-		var current = select("#" + self.selectedColour + "Swatch");
-		current.style("border", "0");
-
+		//checking if the provided colour is a text name or a color object
+		if (typeof self.selectedColour === 'string') {
+			//remove the old border
+			var current = select("#" + self.selectedColour + "Swatch");
+			current.style("border", "0");
+		}
+		
 		//get the new colour from the id of the clicked element
 		var c = this.id().split("Swatch")[0];
 

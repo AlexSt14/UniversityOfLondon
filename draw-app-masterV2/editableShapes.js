@@ -1,13 +1,15 @@
 //A tool for drawing vertices shapes and then edit them if needed
 //global variables needed for editableShapes
 var editMode = false;
-var currentShape = [];
+var currentShape = [];  
 
 function EditableShapes() {
     this.name = "editableShapes";
     this.icon = "/assets/resize.png";
     this.editButton = createButton('Edit Shape');
     this.finishButton = createButton('Finish Shape');
+    this.editButton.hide();
+    this.finishButton.hide();
     this.displayName = "Editable Shapes Tool";
     var self = this; //Saving the editableShape "this" reference
     
@@ -65,12 +67,13 @@ function EditableShapes() {
     //This will return a boolean based on where the user presses the mouse
     this.mousePressOnCanvas = function() {
         if (mouseX < canvasContainer.size().width && mouseX > 0
-        && mouseY < canvasContainer.size().height && mouseY > 0) {
+        && mouseY < canvasContainer.size().height && mouseY > 0) {   
             return true;
         }
         return false;
     }
-     //This will clear the button from the canvas when editableShapes is unselected and clear the name
+   
+    //This will clear the button from the canvas when editableShapes is unselected and clear the name
     this.unselectTool = function() {
 		updatePixels();
 		//clear options

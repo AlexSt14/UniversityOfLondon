@@ -18,7 +18,6 @@ function SprayCanTool(){
 	};
 	//This will clear the tool name
     this.unselectTool = function() {
-		updatePixels();
 		//clear options
         select(".options").html("");
 	};

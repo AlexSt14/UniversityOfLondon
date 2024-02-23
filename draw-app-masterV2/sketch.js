@@ -17,7 +17,9 @@ function setup() {
 	canvasContainer = select('#content');
 	c = createCanvas(canvasContainer.size().width, canvasContainer.size().height);
 	c.parent("content");
-	
+	//These two are part of the bucket filling algorithm
+	pixelDensity(1);
+	noSmooth();
 	colorPicker = createColorPicker('deeppink');
 	colorPicker.parent('#colorPicker')
 	colorPicker.width = 200;
@@ -25,6 +27,7 @@ function setup() {
 	helpers = new HelperFunctions();
 	colourP = new ColourPalette();
 	scissors = new Scissors();
+	editableShapes = new EditableShapes();
 	fillButtonState = false;
 	//create a toolbox for storing the tools
 	toolbox = new Toolbox();
@@ -39,7 +42,7 @@ function setup() {
 	toolbox.addTool(new SquareTool());
 	toolbox.addTool(new RectangleTool());
 	toolbox.addTool(new EraserTool());
-	toolbox.addTool(new EditableShapes());
+	toolbox.addTool(editableShapes);
 	toolbox.addTool(scissors);
 	toolbox.addTool(new BucketFilling());
 	toolbox.addTool(new TextTool());

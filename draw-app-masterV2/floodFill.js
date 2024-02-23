@@ -1,8 +1,12 @@
 //The flood fill algorithm was taken and adapted to work with my colour palette from
-//Mainly I did not change the algorithm itself but the input that the algorithm receives. This algorithm expects rgba input while our colors were usually of the form of a string. I had to take that and convert it to an array where each part of rgba has one index in the array, r = 0, g = 1, b = 2, a = 3. You get the meaning
+//Mainly the input that the algorithm receives. This algorithm expects rgba input while our colors were usually of the form of a string. I had to take that and convert it to an array where each part of rgba has one index in the array, r = 0, g = 1, b = 2, a = 3. You get the meaning
+//Lastly, I have also fixed an issue with this algorithm, the original algorithm (if you look on the below link)
+//has an issue within floodFill function. When you try to fill the same area with the same color, the while loop enters an infinite loop and the page crashes.
+//This happens because the algorithm doesn't have a way to mark pixels that were already visited.
+//To fix the issue I added a way to keep track of pixels that have already been filled by creating a new array (see below where I marked code wrote by me!).
 //https://www.reddit.com/r/p5js/comments/rhzvvr/a_flood_fill_algorithm_i_couldnt_find_any_for_p5/
 
-function arrayEquals(a, b) {
+  function arrayEquals(a, b) {
     return (
       Array.isArray(a) &&
       Array.isArray(b) &&
@@ -10,6 +14,7 @@ function arrayEquals(a, b) {
       a.every((val, index) => val === b[index])
     );
   }
+  
   
   function expandToNeighbours(queue,current){
     
@@ -48,18 +53,22 @@ function arrayEquals(a, b) {
     ];
   
     let queue = [];
+    //This "visited" array will hold pixels that have already been visited
+    let visited = new Array(width * height).fill(false);  //My modification of the algorithm
     queue.push(seed);
   
     while (queue.length) {
       let current = queue.shift();
       index = 4 * (width * current.y + current.x);
+      //The next 2 lines of code will first check if the pixel has already been filled and then skips the iteration, if the if statement doesn't get hit, the second line of code will add the pixel to the visited array as true (visited)
+      if (visited[width * current.y + current.x]) continue;   //My modification of the algorithm
+      visited[width * current.y + current.x] = true;    //My modification of the algorithm
       let color = [
         pixels[index],
         pixels[index + 1],
         pixels[index + 2],
         pixels[index + 3],
       ];
-  
       if (!arrayEquals(color, seedColor)) {
         continue;
       }

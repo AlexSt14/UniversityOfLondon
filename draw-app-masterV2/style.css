@@ -66,19 +66,19 @@ html, body {
 	margin: 5px;
 }
 
-
-.wrapper {
-	display: grid;
-	height: 100%;
-	grid-template-columns: 70px 230px 150px  minmax(250px, 300px) 2050px;
-	grid-template-rows: 35px minmax(500px, 1fr) 160px 100px;
-	grid-template-areas:
-			"header header header header header"
-			"sidebar content content content content"
-			"colourP colourP colorPicker options options2";
-	background-color: #fff;
-	color: #444;
-}
+	
+	.wrapper {
+		display: grid;
+		height: 100%;
+		grid-template-columns: 70px 230px 150px  minmax(250px, 300px) minmax(800px, 1fr);
+		grid-template-rows: 35px minmax(500px, 1fr) 160px 100px;
+		grid-template-areas:
+				"header header header header header"
+				"sidebar content content content content"
+				"colourP colourP colorPicker options options2";
+		background-color: #fff;
+		color: #444;
+	}
 .box {
   background-color: #444;
   color: #fff;

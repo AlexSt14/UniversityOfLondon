@@ -38,7 +38,7 @@ function FreehandTool(){
 	};
 	//This will clear the name of the tool from the canvas
 	this.unselectTool = function() {
-		updatePixels();
+	
 		//clear options
         select(".options").html("");
 	};

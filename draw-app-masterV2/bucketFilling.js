@@ -17,7 +17,7 @@ function BucketFilling() {
             fillColor[3] = 255;
             //getting out the levels array only from the color object
             var levels = fillColor.levels;
-            console.log(fillColor);
+            console.log(fillColor.levels);
             //Calling the fill algorithm, passing an array of rgba values
             floodFill(createVector(mouseX,mouseY),[...levels])
         }
