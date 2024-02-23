@@ -37,7 +37,8 @@ function SquareTool() {
     //adds a button and click handler to the options area. When clicked
 	//toggle the fill of the square
 	this.populateOptions = function() {
-		select(".options").html("<p>Square Tool</p><button id='squareButton'>Filled Square</button>");
+		select(".options").html(
+			"<button id='squareButton'>Filled Square</button>");
 		// 	//click handler
 		select("#squareButton").mouseClicked(function() {
 			var button = select("#" + this.elt.id);  

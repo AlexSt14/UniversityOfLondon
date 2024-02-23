@@ -4,11 +4,10 @@ var editMode = false;
 var currentShape = [];
 
 function EditableShapes() {
-    this.name = "editableShapes";
+    this.name = "Editable Shapes";
     this.icon = "/assets/resize.png";
     this.editButton = createButton('Edit Shape');
     this.finishButton = createButton('Finish Shape');
-    this.displayName = "Editable Shapes Tool";
     var self = this; //Saving the editableShape "this" reference
     
     loadPixels(); //This will help prevent saving the drawing until we click finish shape
@@ -70,18 +69,16 @@ function EditableShapes() {
         }
         return false;
     }
-     //This will clear the button from the canvas when editableShapes is unselected and clear the name
+     //This will clear the button from the canvas when editableShapes is unselected
     this.unselectTool = function() {
 		updatePixels();
 		//clear options
 		select(".options2").html("");
-        select(".options").html("");
 	};
-     //adds a button and tool name
+     //adds a button
 	this.populateOptions = function() {
         select(".options2").html("<p>Editable Shapes</p>")        
 		this.finishButton.parent("#optionsSize");	
         this.editButton.parent("#optionsSize");	
-        select(".options").html(this.displayName);
 	};
 }

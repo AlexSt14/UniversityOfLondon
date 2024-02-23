@@ -4,7 +4,6 @@
 function LineToTool(){
 	this.icon = "assets/lineTo.jpg";
 	this.name = "LineTo";
-	this.displayName = "Line to tool";
 
 	var startMouseX = -1;
 	var startMouseY = -1;
@@ -42,16 +41,6 @@ function LineToTool(){
 			startMouseX = -1;
 			startMouseY = -1;
 		}
-	};
-	//This will clear the tool name from the canvas
-	this.unselectTool = function() {
-		updatePixels();
-		//clear options
-        select(".options").html("");
-	};
-     //adds a tool name
-	this.populateOptions = function() {
-        select(".options").html(this.displayName);
 	};
 
 
