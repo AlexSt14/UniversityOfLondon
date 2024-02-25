@@ -6,7 +6,6 @@
 //To fix the issue I added a way to keep track of pixels that have already been filled by creating a new array (see below where I marked code wrote by me!).
 //https://www.reddit.com/r/p5js/comments/rhzvvr/a_flood_fill_algorithm_i_couldnt_find_any_for_p5/
 
-let tolerance = 1; //Can adjust this as needed
   function arrayEquals(a, b) {
     return (
       Array.isArray(a) &&

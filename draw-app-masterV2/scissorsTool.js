@@ -8,6 +8,7 @@ function Scissors() {
     this.name = "scissorsTool";
     this.icon = "./assets/scissors.png";
     this.selectButton = createButton("Select area");
+    this.selectButton.hide();
     this.displayName = "Scissors Tool";
     //defining the object itself to a variable
     var self = this;
@@ -91,6 +92,7 @@ function Scissors() {
 	};
      //adds a button and name of the tool
 	this.populateOptions = function() {
+        this.selectButton.show();
         select(".options2").html("<p>Select area to cut</p>")        
 		this.selectButton.parent("#optionsSize");	
         select(".options").html(this.displayName);

@@ -26,6 +26,7 @@ function setup() {
 	helpers = new HelperFunctions();
 	colourP = new ColourPalette();
 	scissors = new Scissors();
+	editableShapes = new EditableShapes();
 	fillButtonState = false;
 	//create a toolbox for storing the tools
 	toolbox = new Toolbox();
@@ -40,7 +41,7 @@ function setup() {
 	toolbox.addTool(new SquareTool());
 	toolbox.addTool(new RectangleTool());
 	toolbox.addTool(new EraserTool());
-	toolbox.addTool(new EditableShapes());
+	toolbox.addTool(editableShapes);
 	toolbox.addTool(scissors);
 	toolbox.addTool(new BucketFilling());
 	toolbox.addTool(new TextTool());
@@ -49,17 +50,21 @@ function setup() {
 }
 
 function draw() {
-	//call the draw function from the selected tool.
+	//call the draw function from the selected tool
 	//hasOwnProperty is a javascript function that tests
 	//if an object contains a particular method or property
 	//if there isn't a draw method the app will alert the user
-	if (toolbox.selectedTool.hasOwnProperty("draw")) {
-		toolbox.selectedTool.draw();
-	} else {
-		alert("it doesn't look like your tool has a draw method!");
-	}	
-	
-	
+	//but this will only run if the selected tool is not bucket filling, this is because
+	//we do not need a draw function for bucket filling so theres no need for this function call
+	if (!(toolbox.selectedTool.name === "bucketFilling")) {
+		console.log(!(toolbox.selectedTool.name === "bucketFilling"))
+		if (toolbox.selectedTool.hasOwnProperty("draw")) {
+			toolbox.selectedTool.draw();
+		}
+		else {
+			alert("it doesn't look like your tool has a draw method!");
+		}
+	}
 }
 
 function mousePressed() {

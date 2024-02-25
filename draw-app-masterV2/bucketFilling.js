@@ -3,10 +3,7 @@ function BucketFilling() {
     this.name = "bucketFilling";
     this.icon = "/assets/bucket.png";
     this.displayName = "Bucket Filling Tool";
-
-    this.draw = function () {
-
-    }
+    
     this.mouseHasBeenPressed = function() {
         //checking if mouse press is on canvas before filling the shape
         if (mouseX < canvasContainer.size().width && mouseX > 0
@@ -17,7 +14,7 @@ function BucketFilling() {
             fillColor[3] = 255;
             //getting out the levels array only from the color object
             var levels = fillColor.levels;
-            console.log(fillColor);
+            console.log(fillColor.levels);
             //Calling the fill algorithm, passing an array of rgba values
             floodFill(createVector(mouseX,mouseY),[...levels])
         }
@@ -27,9 +24,11 @@ function BucketFilling() {
 		updatePixels();
 		//clear options
 		select(".options").html("");
+        select(".options2").html("");
 	};
      //adds the tool name
 	this.populateOptions = function() {
-        select(".options").html(this.displayName)        	
+        select(".options").html(this.displayName)   
+        select(".options2").html("Select a color and click on canvas");     	
 	};
 }
