@@ -1,5 +1,19 @@
 /* Web Development FINAL PROJECT Website for a business */
 /* External style sheet. All html pages are contained within this same css style page */
+/* Global styling of figcaption for screen reader only, hidden otherwise */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+nav figure, .service-closing-figure, section figure {
+    margin: 0;
+}
 /* HOME SECTION */
 /* Navbar Styling */
 /* Bootstrap settings were completely changed and navbar was revamped for my needs */

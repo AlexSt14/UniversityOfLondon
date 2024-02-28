@@ -18,12 +18,15 @@
 <body>
     <!--NAVBAR section, this element comes from Bootstrap Navbar page: https://getbootstrap.com/docs/5.3/components/navbar/-->
     <!--The code has been taken and modified for my needs and pages, including adding a logo inside the navbar-->
-    <div class="container-fuild navbar-elements">
+    <nav class="container-fuild navbar-elements">
         <div class="row">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <!--LOGO of navbar-->
-                    <a class="navbar-brand" href="./index.html"><img alt="logo picture" id="logoo" class="img-fluid" src="./assets/images/logo.PNG" width="150" height="100"></a>
+                    <figure>
+                        <!--LOGO of navbar-->
+                        <a class="navbar-brand" href="./index.html"><img alt="logo picture" id="logoo" class="img-fluid" src="./assets/images/logo.PNG" width="150" height="100"></a>
+                        <figcaption class="sr-only">An image with the logo</figcaption>
+                    </figure>                    
                     <!--This button only shows up when website is navigated on a mobile or less than a certain amount of pixels in width-->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -41,13 +44,13 @@
                 </div>
             </nav>
         </div>
-    </div>
+    </nav>
     <!--END NAVBAR Section-->
     <!--VIDEO SECTION-->
     <!--Content for this video was received from the local business I partnered with for this website, this video section is using a Bootstrap card-->
     <!--which was modified to my needs to fit the video and some other relevant information and button. The link for the bootstrap card is:-->
     <!--https://getbootstrap.com/docs/5.3/components/card/-->
-    <div class="container d-flex justify-content-center text-center video-wrapper">
+    <section class="container d-flex justify-content-center text-center video-wrapper">
         <div class="card mb-3" style="max-width: 1340px;">
             <div class="row align-items-center g-0">
                 <div class="col-md-8">
@@ -55,11 +58,14 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-12 video-container">
-                                <!--Actual video being loaded-->
-                                <video class="img-fluid" autoplay muted loop>
-                                    <source src="./assets/videos/indexvideof.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
+                                <figure>
+                                    <!--Actual video being loaded-->
+                                    <video class="img-fluid" autoplay muted loop>
+                                        <source src="./assets/videos/indexvideof.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <figcaption class="sr-only">A video with the Make-Up Artist </figcaption>
+                                </figure>                                
                             </div>
                         </div>
                     </div>
@@ -81,14 +87,14 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!--END VIDEO Section-->
     
     <!--Services Section-->
     <!--This section is taking advantage of bootstrap cards from link: https://getbootstrap.com/docs/5.3/components/card/-->
     <!--and I modified them to fit my needs and content, removed certain parts of the card such as footer and added interactivity with css over them-->
     <!--Using a container-fluid part from bootstrap and 3 cards side by side (for desktop view) and underneath each other (mobile or tablet view)-->
-    <div class="container-fuild bg-dark">
+    <section class="container-fuild bg-dark">
         <div class="row">
             <div class="col-lg-12">
                 <div class="services-image-container">
@@ -96,7 +102,10 @@
                         <div class="col">
                             <!--Card 1 from services-->
                             <div class="card h-100 bg-dark image-container">
-                                <img src="./assets/images/index/serviceBmakeup.jpg" alt="Everyday Make-Up Picture Showcase" class="card-img-top services-image">
+                                <figure>
+                                    <!--Figcaption not included as alt attribute provides clear description-->
+                                    <img src="./assets/images/index/serviceBmakeup.jpg" alt="Everyday Make-Up Picture Showcase" class="card-img-top services-image">
+                                </figure>                                
                                 <div class="card-body">
                                     <div class="card-body-text">
                                         <h5 class="card-title">Everyday Make-Up</h5>
@@ -108,7 +117,10 @@
                         <div class="col">
                             <!--Card 2 from services-->
                             <div class="card h-100 bg-dark image-container">
-                                <img src="./assets/images/index/serviceEmakeup.jpg" class="card-img-top services-image" alt="Bridal Make-Up Picture Showcase">
+                                <figure>
+                                    <!--Figcaption not included as alt attribute provides clear description-->
+                                    <img src="./assets/images/index/serviceEmakeup.jpg" class="card-img-top services-image" alt="Bridal Make-Up Picture Showcase">
+                                </figure>                                
                                 <div class="card-body">
                                     <div class="card-body-text">
                                         <h5 class="card-title">Bridal Make-Up</h5>
@@ -120,7 +132,10 @@
                         <div class="col">
                             <!--Card 3 from services-->
                             <div class="card h-100 bg-dark image-container">
-                                <img src="./assets/images/index/servicehenna.jpg" class="card-img-top services-image" alt="Henna Eyebrows Picture Showcase">
+                                <figure>
+                                    <!--Figcaption not included as alt attribute provides clear description-->
+                                    <img src="./assets/images/index/servicehenna.jpg" class="card-img-top services-image" alt="Henna Eyebrows Picture Showcase">
+                                </figure>                                
                                 <div class="card-body">
                                     <div class="card-body-text">
                                         <h5 class="card-title">Henna Eyebrows</h5>
@@ -137,19 +152,22 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!--END SERVICES Section-->
     <!--POPULAR Service SECTION-->
     <!--This section takes advantage of a bootstrap card to highlight the top service that the business is known for and performs the most-->
     <!--https://getbootstrap.com/docs/5.3/components/card/ and the card has been modified by removing header/footer and css has been applied to for interactivity-->
-    <div class="container-fuild popular-service-section">
+    <section class="container-fuild popular-service-section">
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="mb-5">Our Most Popular Service</h1>
                 <div class="card mb-3" style="max-width: 940px;">
                     <div class="row align-items-center g-0">
                         <div class="col-md-8">
-                            <img src="./assets/images/index/popularservice.jpg" width="1200" class="img-fluid rounded-start" alt="Henna Eyebrows Most Popular Service">
+                            <figure>
+                                <!--Figcaption not included as alt attribute provides clear description-->
+                                <img src="./assets/images/index/popularservice.jpg" width="1200" class="img-fluid rounded-start" alt="Henna Eyebrows Most Popular Service">
+                            </figure>                            
                         </div>
                         <div class="col-md-4">
                             <div class="card-body">
@@ -163,13 +181,13 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!--END POPULAR Services Section-->
     <!--Testimonials Section including a slideshow of testimonials-->
     <!--This section takes advantage of bootstrap cards that were modified to fit my content, such as header/footer and image section-->
     <!--https://getbootstrap.com/docs/5.3/components/card/ where I modified and added a slideshow from testimonials and using javascript for-->
     <!--Automated slide move-->
-    <div class="container-fuild testimonials-section-wrapper">
+    <section class="container-fuild testimonials-section-wrapper">
         <div class="testimonials-section">
             <div class="row row-cols-1 row-cols-md-3 g-4 test-div">
                 <div class="col testimonial-first-col">
@@ -189,159 +207,198 @@
                     <!--Card 3 from testimonials section where the slideshow is running for an automated effect with javascript-->
                     <div class="card h-100">
                         <div class="card-body">
-                            <div class="my-slides-testimonials">
+                            <article class="my-slides-testimonials">
                                 <p class="card-text">"Absolutely impressed by my everyday makeup artist! Their talent enhances natural beauty and creates flawless, long-lasting looks. My go-to for custom, glamorous yet understated styles that perfectly match my personal aesthetic. Simply the best."</p>
                                 <h2 class="card-title">Adelina</h2>
-                            </div>
-                            <div class="my-slides-testimonials">
+                            </article>
+                            <article class="my-slides-testimonials">
                                 <p class="card-text">"Made me feel like the most beautiful bride for my special day! Skilled artistry accentuated my best features and created a timeless, glamorous look. Flawless, long-lasting makeup that captured the romance and magic of my wedding."</p>
                                 <h2 class="card-title">Rose</h2>
-                            </div>
-                            <div class="my-slides-testimonials">
+                            </article>
+                            <article class="my-slides-testimonials">
                                 <p class="card-text">"The artist framed my eyes flawlessly with gorgeous henna brows, defining and enhancing my natural features with subtle, beautiful tinting. Long-lasting results perfected my arch and shape. Highly recommend for gorgeous, undone brows!"</p>
                                 <h2 class="card-title">Sasha</h2>
-                            </div>
-                            <div style="text-align:center">
+                            </article>
+                            <article style="text-align:center">
                                 <span class="dot" onclick="currentSlide(1)"></span>
                                 <span class="dot" onclick="currentSlide(2)"></span>
                                 <span class="dot" onclick="currentSlide(3)"></span>
-                            </div>
+                            </article>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!--END TESTIMONIALS Section-->
     <!--LOOKS Section-->
     <!--Here I am taking advantage of the Mansory CDN to have all my cards arranged dynamically: https://getbootstrap.com/docs/5.3/examples/masonry/-->
     <!--This cool masonry integration (CDN for this is added at the end of Body tag) helps give a cool and dynamic effect to the cards with pictures-->
     <!--https://getbootstrap.com/docs/5.3/components/card/ Bootstrap cards were used to create this effect alongside Masonry CDN-->
-    <div class="container looks-presentation">
-        <div class="row-cols-1">
-            <h4>#NaturalBeauty</h4>
-            <h1>Looks and Services</h1>
-        </div>
-    </div>
-    <div class="container-fuild looks-wrapper">
-        <div class="row row-cols-1 row-cols-md-4" data-masonry='{"percentPosition": true }'>
-            <div class="col-* px-0">
-                <!--This is where cards start to be created-->
-                <div class="card">
-                    <img src="./assets/images/index/showedimage1.jpg" class="card-img-top" alt="Everyday Make-Up Example 1">
-                    <div class="card-body">
-                        <h3 class="card-title">Everyday Make-Up</h3>
-                        <p class="card-text">Subtlety reigns supreme. Smoky shades play around the eyes, deepening towards the corners for a touch of mystique.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-* px-0">
-                <div class="card">
-                    <img src="./assets/images/index/showedimage2.jpg" class="card-img-top" alt="Everyday Make-Up Example 2">
-                    <div class="card-body">
-                        <h3 class="card-title">Everyday Make-Up</h3>
-                        <p class="card-text">Bold black liner takes center stage, fading into a hazy whisper of brown at the edges, creating a dreamy, diffused effect.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-* px-0">
-                <div class="card">
-                    <img src="./assets/images/index/showedimage3.jpg" class="card-img-top" alt="Henna Eyebrows Example 1">
-                    <div class="card-body">
-                        <h3 class="card-title">Henna Eyebrows</h3>
-                        <p class="card-text">This isn't just coloring, it's sculpting — defining and enhancing, all part of the transformation in the making.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-* px-0">
-                <div class="card">
-                    <img src="./assets/images/index/showedimage4.jpeg" class="card-img-top" alt="Everyday Make-Up Example 3">
-                    <div class="card-body">
-                        <h3 class="card-title">Everyday Make-Up</h3>
-                        <p class="card-text">Delicate liner defines, while light fades to playful pink - a flirty gradient for the eyes.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-* px-0">
-                <div class="card">
-                    <img src="./assets/images/index/showedimage5.jpg" class="card-img-top" alt="Everyday Make-Up Example 4">
-                    <div class="card-body">
-                        <h3 class="card-title">Everyday Make-Up</h3>
-                        <p class="card-text">Subtlety reigns supreme. Smoky shades play around the eyes, deepening towards the corners for a touch of mystique.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-* px-0">
-                <div class="card">
-                    <img src="./assets/images/index/showedimage6.jpg" class="card-img-top" alt="Everyday Make-Up Example 5">
-                    <div class="card-body">
-                        <h3 class="card-title">Everyday Make-Up</h3>
-                        <p class="card-text">Bold and sultry, this look takes center stage. Deep black paints the outer corners, smudging into a hazy whisper of warm brown as it meets the crease. The contrast intensifies, eyes looking deeper and more defined, making a statement with a touch of mystery.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-* px-0">
-                <div class="card">
-                    <img src="./assets/images/index/showedimage7.jpeg" class="card-img-top" alt="Everyday Make-Up Example 6">
-                    <div class="card-body">
-                        <h3 class="card-title">Everyday Make-Up</h3>
-                        <p class="card-text">Eyes take center stage! Playful lines dance outward, kissed with blue and pink below. Soft browns frame above, a harmonious blend for a touch of whimsy.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-* px-0">
-                <div class="card">
-                    <img src="./assets/images/index/showedimage8.jpg" class="card-img-top" alt="Bridal Make-Up Example 1">
-                    <div class="card-body">
-                        <h3 class="card-title">Bridal Make-Up</h3>
-                        <p class="card-text">Delicate wings flutter outward, framing eyes with timeless grace. The gradient deepens, whispering sweet secrets towards the inner corners. Each stroke, a promise whispered, blooming into a radiant bride ready to say "I do."</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-* px-0">
-                <div class="card">
-                    <img src="./assets/images/index/showedimage9.jpeg" class="card-img-top" alt="Henna Eyebrows Example 2">
-                    <div class="card-body">
-                        <h3 class="card-title">Henna Eyebrows</h3>
-                        <p class="card-text">This isn't just coloring, it's sculpting — defining and enhancing, all part of the transformation in the making.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-* px-0">
-                <div class="card">
-                    <img src="./assets/images/index/showedimage10.jpg" class="card-img-top" alt="Waxing Eyebrows Example 1">
-                    <div class="card-body">
-                        <h3 class="card-title">Waxing Eyebrows</h3>
-                        <p class="card-text">From wispy to wow! Our eyebrow waxing expertise shapes and defines brows for a flawless frame. Precision waxing reveals your best brows by removing stray hairs and sculpting the perfect arch.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-* px-0">
-                <div class="card">
-                    <img src="./assets/images/index/showedimage11.jpeg" class="card-img-top" alt="Bridal Make-Up Example 2">
-                    <div class="card-body">
-                        <h3 class="card-title">Bridal Make-Up</h3>
-                        <p class="card-text">Bridal glow unfolds. Soft hues whisper inward, bold line takes flight at the edge. Ethereal meets striking, ready to say "I do."</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-* px-0">
-                <div class="card">
-                    <img src="./assets/images/index/showedimage12.jpg" class="card-img-top" alt="Bridal Make-Up Example 3">
-                    <div class="card-body">
-                        <h3 class="card-title">Bridal Make-Up</h3>
-                        <p class="card-text">Electric blue glitter ignites the inner eye, clashing with playful pink as it meets the outer edge. Razor-sharp liner frames the explosion, a daring statement defying the ordinary.</p>
-                    </div>
-                </div>
-                <!--This is where cards END-->
+    <section>
+        <div class="container looks-presentation">
+            <div class="row-cols-1">
+                <h4>#NaturalBeauty</h4>
+                <h1>Looks and Services</h1>
             </div>
         </div>
-    </div>
-    <!--LOOKS Section END-->
+        <div class="container-fuild looks-wrapper">
+            <div class="row row-cols-1 row-cols-md-4" data-masonry='{"percentPosition": true }'>
+                <div class="col-* px-0">
+                    <!--This is where cards start to be created-->
+                    <div class="card">
+                        <figure>
+                            <!--Figcaption not included as alt attribute provides clear description-->
+                            <img src="./assets/images/index/showedimage1.jpg" class="card-img-top" alt="Everyday Make-Up Example 1">
+                        </figure>                        
+                        <div class="card-body">
+                            <h3 class="card-title">Everyday Make-Up</h3>
+                            <p class="card-text">Subtlety reigns supreme. Smoky shades play around the eyes, deepening towards the corners for a touch of mystique.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-* px-0">
+                    <div class="card">
+                        <figure>
+                            <!--Figcaption not included as alt attribute provides clear description-->
+                            <img src="./assets/images/index/showedimage2.jpg" class="card-img-top" alt="Everyday Make-Up Example 2">
+                        </figure>                        
+                        <div class="card-body">
+                            <h3 class="card-title">Everyday Make-Up</h3>
+                            <p class="card-text">Bold black liner takes center stage, fading into a hazy whisper of brown at the edges, creating a dreamy, diffused effect.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-* px-0">
+                    <div class="card">
+                        <figure>
+                            <!--Figcaption not included as alt attribute provides clear description-->
+                            <img src="./assets/images/index/showedimage3.jpg" class="card-img-top" alt="Henna Eyebrows Example 1">
+                        </figure>                        
+                        <div class="card-body">
+                            <h3 class="card-title">Henna Eyebrows</h3>
+                            <p class="card-text">This isn't just coloring, it's sculpting — defining and enhancing, all part of the transformation in the making.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-* px-0">
+                    <div class="card">
+                        <figure>
+                            <!--Figcaption not included as alt attribute provides clear description-->
+                            <img src="./assets/images/index/showedimage4.jpeg" class="card-img-top" alt="Everyday Make-Up Example 3">
+                        </figure>                        
+                        <div class="card-body">
+                            <h3 class="card-title">Everyday Make-Up</h3>
+                            <p class="card-text">Delicate liner defines, while light fades to playful pink - a flirty gradient for the eyes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-* px-0">
+                    <div class="card">
+                        <figure>
+                            <!--Figcaption not included as alt attribute provides clear description-->
+                            <img src="./assets/images/index/showedimage5.jpg" class="card-img-top" alt="Everyday Make-Up Example 4">
+                        </figure>                        
+                        <div class="card-body">
+                            <h3 class="card-title">Everyday Make-Up</h3>
+                            <p class="card-text">Subtlety reigns supreme. Smoky shades play around the eyes, deepening towards the corners for a touch of mystique.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-* px-0">
+                    <div class="card">
+                        <figure>
+                            <!--Figcaption not included as alt attribute provides clear description-->
+                            <img src="./assets/images/index/showedimage6.jpg" class="card-img-top" alt="Everyday Make-Up Example 5">
+                        </figure>                        
+                        <div class="card-body">
+                            <h3 class="card-title">Everyday Make-Up</h3>
+                            <p class="card-text">Bold and sultry, this look takes center stage. Deep black paints the outer corners, smudging into a hazy whisper of warm brown as it meets the crease. The contrast intensifies, eyes looking deeper and more defined, making a statement with a touch of mystery.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-* px-0">
+                    <div class="card">
+                        <figure>
+                            <!--Figcaption not included as alt attribute provides clear description-->
+                            <img src="./assets/images/index/showedimage7.jpeg" class="card-img-top" alt="Everyday Make-Up Example 6">
+                        </figure>                        
+                        <div class="card-body">
+                            <h3 class="card-title">Everyday Make-Up</h3>
+                            <p class="card-text">Eyes take center stage! Playful lines dance outward, kissed with blue and pink below. Soft browns frame above, a harmonious blend for a touch of whimsy.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-* px-0">
+                    <div class="card">
+                        <figure>
+                            <!--Figcaption not included as alt attribute provides clear description-->
+                            <img src="./assets/images/index/showedimage8.jpg" class="card-img-top" alt="Bridal Make-Up Example 1">
+                        </figure>                        
+                        <div class="card-body">
+                            <h3 class="card-title">Bridal Make-Up</h3>
+                            <p class="card-text">Delicate wings flutter outward, framing eyes with timeless grace. The gradient deepens, whispering sweet secrets towards the inner corners. Each stroke, a promise whispered, blooming into a radiant bride ready to say "I do."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-* px-0">
+                    <div class="card">
+                        <figure>
+                            <!--Figcaption not included as alt attribute provides clear description-->
+                            <img src="./assets/images/index/showedimage9.jpeg" class="card-img-top" alt="Henna Eyebrows Example 2">
+                        </figure>                        
+                        <div class="card-body">
+                            <h3 class="card-title">Henna Eyebrows</h3>
+                            <p class="card-text">This isn't just coloring, it's sculpting — defining and enhancing, all part of the transformation in the making.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-* px-0">
+                    <div class="card">
+                        <figure>
+                            <!--Figcaption not included as alt attribute provides clear description-->
+                            <img src="./assets/images/index/showedimage10.jpg" class="card-img-top" alt="Waxing Eyebrows Example 1">
+                        </figure>                        
+                        <div class="card-body">
+                            <h3 class="card-title">Waxing Eyebrows</h3>
+                            <p class="card-text">From wispy to wow! Our eyebrow waxing expertise shapes and defines brows for a flawless frame. Precision waxing reveals your best brows by removing stray hairs and sculpting the perfect arch.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-* px-0">
+                    <div class="card">
+                        <figure>
+                            <!--Figcaption not included as alt attribute provides clear description-->
+                            <img src="./assets/images/index/showedimage11.jpeg" class="card-img-top" alt="Bridal Make-Up Example 2">
+                        </figure>                        
+                        <div class="card-body">
+                            <h3 class="card-title">Bridal Make-Up</h3>
+                            <p class="card-text">Bridal glow unfolds. Soft hues whisper inward, bold line takes flight at the edge. Ethereal meets striking, ready to say "I do."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-* px-0">
+                    <div class="card">
+                        <figure>
+                            <!--Figcaption not included as alt attribute provides clear description-->
+                            <img src="./assets/images/index/showedimage12.jpg" class="card-img-top" alt="Bridal Make-Up Example 3">
+                        </figure>                        
+                        <div class="card-body">
+                            <h3 class="card-title">Bridal Make-Up</h3>
+                            <p class="card-text">Electric blue glitter ignites the inner eye, clashing with playful pink as it meets the outer edge. Razor-sharp liner frames the explosion, a daring statement defying the ordinary.</p>
+                        </div>
+                    </div>
+                    <!--This is where cards END-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--LOOKS Section END-->   
+
     <!--FOOTER SECTION-->
     <!--This section only uses the basic bootstrap grid so that I can reach the desired look/aspect-->
     <!--It contains info for the owner of the site alongside quick navigation buttons to other pages from the site-->
-    <div class="container-fuild bg-dark footer-wrapper">
+    <footer class="container-fuild bg-dark footer-wrapper">
         <div class="row">
             <div class="col-md-6 ps-4">
                 <h1>Natural Beauty</h1>
@@ -349,11 +406,11 @@
                     <p>© 2024 by <a href="https://alexst14.github.io/portfolio/" target="_blank">Alex Sthali.</p></a>
                 </div>
             </div>
-            <div class="col-md-2 footer-address">
+            <address class="col-md-2 footer-address">
                 <p>15 Finch Drive</p>
                 <p>Buckshaw Village, PR7 7NL</p>
                 <p>st.raluca@yahoo.com</p>
-            </div>
+            </address>
             <div class="col-md-2 footer-sec-3">
                 <ul id="footer-nav-buttons">
                     <a href="./index.html"><li>Home</li></a>
@@ -371,7 +428,7 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </footer>
     <!--This is required for certain aspects of Bootstrap like the navbar button for mobile view of website-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <!--This is needed in order for me to use fontawesome icons within the website-->

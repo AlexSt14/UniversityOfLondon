@@ -18,12 +18,15 @@
 <body>
     <!--NAVBAR section, this element comes from Bootstrap Navbar page: https://getbootstrap.com/docs/5.3/components/navbar/-->
     <!--The code has been taken and modified for my needs and pages, including adding a logo inside the navbar-->
-    <div class="container-fuild navbar-elements">
+    <nav class="container-fuild navbar-elements">
         <div class="row">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <!--LOGO of navbar-->
-                    <a class="navbar-brand" href="./index.html"><img alt="logo" id="logoo" class="img-fluid" src="./assets/images/logo.PNG" width="150" height="100"></a>
+                    <figure>
+                        <!--LOGO of navbar-->
+                        <a class="navbar-brand" href="./index.html"><img alt="logo" id="logoo" class="img-fluid" src="./assets/images/logo.PNG" width="150" height="100"></a>
+                        <figcaption class="sr-only">An image with the logo</figcaption>
+                    </figure>
                     <!--This button only shows up when website is navigated on a mobile or less than a certain amount of pixels in width-->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -41,12 +44,12 @@
                 </div>
             </nav>
         </div>
-    </div>
+    </nav>
     <!--END NAVBAR-->
     <!--ABOUT SECTION-->
     <!--This section quickly goes over the owner's personal information and about themselves. In this section I have used and modified a bootstrap-->
     <!--card to achieve the effect I wanted for the look, such as removing header, footer and changing the body look, link to card: https://getbootstrap.com/docs/5.3/components/card/-->
-    <div class="container about-wrapper">
+    <section class="container about-wrapper">
         <div class="row row-cols-1">
             <div class="col mt-2 about-paragraphs">
                 <h1>About</h1>
@@ -57,25 +60,28 @@
                 <div class="card mb-5" style="max-width: 940px;">
                     <div class="row g-0">
                         <div class="col-md-7">
-                            <img src="./assets/images/about/myself.jpg" class="img-fluid rounded-start" alt="Picture of business owner">
+                            <figure>
+                                <img src="./assets/images/about/myself.jpg" class="img-fluid rounded-start" alt="Picture of business owner">
+                                <figcaption class="sr-only">A picture of the business owner</figcaption>
+                            </figure>                            
                         </div>
                         <div class="col-md-5">
                             <div class="card-body">
                                 <h5 class="card-title mb-5">Have I piqued your interest?</h5>
-                                <a href="./contact.html" class="btn btn-dark carousel-button">Contact Me</a>
+                                <a href="./contact.html" class="btn btn-dark carousel-button" aria-label="Contact me for additional info">Contact Me</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!--END ABOUT Section-->
 
     <!--FOOTER SECTION-->
     <!--This section only uses the basic bootstrap grid so that I can reach the desired look/aspect-->
     <!--It contains info for the owner of the site alongside quick navigation buttons to other pages from the site-->
-    <div class="container-fuild bg-dark footer-wrapper">
+    <footer class="container-fuild bg-dark footer-wrapper">
         <div class="row">
             <div class="col-md-6 ps-4">
                 <h1>Natural Beauty</h1>
@@ -83,11 +89,11 @@
                     <p>© 2024 by <a href="https://alexst14.github.io/portfolio/" target="_blank">Alex Sthali.</p></a>
                 </div>
             </div>
-            <div class="col-md-2 footer-address">
+            <address class="col-md-2 footer-address">
                 <p>15 Finch Drive</p>
                 <p>Buckshaw Village, PR7 7NL</p>
                 <p>st.raluca@yahoo.com</p>
-            </div>
+            </address>
             <div class="col-md-2 footer-sec-3">
                 <ul id="footer-nav-buttons">
                     <a href="./index.html"><li>Home</li></a>
@@ -105,7 +111,7 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </footer>
     <!--This is required for certain aspects of Bootstrap like the navbar button for mobile view of website-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <!--This is needed in order for me to use fontawesome icons within the website-->
