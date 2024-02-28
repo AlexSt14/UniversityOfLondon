@@ -48,7 +48,6 @@ function openModal(n) {
     console.log(n); //debugging purposes
     //Setting index to the same index of the clicked image
     modalIndex = n;
-    console.log(modalIndex); //deubbing purposes
     modalShowSlides(modalIndex); //calling the function to show the picture
     myModal.show(); //And opening the modal
 }

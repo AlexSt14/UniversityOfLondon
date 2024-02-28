@@ -49,7 +49,7 @@
     <!--VIDEO SECTION-->
     <!--Content for this video was received from the local business I partnered with for this website, this video section is using a Bootstrap card-->
     <!--which was modified to my needs to fit the video and some other relevant information and button. The link for the bootstrap card is:-->
-    <!--https://getbootstrap.com/docs/5.3/components/card/-->
+    <!--https://getbootstrap.com/docs/5.3/components/card/ --> 
     <section class="container d-flex justify-content-center text-center video-wrapper">
         <div class="card mb-3" style="max-width: 1340px;">
             <div class="row align-items-center g-0">
@@ -208,22 +208,22 @@
                     <div class="card h-100">
                         <div class="card-body">
                             <article class="my-slides-testimonials">
-                                <p class="card-text">"Absolutely impressed by my everyday makeup artist! Their talent enhances natural beauty and creates flawless, long-lasting looks. My go-to for custom, glamorous yet understated styles that perfectly match my personal aesthetic. Simply the best."</p>
+                                <blockquote><p class="card-text">"Absolutely impressed by my everyday makeup artist! Their talent enhances natural beauty and creates flawless, long-lasting looks. My go-to for custom, glamorous yet understated styles that perfectly match my personal aesthetic. Simply the best."</p></blockquote>
                                 <h2 class="card-title">Adelina</h2>
                             </article>
                             <article class="my-slides-testimonials">
-                                <p class="card-text">"Made me feel like the most beautiful bride for my special day! Skilled artistry accentuated my best features and created a timeless, glamorous look. Flawless, long-lasting makeup that captured the romance and magic of my wedding."</p>
+                                <blockquote><p class="card-text">"Made me feel like the most beautiful bride for my special day! Skilled artistry accentuated my best features and created a timeless, glamorous look. Flawless, long-lasting makeup that captured the romance and magic of my wedding."</p></blockquote>
                                 <h2 class="card-title">Rose</h2>
                             </article>
                             <article class="my-slides-testimonials">
-                                <p class="card-text">"The artist framed my eyes flawlessly with gorgeous henna brows, defining and enhancing my natural features with subtle, beautiful tinting. Long-lasting results perfected my arch and shape. Highly recommend for gorgeous, undone brows!"</p>
+                                <blockquote><p class="card-text">"The artist framed my eyes flawlessly with gorgeous henna brows, defining and enhancing my natural features with subtle, beautiful tinting. Long-lasting results perfected my arch and shape. Highly recommend for gorgeous, undone brows!"</p></blockquote>
                                 <h2 class="card-title">Sasha</h2>
                             </article>
-                            <article style="text-align:center">
+                            <div style="text-align:center">
                                 <span class="dot" onclick="currentSlide(1)"></span>
                                 <span class="dot" onclick="currentSlide(2)"></span>
                                 <span class="dot" onclick="currentSlide(3)"></span>
-                            </article>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -232,7 +232,7 @@
     </section>
     <!--END TESTIMONIALS Section-->
     <!--LOOKS Section-->
-    <!--Here I am taking advantage of the Mansory CDN to have all my cards arranged dynamically: https://getbootstrap.com/docs/5.3/examples/masonry/-->
+    <!--Here I am taking advantage of the Mansory CDN to have all my cards arranged dynamically: https://getbootstrap.com/docs/5.3/examples/masonry/ -->
     <!--This cool masonry integration (CDN for this is added at the end of Body tag) helps give a cool and dynamic effect to the cards with pictures-->
     <!--https://getbootstrap.com/docs/5.3/components/card/ Bootstrap cards were used to create this effect alongside Masonry CDN-->
     <section>
@@ -242,7 +242,7 @@
                 <h1>Looks and Services</h1>
             </div>
         </div>
-        <div class="container-fuild looks-wrapper">
+        <div class="container-fuild looks-wrapper" id="homepage-looks">
             <div class="row row-cols-1 row-cols-md-4" data-masonry='{"percentPosition": true }'>
                 <div class="col-* px-0">
                     <!--This is where cards start to be created-->
@@ -396,7 +396,7 @@
     <!--LOOKS Section END-->   
 
     <!--FOOTER SECTION-->
-    <!--This section only uses the basic bootstrap grid so that I can reach the desired look/aspect-->
+    <!--This section only uses the basic bootstrap grid so that I can get the desired look/aspect-->
     <!--It contains info for the owner of the site alongside quick navigation buttons to other pages from the site-->
     <footer class="container-fuild bg-dark footer-wrapper">
         <div class="row">

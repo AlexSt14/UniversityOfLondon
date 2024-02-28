@@ -1,5 +1,5 @@
 //Small interactive script for changing and applying classes to divs inside the services page, mixing css in order to achieve the desired effect
-// Changing and applying the active class to the clicked elements
+//Changing and applying the active class to the clicked elements
 let items = document.querySelectorAll(".services-list li");
 //Needed to use the Array.from as I needed an array for this to work and apply a for each method
 let description = Array.from(document.getElementsByClassName("services-description"));
@@ -9,9 +9,10 @@ items.forEach(item => {
     item.addEventListener("click", function() {
         //Removing the clicked class from previous elements
         document.querySelector(".clicked").classList.remove("clicked");
+        //Add the clicked class to the one that was clicked
         this.classList.add("clicked");
 
-        //Hiding all the cards first
+        //Hiding the cards
         description.forEach(desc => {
             desc.style.display = "none";
         })

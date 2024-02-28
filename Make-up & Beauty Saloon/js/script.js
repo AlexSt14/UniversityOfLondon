@@ -4,7 +4,7 @@
 let slideIndexTestimonials = 1;
 showSlidesTestimonials(slideIndexTestimonials);
 
-//Next/prev controls
+//Dots selection control
 function currentSlide(n) {
     showSlidesTestimonials(slideIndexTestimonials = n);
 }
@@ -13,11 +13,11 @@ function currentSlide(n) {
 let slideInterval = setInterval(function() {
     plusSlidesTestimonials(1);
 },5000);
-
 function plusSlidesTestimonials(n) {
     showSlidesTestimonials(slideIndexTestimonials += n);
 }
-//Function will display slides, hide other slides
+
+//Function will display current slide, hide other slides
 function showSlidesTestimonials(n) {
     let slides = document.getElementsByClassName("my-slides-testimonials");
     let dots = document.getElementsByClassName("dot");
@@ -39,14 +39,14 @@ function showSlidesTestimonials(n) {
 let testimonialsWidth = window.innerWidth;
 let testimonialsDiv = document.getElementsByClassName("test-div")[0];
 console.log(testimonialsDiv);
-//This ensures if the page is loaded on a mobile, it will remove g-4 class
-if (testimonialsWidth <= 800) {
+//This ensures if the page is directly loaded on a mobile or tablet, it will remove g-4 class
+if (testimonialsWidth <= 900) {
     testimonialsDiv.classList.remove("g-4");
 }
 //This ensures if the page on a desktop is resized to a mobile size, it will remove g-4 class
 window.addEventListener('resize', function() {
     let windowWidth = window.innerWidth;
-    if (windowWidth <= 800) {
+    if (windowWidth <= 900) {
         testimonialsDiv.classList.remove("g-4");
     }
     else {
