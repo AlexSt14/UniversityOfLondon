@@ -68,3 +68,13 @@ function modalShowSlides(n) {
     }
     slides[modalIndex-1].style.display = "block";
 }
+
+//This small script will ensure that masonry is reloaded only after all images are loaded
+//This is needed in order to prevent a bug in case images take longer to load and masonry places cards right under each other and when images load
+//It looks like they overlap, by initializing masonry only after the page has loaded, we prevent this from happening
+//It is especially needed for low end computers or when the page is uploaded to Coursera Static Pages because it is very slow and images take longer to load than any other pc I tested it on
+window.addEventListener("load", function() {
+    let event = new Event("load");
+    let masonryGrid = this.document.querySelector("[data-masonry]");
+    masonryGrid.dispatchEvent(event);
+});

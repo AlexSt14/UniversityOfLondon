@@ -7,7 +7,7 @@ if (window.innerWidth <= 800) {
     contactDiv.classList.remove("g-4");
 }
 //This ensures if the page on a desktop is resized to a mobile size, it will remove g-4 class
-window.addEventListener('resize', function() {
+window.addEventListener("resize", function() {
     let windowWidth = window.innerWidth;
     if (windowWidth <= 800) {
         contactDiv.classList.remove("g-4");
