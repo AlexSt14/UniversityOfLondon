@@ -296,7 +296,7 @@
     <!--HERE I am taking advantage of Masonry CDN to dynamically arrange the cards with the pictures, the link to CDN is given at the end of body tag-->
     <!--Link for bootstrap cards https://getbootstrap.com/docs/5.3/components/card/ -->
     <section class="container-fuild looks-wrapper" id="portfolio">
-        <div class="row row-cols-1 row-cols-md-4" data-masonry='{"percentPosition": true }'>
+        <div class="row row-cols-1 row-cols-md-4 my-masonry-grid">
             <div class="col-* px-0">
                 <div class="card clickable-image" onclick="openModal(1)" data-image="./assets/images/index/showedimage1.jpg">
                     <figure>
@@ -524,5 +524,8 @@
     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
     <!--This is the reference to my external javascript file-->
     <script src="./js/portfolioscript.js"></script>
+    <!--ImagesLoaded library implementation cdn-->
+    <!--https://imagesloaded.desandro.com/ -->
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.js"></script>
 </body>
 </html>

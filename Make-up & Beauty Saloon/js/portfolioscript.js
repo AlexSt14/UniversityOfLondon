@@ -73,8 +73,16 @@ function modalShowSlides(n) {
 //This is needed in order to prevent a bug in case images take longer to load and masonry places cards right under each other and when images load
 //It looks like they overlap, by initializing masonry only after the page has loaded, we prevent this from happening
 //It is especially needed for low end computers or when the page is uploaded to Coursera Static Pages because it is very slow and images take longer to load than any other pc I tested it on
-window.addEventListener("load", function() {
-    let event = new Event("load");
-    let masonryGrid = this.document.querySelector("[data-masonry]");
-    masonryGrid.dispatchEvent(event);
+//I am also using the imagesLoaded cdn to wait for images to be loaded before doing anything else
+//https://imagesloaded.desandro.com/
+console.log("Listening for DOM"); 
+document.addEventListener("DOMContentLoaded", function() {
+    let masonryGrid = document.querySelector(".my-masonry-grid");
+    
+    imagesLoaded(masonryGrid, function() {
+        console.log("test");
+        new Masonry(masonryGrid, {
+            percentPosition: true
+        })
+    });
 });
