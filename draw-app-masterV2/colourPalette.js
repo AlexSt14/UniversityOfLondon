@@ -12,6 +12,8 @@ function ColourPalette() {
 	var self = this;
 
 	this.setSelectedColour = function(colour) {
+		//Updating pixels before changing color, preventing a mirrorDrawTool bug where the vertical line would not disappear when unselecting the tool, after changing the color during mirrorDrawTool active
+		updatePixels();
 		//checking if the provided colour is a text name or a color object
 		if (typeof colour === 'string') {
 			//if it's a text name, find the corresponding color
@@ -28,10 +30,10 @@ function ColourPalette() {
 			//if it's a color object, directly set it
 			this.selectedColour = colour;
 		}
-	
+		loadPixels();
 		fill(this.selectedColour);
 		stroke(this.selectedColour);
-		loadPixels(); // As mentioned in your code
+		
 		//this will reset the button and the fill state
 		if (toolbox.selectedTool.name == "circleTool" || toolbox.selectedTool.name == "eraser" || toolbox.selectedTool.name == "rectangleTool"
 			|| toolbox.selectedTool.name == "scissorsTool" || toolbox.selectedTool.name == "squareTool") {
