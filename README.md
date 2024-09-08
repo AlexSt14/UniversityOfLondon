@@ -11,4 +11,7 @@ It includes a handful of tools which can be used to draw or create. <br>
 - Web Development --> Full vanilla HTML/CSS/Javascript + Bootstrap [Website for local organisation](https://github.com/AlexSt14/UniversityOfLondon_Year1/tree/main/Make-up%20%26%20Beauty%20Saloon) <br>
 Final project for Web Development module. It is a website that was created for a local business. <br>
 It was developed using vanilla HTML, CSS, and Javascript, alongside Bootstrap. <br>
-Communication with stakeholders during this development was important.
+Communication with stakeholders during this development was important. <br>
+
+This repository includes a lot more mini projects that were created during the term. Either a sorting algorithm or a super simple game. <br>
+Check out the code in the repository
